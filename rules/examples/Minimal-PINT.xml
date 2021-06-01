@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" 
+   xmlns:ccts="urn:un:unece:uncefact:documentation:2" 
+   xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" 
+   xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" 
+   xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" 
+   xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+	
+<cbc:CustomizationID>urn:peppol.org:pint:3.0</cbc:CustomizationID>
+<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+
+	<cbc:ID>12345678</cbc:ID>
+        <cbc:IssueDate>2020-07-01</cbc:IssueDate>
+        <cbc:DueDate>2020-07-30</cbc:DueDate>
+
+        <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+        <cbc:DocumentCurrencyCode>NZD</cbc:DocumentCurrencyCode>
+
+        <cac:AccountingSupplierParty>
+            <cac:Party>
+                <cbc:EndpointID schemeID="0088">9429033821733</cbc:EndpointID>
+                  <cac:PartyIdentification>
+                     <cbc:ID schemeID="0088">9429033821733</cbc:ID>
+                  </cac:PartyIdentification>
+                     <cac:PostalAddress>
+                             <cac:Country>
+                                     <cbc:IdentificationCode>NZ</cbc:IdentificationCode>
+                              </cac:Country>  
+                     </cac:PostalAddress>                                                   
+                             <cac:PartyLegalEntity>
+                                    <cbc:RegistrationName>NZ Testing Ltd</cbc:RegistrationName>    
+                             </cac:PartyLegalEntity>                                               
+              </cac:Party>                                             
+          </cac:AccountingSupplierParty>   
+               
+          <cac:AccountingCustomerParty>
+              <cac:Party>
+                  <cbc:EndpointID schemeID="0088">8450303436</cbc:EndpointID>
+                      <cac:PostalAddress>
+                          <cac:Country>
+                              <cbc:IdentificationCode>NZ</cbc:IdentificationCode>
+                          </cac:Country>                                                              
+                      </cac:PostalAddress>                                                                  
+                      <cac:PartyLegalEntity>
+                            <cbc:RegistrationName>IT Robots Ltd</cbc:RegistrationName>     
+                      </cac:PartyLegalEntity>
+               </cac:Party>                                                    
+           </cac:AccountingCustomerParty> 
+                                                                         
+           <cac:TaxTotal>   
+               <cbc:TaxAmount currencyID="NZD">0.00</cbc:TaxAmount>         
+               <cac:TaxSubtotal>
+                    <cbc:TaxableAmount currencyID="NZD">0.00</cbc:TaxableAmount>
+                    <cac:TaxCategory>
+                         <cbc:ID>E</cbc:ID>
+                    </cac:TaxCategory>
+                    <cac:TaxScheme>
+                       <cbc:ID>GST</cbc:ID>
+                    </cac:TaxScheme>
+               </cac:TaxSubtotal>     
+           </cac:TaxTotal>  
+                                                                         
+          <cac:LegalMonetaryTotal>
+               <cbc:LineExtensionAmount currencyID="NZD">1000.00</cbc:LineExtensionAmount>
+               <cbc:TaxExclusiveAmount currencyID="NZD">1000.00</cbc:TaxExclusiveAmount>
+               <cbc:TaxInclusiveAmount currencyID="NZD">1000.00</cbc:TaxInclusiveAmount>
+               <cbc:PayableAmount currencyID="NZD">1000.00</cbc:PayableAmount>
+           </cac:LegalMonetaryTotal>   
+          
+           <cac:InvoiceLine>
+               <cbc:ID>1</cbc:ID>
+               <cbc:InvoicedQuantity unitCode="10">1</cbc:InvoicedQuantity>
+               <cbc:LineExtensionAmount currencyID="NZD">1000.00</cbc:LineExtensionAmount>
+               <cac:Item>
+                   <cbc:Name>unit of stuff</cbc:Name>
+                   <cac:ClassifiedTaxCategory>
+                          <cbc:ID>E</cbc:ID>
+                   </cac:ClassifiedTaxCategory>
+                   <cac:TaxScheme>
+                      <cbc:ID>GST</cbc:ID>
+                   </cac:TaxScheme>
+
+               </cac:Item>                                      
+               <cac:Price>
+                   <cbc:PriceAmount currencyID="NZD">1000.00</cbc:PriceAmount>
+               </cac:Price>                                                    
+            </cac:InvoiceLine>                                                        
+</Invoice>
