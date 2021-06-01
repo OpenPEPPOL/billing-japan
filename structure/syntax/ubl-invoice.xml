@@ -2,7 +2,7 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
     <Term>ubl-invoice</Term>
-    <Name>PEPPOL BIS Invoice 3.0</Name>
+    <Name>PEPPOL International Invoice</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
