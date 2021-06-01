@@ -1,0 +1,21 @@
+
+
+[[requirements]]
+= Invoice and credit note business requirements
+
+The table below gives an overview of the business requirements from {tc434} supported by this BIS:
+
+====
+Legend::
+Requirements with an id *R__nn__* are from {EN16931} (Example R19).
+====
+
+include::accounting.adoc[]
+
+include::verification.adoc[]
+
+include::vat.adoc[]
+
+include::auditing.adoc[]
+
+include::payment.adoc[]

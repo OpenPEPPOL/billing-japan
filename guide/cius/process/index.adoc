@@ -1,0 +1,9 @@
+[[process]]
+= Business processes and typical use cases
+
+:leveloffset: +1
+
+include::process.adoc[]
+
+
+:leveloffset: -1

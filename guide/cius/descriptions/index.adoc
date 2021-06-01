@@ -1,0 +1,13 @@
+[[descriptions]]
+= Descriptions of selected parts of the transaction
+
+:leveloffset: +1
+
+
+include::roles-and-actor.adoc[]
+include::delivery-details.adoc[]
+
+
+
+
+:leveloffset: -1

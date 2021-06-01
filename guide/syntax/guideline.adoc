@@ -1,0 +1,7 @@
+
+= UBL schemas and namespaces
+
+The XML schemas used are
+
+* {UBLInv} with the target namespace `urn:oasis:names:specification:ubl:schema:xsd:Invoice-2`
+* {UBLCreditNote} with the target namespace `urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2`
