@@ -36,7 +36,7 @@
         <Title>UBL Credit Note</Title>
     </Resource>
 
-    <!-- Rules -->
+<!--     
     <Resource>
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
@@ -50,7 +50,7 @@
         <Title>Rules for PEPPOL BIS 3.0 Billing</Title>
     </Resource>
     
-    <!-- Code lists -->
+
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/icd.xml</Path>
@@ -121,7 +121,7 @@
     </Resource>
 
 
-    <!-- Files -->
+
     
     <Resource>
         <Type>native:File</Type>
@@ -150,5 +150,5 @@
         <Path>mapping/mapping-cii-ubl.xls</Path>
         <Title>Excel mappling table cii to ubl</Title>
         <Property key="download">mapping-cii-ubl.xls</Property>
-    </Resource>
+    </Resource> -->
 </Project>
