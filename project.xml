@@ -37,7 +37,8 @@
     </Resource>
 
 <!--     
-    <Resource>
+    ljælj
+	<Resource>
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
