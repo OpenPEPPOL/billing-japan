@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>PEPPOL BIS Billing 3.0</Name>
+    <Name>PEPPOL BIS PINT</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
@@ -37,21 +37,20 @@
     </Resource>
 
 <!--     
-    ljælj
 	<Resource>
         <Identifier>ubl-tc434</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
         <Title>EN16931  model bound to UBL</Title>
-    </Resource>
+</Resource> -->
     <Resource>
-        <Identifier>ubl-peppol</Identifier>
+        <Identifier>ubl-pint</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
-        <Title>Rules for PEPPOL BIS 3.0 Billing</Title>
+        <Path>rules/sch/PEPPOL-PINT-UBL.sch</Path>
+        <Title>Rules for PEPPOL PINT</Title>
     </Resource>
     
-
+  
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/icd.xml</Path>
@@ -126,26 +125,26 @@
     
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/PEPPOL-EN16931-UBL.sch</Path>
-        <Title>Schematron for PEPPOL rules (UBL)</Title>
+        <Path>rules/sch/PEPPOL-PINT-UBL.sch</Path>
+        <Title>Schematron for PEPPOL PINT rules (UBL)</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">PEPPOL-EN16931-UBL.sch</Property>
+        <Property key="download">PEPPOL-PINT-UBL.sch</Property>
     </Resource>
-    <Resource>
+    <!--    <Resource>
         <Type>native:File</Type>
         <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
         <Title>Schematron for TC434 rules (UBL)</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
         <Property key="download">CEN-EN16931-UBL.sch</Property>
     </Resource>
-    
+    -->
     <Resource>
         <Type>native:File</Type>
         <Path>stylesheet/stylesheet-ubl.xslt</Path>
         <Title>Stylesheet for UBL instances</Title>
         <Property key="download">stylesheet-ubl.xslt</Property>
     </Resource>
-    
+    <!--
     <Resource>
         <Type>native:File</Type>
         <Path>mapping/mapping-cii-ubl.xls</Path>
