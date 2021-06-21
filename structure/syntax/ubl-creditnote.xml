@@ -68,7 +68,6 @@
             </Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-7</Reference>
-            <Reference type="RULE">ibr-co-03</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
         </Element>
 
@@ -165,7 +164,8 @@
                 <Name>Invoicing period end date</Name>
                 <Description>The date when the Invoice period ends. Format = "YYYY-MM-DD".</Description>
                 <DataType>Date</DataType>
-                <Reference type="BUSINESS_TERM">BT-74</Reference>                <Reference type="RULE">BR-29</Reference>
+                <Reference type="BUSINESS_TERM">BT-74</Reference>
+                <Reference type="RULE">ibr-29</Reference>
                 <Reference type="RULE">ibr-co-19</Reference>
                 <Value type="EXAMPLE">2017-10-31</Value>
             </Element>
@@ -176,7 +176,6 @@
                 <Description>The code of the date when the VAT becomes accountable for the Seller and for the Buyer.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-8</Reference>
-                <Reference type="RULE">ibr-co-03</Reference>
                 <Reference type="CODE_LIST">UNCL2005</Reference>
                 <Value type="EXAMPLE">35</Value>
             </Element>
