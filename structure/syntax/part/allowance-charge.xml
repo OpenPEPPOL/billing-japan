@@ -34,8 +34,6 @@
             <Reference type="RULE">ibr-co-21</Reference>
             <Reference type="RULE">ibr-co-22</Reference>
             <Reference type="CODE_LIST">UNCL7161</Reference>
-            <Reference type="RULE">ibr-CL-19</Reference>
-            <Reference type="RULE">ibr-CL-20</Reference>
             <Value type="EXAMPLE">95</Value>
         </Element>
         
@@ -76,10 +74,6 @@
             <Reference type="BUSINESS_TERM">BT-92,BT-99</Reference>
             <Reference type="RULE">ibr-31</Reference>
             <Reference type="RULE">ibr-36</Reference>
-            <Reference type="RULE">ibr-CL-03</Reference>
-            <Reference type="RULE">ibr-DEC-01</Reference>
-            <Reference type="RULE">ibr-DEC-05</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
             
             <Attribute>
                 <Term>currencyID</Term>
@@ -98,10 +92,6 @@
             </Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-93,BT-100</Reference>
-            <Reference type="RULE">ibr-DEC-02</Reference>
-            <Reference type="RULE">ibr-DEC-06</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">ibr-CL-03</Reference>
             
             
             <Attribute>
@@ -126,9 +116,6 @@
             <Reference type="BUSINESS_TERM">BT-95,BT-102</Reference>
             <Reference type="RULE">ibr-32</Reference>
             <Reference type="RULE">ibr-37</Reference>
-            <Reference type="RULE">ibr-O-13</Reference>
-            <Reference type="RULE">ibr-O-14</Reference>
-            <Reference type="RULE">ibr-CL-17</Reference>
             <Reference type="CODE_LIST">UNCL5305</Reference>
             <Value type="EXAMPLE">S</Value>
             
@@ -141,24 +128,6 @@
             <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
             <DataType>Percentage</DataType>
             <Reference type="BUSINESS_TERM">BT-96,BT-103</Reference>
-            <Reference type="RULE">ibr-S-06</Reference>
-            <Reference type="RULE">ibr-S-07</Reference>
-            <Reference type="RULE">ibr-Z-06</Reference>
-            <Reference type="RULE">ibr-Z-07</Reference>
-            <Reference type="RULE">ibr-E-06</Reference>
-            <Reference type="RULE">ibr-E-07</Reference>
-            <Reference type="RULE">ibr-AE-06</Reference>
-            <Reference type="RULE">ibr-AE-07</Reference>
-            <Reference type="RULE">ibr-IC-06</Reference>
-            <Reference type="RULE">ibr-IC-07</Reference>
-            <Reference type="RULE">ibr-G-06</Reference>
-            <Reference type="RULE">ibr-G-07</Reference>
-            <Reference type="RULE">ibr-O-06</Reference>
-            <Reference type="RULE">ibr-O-07</Reference>
-            <Reference type="RULE">ibr-IG-06</Reference>
-            <Reference type="RULE">ibr-IG-07</Reference>
-            <Reference type="RULE">ibr-IP-06</Reference>
-            <Reference type="RULE">ibr-IP-07</Reference>
             <Value type="EXAMPLE">25</Value>
             
         </Element>
