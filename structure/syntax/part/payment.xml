@@ -13,8 +13,8 @@
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-81</Reference>
-            <Reference type="RULE">IBR-49</Reference>
-            <Reference type="RULE">IBR-CL-16</Reference>
+            <Reference type="RULE">ibr-49</Reference>
+            <Reference type="RULE">ibr-CL-16</Reference>
             <Reference type="CODE_LIST">UNCL4461</Reference>
             
             
@@ -58,7 +58,7 @@
                     standards, an invoice should never include a full card primary account number.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-87</Reference>
-                <Reference type="RULE">IBR-51</Reference>
+                <Reference type="RULE">ibr-51</Reference>
                 <Value type="EXAMPLE">1234</Value>
             </Element>
             
@@ -93,8 +93,8 @@
                 </Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-84</Reference>
-                <Reference type="RULE">IBR-50</Reference>
-                <Reference type="RULE">IBR-61</Reference>
+                <Reference type="RULE">ibr-50</Reference>
+                <Reference type="RULE">ibr-61</Reference>
                 <Value type="EXAMPLE">NO99991122222</Value>
             </Element>
             
