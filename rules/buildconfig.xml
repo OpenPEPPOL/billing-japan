@@ -13,7 +13,7 @@
   <configuration>
     <identifier>peppolbis-pint-ubl</identifier>
     <title>PINT UBL 4.0</title>
-    <file path="sch/PINT-UBL-valodation-preprocessed.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/PINT-UBL-validation-preprocessed.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
   </configuration>
 
   <configuration>
