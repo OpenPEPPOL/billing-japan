@@ -6,18 +6,16 @@
         <Description>A group of business terms providing information about where and when the goods and services
             invoiced are delivered.
         </Description>
-        <Reference type="BUSINESS_TERM">BG-13</Reference>
+        <Reference type="BUSINESS_TERM">IBG-13</Reference>
         
         <Element cardinality="0..1">
             <Term>cbc:ActualDeliveryDate</Term>
             <Name>Actual delivery date</Name>
             <Description>The date on which the supply of goods or services was made or completed. Format = "YYYY-MM-DD"</Description>
             <DataType>Date</DataType>
-            <Reference type="BUSINESS_TERM">BT-72</Reference>
-            <Reference type="RULE">BR-IC-11</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
+            <Reference type="BUSINESS_TERM">IBT-72</Reference>
             <Value type="EXAMPLE">2017-12-01</Value>
-            
+			<Section>Shared</Section>            
         </Element>
         
         <Element cardinality="0..1">
@@ -28,7 +26,8 @@
                 <Name>Deliver to location identifier</Name>
                 <Description>An identifier for the location at which the goods and services are delivered.</Description>
                 <DataType>Identifier</DataType>
-                <Reference type="BUSINESS_TERM">BT-71</Reference>
+                <Reference type="BUSINESS_TERM">IBT-071</Reference>
+				<Section>Shared</Section>            
                 
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
@@ -48,15 +47,16 @@
                 <Description>A group of business terms providing information about the address to which goods and services
                     invoiced were or are delivered.
                 </Description>
-                <Reference type="BUSINESS_TERM">BG-15</Reference>
+                <Reference type="BUSINESS_TERM">IBG-15</Reference>
                 
                 <Element cardinality="0..1">
                     <Term>cbc:StreetName</Term>
                     <Name>Deliver to address line 1</Name>
                     <Description>The main address line in an address.</Description>
                     <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-75</Reference>
+                    <Reference type="BUSINESS_TERM">IBT-075</Reference>
                     <Value type="EXAMPLE">Delivery Street 1</Value>
+					<Section>Shared</Section>            
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -66,8 +66,9 @@
                         main line.
                     </Description>
                     <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-76</Reference>
+                    <Reference type="BUSINESS_TERM">IBT-076</Reference>
                     <Value type="EXAMPLE">Delivery Street 2</Value>
+					<Section>Shared</Section>            
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -76,8 +77,9 @@
                     <Description>The common name of the city, town or village, where the deliver to address is located.
                     </Description>
                     <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-77</Reference>
+                    <Reference type="BUSINESS_TERM">IBT-077</Reference>
                     <Value type="EXAMPLE">Malmö</Value>
+					<Section>Shared</Section>            
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -86,8 +88,9 @@
                     <Description>The identifier for an addressable group of properties according to the relevant postal service.
                     </Description>
                     <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-78</Reference>
+                    <Reference type="BUSINESS_TERM">IBT-078</Reference>
                     <Value type="EXAMPLE">86756</Value>
+					<Section>Shared</Section>            
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -95,8 +98,9 @@
                     <Name>Deliver to country subdivision</Name>
                     <Description>The subdivision of a country.</Description>
                     <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-79</Reference>
+                    <Reference type="BUSINESS_TERM">IBT-079</Reference>
                     <Value type="EXAMPLE">South Region</Value>
+					<Section>Shared</Section>            
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -110,8 +114,9 @@
                             main line.
                         </Description>
                         <DataType>Text</DataType>
-                        <Reference type="BUSINESS_TERM">BT-165</Reference>
+                        <Reference type="BUSINESS_TERM">IBT-165</Reference>
                         <Value type="EXAMPLE">C54</Value>
+						<Section>Shared</Section>            
                     </Element>
                 </Element>
                 
@@ -124,12 +129,10 @@
                         <Name>Deliver to country code</Name>
                         <Description>A code that identifies the country.</Description>
                         <DataType>Code</DataType>
-                        <Reference type="BUSINESS_TERM">BT-80</Reference>
-                        <Reference type="RULE">BR-57</Reference>
-                        <Reference type="RULE">BR-CL-14</Reference>
-                        <Reference type="RULE">BR-IC-12</Reference>
+                        <Reference type="BUSINESS_TERM">IBT-080</Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">SE</Value>
+						<Section>Shared</Section>            
                     </Element>
                 </Element>
             </Element>
@@ -148,8 +151,9 @@
                     <Name>Deliver to party name</Name>
                     <Description>The name of the party to which the goods and services are delivered.</Description>
                     <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-70</Reference>
+                    <Reference type="BUSINESS_TERM">IBT-070</Reference>
                     <Value type="EXAMPLE">Deliver name</Value>
+					<Section>Shared</Section>            
                 </Element>
             </Element>
         </Element>
