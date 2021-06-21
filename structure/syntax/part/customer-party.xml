@@ -211,7 +211,7 @@
                     <Description>The full name of the Buyer.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-044</Reference>
-                    <Reference type="RULE">IBR-07</Reference>
+                    <Reference type="RULE">ibr-07</Reference>
                     <Value type="EXAMPLE">Buyer Full Name AS</Value>
  					<Section>Shared</Section>
                 </Element>
