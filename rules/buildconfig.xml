@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
 
-  <package url="http://docs.peppol.eu/poacc/billing/3.0/">PEPPOL Japan BIS</package>
+  <package url="http://docs.peppol.eu/poacc/billing-japan/">PEPPOL BIS Japan Billing</package>
 
   <testfolder>examples</testfolder>
   <testfolder>snippets</testfolder>
@@ -12,13 +12,13 @@
   <configuration>
     <identifier>peppolbis-pint-ubl</identifier>
     <title>PINT UBL 4.0</title>
-    <file path="sch/PINT-UBL-validation-preprocessed.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/PINT-UBL-validation-preprocessed.sch" infoUrl="http://docs.peppol.eu/poacc/billing-japan/rules/{}/"/>
   </configuration>
 
 <!--   <configuration>
     <identifier>peppolbis-japan-ubl</identifier>
     <title>PEPPOL BIS Japan 4.0</title>
-    <file path="sch/PEPPOL-JPN-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing/3.0/rules/{}/"/>
+    <file path="sch/PEPPOL-JPN-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing-japan/rules/{}/"/>
   </configuration>
 
   <configuration>
