@@ -24,6 +24,4 @@ include::../../transaction-spec/codes/payment-means.adoc[]
 
 include::../../transaction-spec/codes/taxpoint.adoc[]
 
-include::../../transaction-spec/codes/vat-exempt.adoc[]
-
 :leveloffset: -1
