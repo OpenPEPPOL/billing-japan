@@ -7,7 +7,6 @@
             Invoice line.
         </Description>
         <Reference type="BUSINESS_TERM">BG-27, BG-28</Reference>
-         <Reference type="RULE">ibr-co-23</Reference>
          <Reference type="RULE">ibr-co-24</Reference>
         
         <Element>

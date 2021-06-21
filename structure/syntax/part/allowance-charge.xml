@@ -114,8 +114,6 @@
             <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-95,BT-102</Reference>
-            <Reference type="RULE">ibr-32</Reference>
-            <Reference type="RULE">ibr-37</Reference>
             <Reference type="CODE_LIST">UNCL5305</Reference>
             <Value type="EXAMPLE">S</Value>
             

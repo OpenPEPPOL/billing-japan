@@ -24,8 +24,7 @@
             </Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-24</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R004</Reference>
-            <Reference type="RULE">BR-01</Reference>
+            <Reference type="RULE">ibr-01</Reference>
             <Value type="DEFAULT">urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</Value>
         </Element>
 
@@ -37,8 +36,6 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-23</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R001</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R007</Reference>
             <Value type="DEFAULT">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</Value>
         </Element>
 
@@ -49,7 +46,7 @@
                 within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">BT-1</Reference>
-            <Reference type="RULE">BR-02</Reference>
+            <Reference type="RULE">ibr-02</Reference>
             <Value type="EXAMPLE">33445566</Value>
         </Element>
 
@@ -59,8 +56,7 @@
             <Description>The date when the Invoice was issued. Format "YYYY-MM-DD"</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-2</Reference>
-            <Reference type="RULE">BR-03</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
+            <Reference type="RULE">ibr-03</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
         </Element>
 
@@ -72,7 +68,7 @@
             </Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-7</Reference>
-            <Reference type="RULE">BR-CO-03</Reference>
+            <Reference type="RULE">ibr-co-03</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
         </Element>
 
@@ -83,9 +79,7 @@
             <Description>A code specifying the functional type of the Invoice.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-3</Reference>
-            <Reference type="RULE">BR-04</Reference>
-            <Reference type="RULE">BR-CL-01</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-P0101</Reference>
+            <Reference type="RULE">ibr-04</Reference>
             <Reference type="CODE_LIST">UNCL1001-cn</Reference>
             <Value type="EXAMPLE">381</Value>
         </Element>
@@ -98,8 +92,6 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-22</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
-            <Reference type="RULE">BR-CL-08</Reference>
             <Value type="EXAMPLE">Please note our new phone number 33 44 55 66</Value>
         </Element>
 
@@ -113,8 +105,7 @@
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-5</Reference>
-            <Reference type="RULE">BR-05</Reference>
-            <Reference type="RULE">BR-CL-04</Reference>
+            <Reference type="RULE">ibr-05</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
             <Value type="EXAMPLE">EUR</Value>
         </Element>
@@ -128,8 +119,6 @@
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-6</Reference>
-            <Reference type="RULE">BR-CL-05</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R005</Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
             <Value type="EXAMPLE">SEK</Value>
         </Element>
@@ -151,7 +140,6 @@
             <Description>An identifier assigned by the Buyer used for internal routing purposes. An invoice must have buyer reference or purchase order reference (BT-13).</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-10</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
             <Value type="EXAMPLE">abs1234</Value>
         </Element>
 
@@ -161,7 +149,6 @@
             <Description>A group of business terms providing information on the invoice period. Also called delivery period. 
                 If the group is used, the invoiceing period start date and/or end date must be used.</Description>
             <Reference type="BUSINESS_TERM">BG-14</Reference>
-            <Reference type="RULE">BR-IC-11</Reference>
 
             <Element cardinality="0..1">
                 <Term>cbc:StartDate</Term>
@@ -169,8 +156,7 @@
                 <Description>The date when the Invoice period starts. Format = "YYYY-MM-DD".</Description>
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">BT-73</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-                <Reference type="RULE">BR-CO-19</Reference>
+                <Reference type="RULE">ibr-co-19</Reference>
                 <Value type="EXAMPLE">2017-10-01</Value>
             </Element>
 
@@ -179,10 +165,8 @@
                 <Name>Invoicing period end date</Name>
                 <Description>The date when the Invoice period ends. Format = "YYYY-MM-DD".</Description>
                 <DataType>Date</DataType>
-                <Reference type="BUSINESS_TERM">BT-74</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-                <Reference type="RULE">BR-29</Reference>
-                <Reference type="RULE">BR-CO-19</Reference>
+                <Reference type="BUSINESS_TERM">BT-74</Reference>                <Reference type="RULE">BR-29</Reference>
+                <Reference type="RULE">ibr-co-19</Reference>
                 <Value type="EXAMPLE">2017-10-31</Value>
             </Element>
 
@@ -192,9 +176,7 @@
                 <Description>The code of the date when the VAT becomes accountable for the Seller and for the Buyer.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-8</Reference>
-                <Reference type="RULE">BR-CO-03</Reference>
-                <Reference type="RULE">BR-CL-06</Reference>
-				<Reference type="RULE">PEPPOL-EN16931-CL006</Reference>
+                <Reference type="RULE">ibr-co-03</Reference>
                 <Reference type="CODE_LIST">UNCL2005</Reference>
                 <Value type="EXAMPLE">35</Value>
             </Element>
@@ -210,7 +192,6 @@
                 <Description>An identifier of a referenced purchase order, issued by the Buyer.An invoice must have buyer reference (BT-10) or purchase order reference.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">BT-13</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R003</Reference>
                 <Value type="EXAMPLE">98776</Value>
             </Element>
 
@@ -240,7 +221,7 @@
                     <Description>The identification of an Invoice that was previously sent by the Seller.</Description>
                     <DataType>Document Reference</DataType>
                     <Reference type="BUSINESS_TERM">BT-25</Reference>
-                    <Reference type="RULE">BR-55</Reference>
+                    <Reference type="RULE">ibr-55</Reference>
                     <Value type="EXAMPLE">inv123</Value>
                 </Element>
                 <Element cardinality="0..1">
@@ -250,7 +231,6 @@
                         provided in case the Preceding Invoice identifier is not unique. Format = "YYYY-MM-DD".</Description>
                     <DataType>Date</DataType>
                     <Reference type="BUSINESS_TERM">BT-26</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
                     <Value type="EXAMPLE">2017-09-15</Value>
                 </Element>
             </Element>
@@ -306,8 +286,6 @@
                 The additional supporting documents can be used for both referencing a document number which is expected to be known by the receiver, 
                 an external document (referenced by a URL) or as an embedded document, Base64 encoded (such as a time report).</Description>
             <Reference type="BUSINESS_TERM">BG-24</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R006</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R080</Reference>
            
 
             
@@ -317,13 +295,12 @@
                 <Description>An identifier for an object on which the invoice is based (with DocumentTypeCode=130), given by the Seller, the identifier for the supporting document or the project reference identifier (DocumentTypeCode=50).</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-18, BT-122</Reference>
-                <Reference type="RULE">BR-52</Reference>
+                <Reference type="RULE">ibr-52</Reference>
                 
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
                     <Description>The identification scheme identifier of the Invoiced object identifier.</Description>
-                    <Reference type="RULE">BR-CL-07</Reference>
                     <Reference type="CODE_LIST">UNCL1153</Reference>
                     <Value type="EXAMPLE">AUN</Value>
                 </Attribute>
@@ -367,10 +344,7 @@
                         <Term>mimeCode</Term>
                         <Name>Attached document Mime code</Name>
                         <Description>The mime code of the attached document.</Description>
-                        <Reference type="RULE">PEPPOL-EN16931-CL001</Reference>
-                        <Reference type="RULE">UBL-DT-06</Reference>
-                        <Reference type="CODE_LIST">MimeCode</Reference>
-                        <Reference type="RULE">BR-CL-24</Reference>
+                         <Reference type="CODE_LIST">MimeCode</Reference>
                         <Value type="EXAMPLE">text/csv</Value>
                     </Attribute>
                     
@@ -378,8 +352,7 @@
                         <Term>filename</Term>
                         <Name>Attached document Filename</Name>
                         <Description>The file name of the attached document</Description>
-                        <Reference type="RULE">UBL-DT-07</Reference>
-                        <Value type="EXAMPLE">Hours-spent.csv</Value>
+                         <Value type="EXAMPLE">Hours-spent.csv</Value>
                         
                     </Attribute>
                     
@@ -447,8 +420,7 @@
                 </Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-81</Reference>
-                <Reference type="RULE">BR-49</Reference>
-                <Reference type="RULE">BR-CL-16</Reference>
+                <Reference type="RULE">ibr-49</Reference>
                 <Reference type="CODE_LIST">UNCL4461</Reference>
 
 
@@ -472,8 +444,7 @@
                 <Description>The date when the payment is due.Format "YYYY-MM-DD". In case the Amount due for payment (BT-115) is positive, either the Payment due date (BT-9) or the Payment terms (BT-20) shall be present.</Description>
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">BT-9</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
-                <Reference type="RULE">BR-CO-25</Reference>
+                <Reference type="RULE">ibr-co-25</Reference>
                 <Value type="EXAMPLE">2017-11-01</Value>
             </Element>
 
@@ -511,7 +482,7 @@
                 </Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-20</Reference>
-                <Reference type="RULE">BR-CO-25</Reference>
+                <Reference type="RULE">ibr-co-25</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
             </Element>
         </Element>
@@ -529,7 +500,7 @@
             <Name>INVOICE LINE</Name>
             <Description>A group of business terms providing information on individual Invoice lines.</Description>
             <Reference type="BUSINESS_TERM">BG-25</Reference>
-            <Reference type="RULE">BR-16</Reference>
+            <Reference type="RULE">ibr-16</Reference>
            
 
 
@@ -539,7 +510,7 @@
                 <Description>A unique identifier for the individual line within the Invoice.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-126</Reference>
-                <Reference type="RULE">BR-21</Reference>
+                <Reference type="RULE">ibr-21</Reference>
                 <Value type="EXAMPLE">12</Value>
             </Element>
 
@@ -559,7 +530,7 @@
                 <Description>The quantity of items (goods or services) that is charged in the Invoice line.</Description>
                 <DataType>Quantity</DataType>
                 <Reference type="BUSINESS_TERM">BT-129</Reference>
-                <Reference type="RULE">BR-22</Reference>
+                <Reference type="RULE">ibr-22</Reference>
 
 
                 <Attribute>
@@ -570,7 +541,7 @@
 					The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">BT-130</Reference>
-                    <Reference type="RULE">BR-23</Reference>
+                    <Reference type="RULE">ibr-23</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">C62</Value>
                 </Attribute>
@@ -585,16 +556,10 @@
                     Must be rounded to maximum 2 decimals.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-131</Reference>
-                <Reference type="RULE">BR-24</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R120</Reference>
-                <Reference type="RULE">BR-DEC-23</Reference>
-                <Reference type="RULE">UBL-DT-01</Reference>
-                <Reference type="RULE">BR-CL-03</Reference>
+                <Reference type="RULE">ibr-24</Reference>
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Mandatory attribute. Use BT-5</Description>
-                    <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
@@ -634,9 +599,7 @@
             <Element cardinality="0..1">
                 <Term>cac:DocumentReference</Term>
                 <Name>LINE OBJECT IDENTIFIER</Name>
-                 <Reference type="RULE">PEPPOL-EN16931-R100</Reference>
-                 <Reference type="RULE">PEPPOL-EN16931-R101</Reference>
-
+                
                 <Element>
                     <Term>cbc:ID</Term>
                     <Name>Invoice line object identifier</Name>

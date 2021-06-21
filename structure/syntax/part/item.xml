@@ -112,7 +112,6 @@
                     <Term>listID</Term>
                     <Name>Item classification identifier identification scheme identifier</Name>
                     <Description>The identification scheme identifier of the Item classification identifier</Description>
-                    <Reference type="RULE">ibr-CL-13</Reference>
                     <Reference type="CODE_LIST">UNCL7143</Reference>
                     <Value type="EXAMPLE">STI</Value>
                 </Attribute>
@@ -142,7 +141,6 @@
                 <Description>The VAT category code for the invoiced item.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-151</Reference>
-                <Reference type="RULE">ibr-co-04</Reference>
                 <Reference type="CODE_LIST">UNCL5305</Reference>
                 <Value type="EXAMPLE">S</Value>
             </Element>

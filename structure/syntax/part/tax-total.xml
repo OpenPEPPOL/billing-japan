@@ -35,7 +35,6 @@
                 and exemption reasons
             </Description>
             <Reference type="BUSINESS_TERM">BG-23</Reference>
-            <Reference type="RULE">ibr-co-18</Reference>
             
             <Element>
                 <Term>cbc:TaxableAmount</Term>
@@ -45,7 +44,6 @@
                 </Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-116</Reference>
-                <Reference type="RULE">ibr-45</Reference>
                 
                 
                 <Attribute>
@@ -64,8 +62,6 @@
                 <Description>The total VAT amount for a given VAT category. Must be rounded to maximum 2 decimals.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-117</Reference>
-                <Reference type="RULE">ibr-46</Reference>
-                <Reference type="RULE">ibr-co-17</Reference>
                 
                 
                 <Attribute>
@@ -87,8 +83,7 @@
                     <Description>Coded identification of a VAT category.</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">BT-118</Reference>  
-                    <Reference type="CODE_LIST">UNCL5305</Reference>  
-                    <Reference type="RULE">ibr-47</Reference>
+                    <Reference type="CODE_LIST">UNCL5305</Reference>
                     <Value type="EXAMPLE">S</Value> 
                 </Element>
                 
@@ -98,7 +93,6 @@
                     <Description>The VAT rate, represented as percentage that applies for the relevant VAT category.</Description>
                     <DataType>Percentage</DataType>
                     <Reference type="BUSINESS_TERM">BT-119</Reference>
-                    <Reference type="RULE">ibr-48</Reference>
                     <Value type="EXAMPLE">25</Value> 
                 </Element>
                 
