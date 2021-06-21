@@ -18,7 +18,6 @@
             <Reference type="BUSINESS_TERM">BT-146</Reference>
             <Reference type="RULE">ibr-26</Reference>
             <Reference type="RULE">ibr-27</Reference>
-            <Reference type="RULE">ibr-CL-03</Reference>
             
             
             <Attribute>
@@ -37,7 +36,6 @@
             <Description>The number of item units to which the price applies.</Description>
             <DataType>Quantity</DataType>
             <Reference type="BUSINESS_TERM">BT-149</Reference>
-            <Reference type="RULE">ibr-CL-23</Reference>
             
             
             
@@ -74,7 +72,6 @@
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Mandatory attribute. Use BT-5</Description>
-                    <Reference type="RULE">ibr-CL-03</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
@@ -89,7 +86,6 @@
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-148</Reference>
                 <Reference type="RULE">ibr-28</Reference>
-                <Reference type="RULE">ibr-CL-03</Reference>
                 
                 <Attribute>
                     <Term>currencyID</Term>

@@ -4,7 +4,7 @@
         <Term>cac:TaxTotal</Term>
         <Name>TAX TOTAL</Name>
         <Description>When tax currency code is provided, two instances of the tax total must be present, but only one with tax subtotal.</Description>
-        <Reference type="RULE">PEPPOL-EN16931-R054</Reference>
+
         
         <Element>
             <Term>cbc:TaxAmount</Term>
@@ -15,10 +15,6 @@
             <Reference type="BUSINESS_TERM">BT-110, BT-111</Reference>
             <Reference type="RULE">ibr-53</Reference>
             <Reference type="RULE">ibr-co-14</Reference>
-            <Reference type="RULE">ibr-DEC-13</Reference>
-            <Reference type="RULE">ibr-DEC-15</Reference>    
-            <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">ibr-CL-03</Reference>
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5 or BT-6.</Description>
@@ -40,7 +36,6 @@
             </Description>
             <Reference type="BUSINESS_TERM">BG-23</Reference>
             <Reference type="RULE">ibr-co-18</Reference>
-            <Reference type="RULE">ibr-O-11</Reference>
             
             <Element>
                 <Term>cbc:TaxableAmount</Term>
@@ -51,18 +46,6 @@
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-116</Reference>
                 <Reference type="RULE">ibr-45</Reference>
-                <Reference type="RULE">ibr-S-08</Reference>
-                <Reference type="RULE">ibr-Z-08</Reference>
-                <Reference type="RULE">ibr-E-08</Reference>
-                <Reference type="RULE">ibr-AE-08</Reference>
-                <Reference type="RULE">ibr-IC-08</Reference>
-                <Reference type="RULE">ibr-G-08</Reference>
-                <Reference type="RULE">ibr-O-08</Reference>
-                <Reference type="RULE">ibr-IG-08</Reference>
-                <Reference type="RULE">ibr-IP-08</Reference>
-                <Reference type="RULE">ibr-DEC-19</Reference>
-                <Reference type="RULE">UBL-DT-01</Reference>
-                <Reference type="RULE">ibr-CL-03</Reference>
                 
                 
                 <Attribute>
@@ -83,17 +66,6 @@
                 <Reference type="BUSINESS_TERM">BT-117</Reference>
                 <Reference type="RULE">ibr-46</Reference>
                 <Reference type="RULE">ibr-co-17</Reference>
-                <Reference type="RULE">ibr-S-09</Reference>
-                <Reference type="RULE">ibr-Z-09</Reference>
-                <Reference type="RULE">ibr-E-09</Reference>
-                <Reference type="RULE">ibr-AE-09</Reference>
-                <Reference type="RULE">ibr-IC-09</Reference>
-                <Reference type="RULE">ibr-G-09</Reference>
-                <Reference type="RULE">ibr-O-09</Reference>
-                <Reference type="RULE">ibr-IG-09</Reference>
-                <Reference type="RULE">ibr-IP-09</Reference>
-                <Reference type="RULE">ibr-DEC-20</Reference>
-                <Reference type="RULE">UBL-DT-01</Reference>
                 
                 
                 <Attribute>
@@ -117,16 +89,6 @@
                     <Reference type="BUSINESS_TERM">BT-118</Reference>  
                     <Reference type="CODE_LIST">UNCL5305</Reference>  
                     <Reference type="RULE">ibr-47</Reference>
-                    <Reference type="RULE">ibr-S-01</Reference>
-                    <Reference type="RULE">ibr-Z-01</Reference>
-                    <Reference type="RULE">ibr-E-01</Reference>
-                    <Reference type="RULE">ibr-AE-01</Reference>
-                    <Reference type="RULE">ibr-IC-01</Reference>
-                    <Reference type="RULE">ibr-G-01</Reference>
-                    <Reference type="RULE">ibr-O-10</Reference>
-                    <Reference type="RULE">ibr-IG-01</Reference>
-                    <Reference type="RULE">ibr-IP-01</Reference>
-                    <Reference type="RULE">ibr-CL-17</Reference>
                     <Value type="EXAMPLE">S</Value> 
                 </Element>
                 
@@ -146,16 +108,6 @@
                     <Description>A coded statement of the reason for why the amount is exempted from VAT.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-121</Reference>
-                    <Reference type="RULE">ibr-CL-22</Reference>
-                    <Reference type="RULE">ibr-S-10</Reference>
-                    <Reference type="RULE">ibr-Z-10</Reference>
-                    <Reference type="RULE">ibr-E-10</Reference>
-                    <Reference type="RULE">ibr-AE-10</Reference>
-                    <Reference type="RULE">ibr-IC-10</Reference>
-                    <Reference type="RULE">ibr-G-10</Reference>
-                    <Reference type="RULE">ibr-O-10</Reference>
-                    <Reference type="RULE">ibr-IG-10</Reference>
-                    <Reference type="RULE">ibr-IP-10</Reference>
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -166,15 +118,6 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-120</Reference>
-                    <Reference type="RULE">ibr-S-10</Reference>
-                    <Reference type="RULE">ibr-Z-10</Reference>
-                    <Reference type="RULE">ibr-E-10</Reference>
-                    <Reference type="RULE">ibr-AE-10</Reference>
-                    <Reference type="RULE">ibr-IC-10</Reference>
-                    <Reference type="RULE">ibr-G-10</Reference>
-                    <Reference type="RULE">ibr-O-10</Reference>
-                    <Reference type="RULE">ibr-IG-10</Reference>
-                    <Reference type="RULE">ibr-IP-10</Reference>
                     <Value type="EXAMPLE">Exempt</Value> 
                 </Element>
                 <Element>

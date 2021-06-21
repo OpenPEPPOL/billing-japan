@@ -31,8 +31,6 @@
             <Reference type="RULE">ibr-co-07</Reference>
             <Reference type="RULE">ibr-co-08</Reference>
             <Reference type="CODE_LIST">UNCL7161</Reference>
-            <Reference type="RULE">ibr-CL-19</Reference>
-            <Reference type="RULE">ibr-CL-20</Reference>
             <Value type="EXAMPLE">95</Value>
         </Element>
         
@@ -46,7 +44,6 @@
             <Reference type="RULE">ibr-44</Reference>
             <Reference type="RULE">ibr-co-07</Reference>
             <Reference type="RULE">ibr-co-08</Reference>
-            <Reference type="RULE">DK-R-004</Reference>
             <Value type="EXAMPLE">Discount</Value>
             
         </Element>
@@ -70,10 +67,6 @@
             <Reference type="BUSINESS_TERM">BT-136,BT-141</Reference>
             <Reference type="RULE">ibr-41</Reference>
             <Reference type="RULE">ibr-43</Reference>
-            <Reference type="RULE">ibr-CL-03</Reference>
-            <Reference type="RULE">ibr-DEC-24</Reference>
-            <Reference type="RULE">ibr-DEC-27</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
             
             <Attribute>
                 <Term>currencyID</Term>
@@ -93,9 +86,6 @@
             </Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-137,BT-142</Reference>
-            <Reference type="RULE">ibr-DEC-25</Reference>
-            <Reference type="RULE">ibr-DEC-28</Reference>
-            <Reference type="RULE">ibr-CL-03</Reference>
             
             
             
