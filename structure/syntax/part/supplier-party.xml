@@ -60,7 +60,7 @@
                     <Value type="EXAMPLE">5060012349998</Value>
                     
                 </Element>
-
+			</Element>
             <Element cardinality="0..1">
                 <Term>cac:PartyIdentification</Term>
                 <Name>Bank assigned creditor identifier</Name>
