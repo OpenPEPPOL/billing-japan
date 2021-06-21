@@ -14,5 +14,4 @@ National rules are provided by each country's PEPPOL Authority, and if you need 
 |Rule
 |Message/Context/Test
 
-include::{rules-dir}/PEPPOL-EN16931-UBL-NATIONAL.sch.adoc[]
 |====

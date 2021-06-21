@@ -11,5 +11,4 @@ Further details can be found at https://github.com/OpenPEPPOL/tc434-validation.
 |Rule
 |Message
 
-include::{rules-dir}/CEN-EN16931-UBL-GENERAL.sch.adoc[]
 |====
