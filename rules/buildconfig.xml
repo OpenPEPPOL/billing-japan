@@ -5,7 +5,7 @@
 
   <testfolder>examples</testfolder>
   <testfolder>snippets</testfolder>
-  <testfolder>unit-UBL-JPN</testfolder>
+    <!-- <testfolder>unit-UBL-JPN</testfolder> -->
 
   <!-- UBL -->
 
