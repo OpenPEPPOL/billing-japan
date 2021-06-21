@@ -3,7 +3,7 @@ include::settings.adoc[]
 = {doctitle}
 {name-op-en}
 v{version}
-:description: The PEPPOL International Business Interoperablity Specification, “PINT BIS” from here on after, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the PEPPOL specifications.
+:description: The Peppol BIS Japan Billing, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the Peppol specifications.
 :doctype: book
 :icons: font
 :stem:
@@ -20,7 +20,7 @@ v{version}
 
 = Link to main site of documentation
 
-link:/poacc/billing/3.0/[Main documentation site]
+link:/poacc/billing-japan/[Main documentation site]
 
 :leveloffset: +1
 
@@ -55,8 +55,6 @@ include::../transaction-spec/validation/index.adoc[]
 include::../transaction-spec/rules/index.adoc[]
 
 include::restrictions/index.adoc[]
-
-include::appendix/syntax_rules.adoc[]
 
 include::appendix/examples.adoc[]
 
