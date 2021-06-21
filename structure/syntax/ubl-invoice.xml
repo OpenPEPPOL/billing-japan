@@ -22,7 +22,6 @@
             <Description languageID="ja-JP">インスタンスドキュメントに含まれるデータが準拠するセマンティックコンテンツ、カーディナリティ、およびビジネスルールに関するルールの全セットを含む仕様の識別</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">IBT-024</Reference>
-            <Reference type="RULE"> </Reference>
             <Value type="EXAMPLE">urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</Value>
 			<Section>Shared</Section>
         </Element>
@@ -34,7 +33,6 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-023</Reference>
-            <Reference type="RULE"> </Reference>
             <Value type="DEFAULT">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</Value>
 			<Section>Shared</Section>
         </Element>
@@ -46,7 +44,6 @@
                 within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">IBT-001</Reference>
-            <Reference type="RULE"> </Reference>
             <Value type="EXAMPLE">33445566</Value>
 			<Section>Shared</Section>
         </Element>
@@ -57,8 +54,6 @@
             <Description>The date when the Invoice was issued.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-002</Reference>
-            <Reference type="RULE"> </Reference>
-            <Reference type="RULE"> </Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
  			<Section>Shared</Section>
 		</Element>
@@ -69,7 +64,6 @@
             <Description>The time of day when an invoice was issued.</Description>
             <DataType>Time</DataType>
             <Reference type="BUSINESS_TERM">IBT-168</Reference>
-            <Reference type="RULE"> </Reference>
             <Value type="EXAMPLE">12:35</Value>
  			<Section>Shared</Section>
 		</Element>
@@ -80,8 +74,7 @@
             <Description>The date when the payment is due.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-009</Reference>
-            <Reference type="RULE"> </Reference>
-            <Value type="EXAMPLE">2017-11-30</Value>
+             <Value type="EXAMPLE">2017-11-30</Value>
   			<Section>Shared</Section>
 			</Element>
 
@@ -91,7 +84,6 @@
             <Description>A code specifying the functional type of the Invoice.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-003</Reference>
-            <Reference type="RULE"> </Reference>
             <Reference type="CODE_LIST">UNCL1001-inv</Reference>
             <Value type="EXAMPLE">380</Value>
   			<Section>Shared</Section>
@@ -104,7 +96,6 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-022</Reference>
-            <Reference type="RULE"> </Reference>
             <Value type="EXAMPLE">Please note our new phone number 33 44 55 66</Value>
   			<Section>Shared</Section>
         </Element>
@@ -116,9 +107,7 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-22</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R002</Reference>
-            <Reference type="RULE">BR-CL-08</Reference>
-            <Value type="EXAMPLE">Please note our new phone number 33 44 55 66</Value>
+           <Value type="EXAMPLE">Please note our new phone number 33 44 55 66</Value>
   			<Section>Shared</Section>
         </Element>
 
@@ -129,7 +118,6 @@
             </Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-007</Reference>
-            <Reference type="RULE"> </Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
   			<Section>Aligned</Section>
         </Element>
@@ -141,7 +129,6 @@
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-005</Reference>
-            <Reference type="RULE"> </Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
             <Value type="EXAMPLE">EUR</Value>
    			<Section>Shared</Section>
@@ -154,7 +141,6 @@
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-006</Reference>
-            <Reference type="RULE"> </Reference>
             <Reference type="CODE_LIST">ISO4217</Reference>
             <Value type="EXAMPLE">SEK</Value>
     		<Section>Aligned</Section>
@@ -177,7 +163,6 @@
             <Description>An identifier assigned by the Buyer used for internal routing purposes.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-010</Reference>
-            <Reference type="RULE"> </Reference>
             <Value type="EXAMPLE">abs1234</Value>
 			<Section>Shared</Section>
         </Element>
@@ -187,7 +172,6 @@
             <Name>DELIVERY OR INVOICE PERIOD</Name>
             <Description>A group of business terms providing information on the invoice period.</Description>
             <Reference type="BUSINESS_TERM">BG-14</Reference>
-            <Reference type="RULE"> </Reference>
 
             <Element cardinality="0..1">
                 <Term>cbc:StartDate</Term>
@@ -195,7 +179,6 @@
                 <Description>The date when the Invoice period starts.</Description>
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">IBT-073</Reference>
-                <Reference type="RULE"> </Reference>
                 <Value type="EXAMPLE">2017-10-01</Value>
 				<Section>Shared</Section>
             </Element>
@@ -206,7 +189,6 @@
                 <Description>The date when the Invoice period ends.</Description>			
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">IBT-074</Reference>
-                <Reference type="RULE"> </Reference>
                 <Value type="EXAMPLE">2017-10-31</Value>
     			<Section>Shared</Section>
 			</Element>
@@ -217,7 +199,6 @@
                 <Description>The code of the date when the TAX becomes accountable for the Seller and for the Buyer.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">IBT-008</Reference>
-                <Reference type="RULE"> </Reference>
                 <Reference type="CODE_LIST">UNCL2005</Reference>
                 <Value type="EXAMPLE">35</Value>
     			<Section>Aligned</Section>
@@ -234,7 +215,6 @@
                 <Description>An identifier of a referenced purchase order, issued by the Buyer.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-013</Reference>
-                <Reference type="RULE"> </Reference>
                 <Value type="EXAMPLE">98776</Value>
     			<Section>Shared</Section>
             </Element>
@@ -266,7 +246,6 @@
                     <Description>The identification of an Invoice that was previously sent by the Seller.</Description>
                     <DataType>Document Reference</DataType>
                     <Reference type="BUSINESS_TERM">IBT-025</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">inv123</Value>
 					<Section>Shared</Section>
                 </Element>
@@ -276,7 +255,6 @@
                     <Description>The date when the Preceding Invoice was issued.</Description>
                     <DataType>Date</DataType>
                     <Reference type="BUSINESS_TERM">IBT-026</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">2017-09-15</Value>
 					<Section>Shared</Section>
                 </Element>
@@ -355,7 +333,6 @@
 				<Description>An identifier for an object on which the invoice is based, given by the Seller.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">IBT-018</Reference>
-				<Reference type="RULE"> </Reference>
 				<Section>Shared</Section>
 				
 				<Attribute usage="Optional">
@@ -363,7 +340,6 @@
 					<Name>Scheme identifier</Name>
 					<Description>The identification scheme identifier of the Invoiced object identifier.</Description>
 					<Reference type="BUSINESS_TERM">IBT-018-1</Reference>
-					<Reference type="RULE"> </Reference>
 					<Reference type="CODE_LIST">UNCL1153</Reference>
 					<Value type="EXAMPLE">AUN</Value>
 				</Attribute>
@@ -404,9 +380,9 @@
         
         <Include>part/payee-party.xml</Include>
 
-<!-- HINGAÐ -->
-        
         <Include>part/taxrep-party.xml</Include>
+
+<!-- HINGAÐ -->
 
         <Include>part/delivery.xml</Include>
 
@@ -423,8 +399,6 @@
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-81</Reference>
-            <Reference type="RULE">BR-49</Reference>
-            <Reference type="RULE">BR-CL-16</Reference>
             <Reference type="CODE_LIST">UNCL4461</Reference>
             
             <Attribute usage="Optional">
@@ -459,7 +433,6 @@
             <Include>part/payment-mandate.xml</Include>
             
         </Element>
-       
 
         <Element cardinality="0..1">
             <Term>cac:PaymentTerms</Term>
@@ -473,7 +446,6 @@
                 </Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-20</Reference>
-                <Reference type="RULE">BR-CO-25</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
             </Element>
         </Element>
@@ -490,7 +462,6 @@
             <Name>INVOICE LINE</Name>
             <Description>A group of business terms providing information on individual Invoice lines.</Description>
             <Reference type="BUSINESS_TERM">BG-25</Reference>
-            <Reference type="RULE">BR-16</Reference>
             
             <Element>
                 <Term>cbc:ID</Term>
@@ -498,7 +469,6 @@
                 <Description>A unique identifier for the individual line within the Invoice.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-126</Reference>
-                <Reference type="RULE">BR-21</Reference>
                 <Value type="EXAMPLE">12</Value>
             </Element>
 
@@ -518,8 +488,6 @@
                 <Description>The quantity of items (goods or services) that is charged in the Invoice line.</Description>
                 <DataType>Quantity</DataType>
                 <Reference type="BUSINESS_TERM">IBT-129</Reference>
-                <Reference type="RULE">BR-22</Reference>
-                <Reference type="RULE">BR-CL-23</Reference>
 
                 <Attribute>
                     <Term>unitCode</Term>
@@ -530,7 +498,6 @@
 					</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">IBT-130</Reference>
-                    <Reference type="RULE">BR-23</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">C62</Value>
                 </Attribute>
@@ -545,18 +512,11 @@
                     Must be rounded to maximum 2 decimals.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">IBT-131</Reference>
-                <Reference type="RULE">BR-24</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R120</Reference>
-                <Reference type="RULE">BR-DEC-23</Reference>
-                <Reference type="RULE">UBL-DT-01</Reference>
-                <Reference type="RULE">BR-CL-03</Reference>
                 
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Mandatory attribute. Use IBT-5</Description>
-                    <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
-                    <Reference type="CODE_LIST">ISO4217</Reference>
+                   <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
                 
@@ -595,8 +555,6 @@
             <Element cardinality="0..1">
                 <Term>cac:DocumentReference</Term>
                 <Name>LINE OBJECT IDENTIFIER</Name>
-                <Reference type="RULE">PEPPOL-EN16931-R100</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R101</Reference>
 
                 <Element>
                     <Term>cbc:ID</Term>

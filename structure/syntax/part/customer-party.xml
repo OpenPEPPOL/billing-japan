@@ -16,7 +16,6 @@
                 <Description>Identifies the Buyer's electronic address to which the invoice is delivered.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-049</Reference>
-                <Reference type="RULE"> </Reference>
 				<Section>Shared</Section>
                 
                 <Attribute>
@@ -43,7 +42,6 @@
                     <Description>An identifier of the Buyer.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-046</Reference>
-                    <Reference type="RULE"> </Reference>
 					<Section>Shared</Section>
                     
                     <Attribute usage="Optional">
@@ -51,7 +49,6 @@
                         <Name>Buyer identifier identification scheme identifier</Name>
                         <Description>If used, the identification scheme shall be chosen from the entries of the list published by the ISO/IEC 6523 maintenance agency.</Description>    
 						<Reference type="BUSINESS_TERM">IBT-046-1</Reference>
-                        <Reference type="RULE"> </Reference>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
                     </Attribute>
@@ -83,7 +80,6 @@
                 <Description>A group of business terms providing information about the postal address for the Buyer.
                     Sufficient components of the address are to be filled to comply with legal requirements.</Description>
                 <Reference type="BUSINESS_TERM">IBG-08</Reference>
-                <Reference type="RULE"> </Reference>
                 
                 <Element cardinality="0..1">
                     <Term>cbc:StreetName</Term>
@@ -165,7 +161,6 @@
                         <Description>A code that identifies the country.</Description>
                         <DataType>Code</DataType>
                         <Reference type="BUSINESS_TERM">IBT-055</Reference>
-                        <Reference type="RULE"> </Reference>
                         <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">SE</Value>
 						<Section>Shared</Section>
@@ -185,7 +180,6 @@
                     <Description>The Buyer's TAX identifier (also known as Buyer TAX identification number).</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-048</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">SE8765456787</Value>
 					<Section>Aligned</Section>
                 </Element>
@@ -229,7 +223,6 @@
                     </Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-047</Reference>
-                    <Reference type="RULE"> </Reference>
  					<Section>Shared</Section>
                     
                     <Attribute usage="Optional">
