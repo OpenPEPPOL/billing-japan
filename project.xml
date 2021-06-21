@@ -125,10 +125,10 @@
     
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/PEPPOL-PINT-UBL.sch</Path>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
         <Title>Schematron for PEPPOL PINT rules (UBL)</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">PEPPOL-PINT-UBL.sch</Property>
+        <Property key="download">PINT-UBL-validation-preprocessed.sch</Property>
     </Resource>
     <!--    <Resource>
         <Type>native:File</Type>
