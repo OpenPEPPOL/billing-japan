@@ -13,17 +13,15 @@
                 the Seller. Must be rounded to maximum 2 decimals</Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-110, BT-111</Reference>
-            <Reference type="RULE">BR-53</Reference>
-            <Reference type="RULE">BR-CO-14</Reference>
-            <Reference type="RULE">BR-DEC-13</Reference>
-            <Reference type="RULE">BR-DEC-15</Reference>    
+            <Reference type="RULE">IBR-53</Reference>
+            <Reference type="RULE">IBR-CO-14</Reference>
+            <Reference type="RULE">IBR-DEC-13</Reference>
+            <Reference type="RULE">IBR-DEC-15</Reference>    
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
+            <Reference type="RULE">IBR-CL-03</Reference>
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5 or BT-6.</Description>
-                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
                 <Value type="EXAMPLE">EUR</Value>
             </Attribute>
@@ -41,9 +39,8 @@
                 and exemption reasons
             </Description>
             <Reference type="BUSINESS_TERM">BG-23</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R053</Reference>
-            <Reference type="RULE">BR-CO-18</Reference>
-            <Reference type="RULE">BR-O-11</Reference>
+            <Reference type="RULE">IBR-CO-18</Reference>
+            <Reference type="RULE">IBR-O-11</Reference>
             
             <Element>
                 <Term>cbc:TaxableAmount</Term>
@@ -53,26 +50,24 @@
                 </Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-116</Reference>
-                <Reference type="RULE">BR-45</Reference>
-                <Reference type="RULE">BR-S-08</Reference>
-                <Reference type="RULE">BR-Z-08</Reference>
-                <Reference type="RULE">BR-E-08</Reference>
-                <Reference type="RULE">BR-AE-08</Reference>
-                <Reference type="RULE">BR-IC-08</Reference>
-                <Reference type="RULE">BR-G-08</Reference>
-                <Reference type="RULE">BR-O-08</Reference>
-                <Reference type="RULE">BR-IG-08</Reference>
-                <Reference type="RULE">BR-IP-08</Reference>
-                <Reference type="RULE">BR-DEC-19</Reference>
+                <Reference type="RULE">IBR-45</Reference>
+                <Reference type="RULE">IBR-S-08</Reference>
+                <Reference type="RULE">IBR-Z-08</Reference>
+                <Reference type="RULE">IBR-E-08</Reference>
+                <Reference type="RULE">IBR-AE-08</Reference>
+                <Reference type="RULE">IBR-IC-08</Reference>
+                <Reference type="RULE">IBR-G-08</Reference>
+                <Reference type="RULE">IBR-O-08</Reference>
+                <Reference type="RULE">IBR-IG-08</Reference>
+                <Reference type="RULE">IBR-IP-08</Reference>
+                <Reference type="RULE">IBR-DEC-19</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
-                <Reference type="RULE">BR-CL-03</Reference>
+                <Reference type="RULE">IBR-CL-03</Reference>
                 
                 
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Mandatory attribute. Use BT-5</Description>
-                    <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
@@ -86,26 +81,24 @@
                 <Description>The total VAT amount for a given VAT category. Must be rounded to maximum 2 decimals.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">BT-117</Reference>
-                <Reference type="RULE">BR-46</Reference>
-                <Reference type="RULE">BR-CO-17</Reference>
-                <Reference type="RULE">BR-S-09</Reference>
-                <Reference type="RULE">BR-Z-09</Reference>
-                <Reference type="RULE">BR-E-09</Reference>
-                <Reference type="RULE">BR-AE-09</Reference>
-                <Reference type="RULE">BR-IC-09</Reference>
-                <Reference type="RULE">BR-G-09</Reference>
-                <Reference type="RULE">BR-O-09</Reference>
-                <Reference type="RULE">BR-IG-09</Reference>
-                <Reference type="RULE">BR-IP-09</Reference>
-                <Reference type="RULE">BR-DEC-20</Reference>
+                <Reference type="RULE">IBR-46</Reference>
+                <Reference type="RULE">IBR-CO-17</Reference>
+                <Reference type="RULE">IBR-S-09</Reference>
+                <Reference type="RULE">IBR-Z-09</Reference>
+                <Reference type="RULE">IBR-E-09</Reference>
+                <Reference type="RULE">IBR-AE-09</Reference>
+                <Reference type="RULE">IBR-IC-09</Reference>
+                <Reference type="RULE">IBR-G-09</Reference>
+                <Reference type="RULE">IBR-O-09</Reference>
+                <Reference type="RULE">IBR-IG-09</Reference>
+                <Reference type="RULE">IBR-IP-09</Reference>
+                <Reference type="RULE">IBR-DEC-20</Reference>
                 <Reference type="RULE">UBL-DT-01</Reference>
                 
                 
                 <Attribute>
                     <Term>currencyID</Term>
                     <Description>Mandatory attribute. Use BT-5</Description>
-                    <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                     <Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
@@ -123,17 +116,17 @@
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">BT-118</Reference>  
                     <Reference type="CODE_LIST">UNCL5305</Reference>  
-                    <Reference type="RULE">BR-47</Reference>
-                    <Reference type="RULE">BR-S-01</Reference>
-                    <Reference type="RULE">BR-Z-01</Reference>
-                    <Reference type="RULE">BR-E-01</Reference>
-                    <Reference type="RULE">BR-AE-01</Reference>
-                    <Reference type="RULE">BR-IC-01</Reference>
-                    <Reference type="RULE">BR-G-01</Reference>
-                    <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-01</Reference>
-                    <Reference type="RULE">BR-IP-01</Reference>
-                    <Reference type="RULE">BR-CL-17</Reference>
+                    <Reference type="RULE">IBR-47</Reference>
+                    <Reference type="RULE">IBR-S-01</Reference>
+                    <Reference type="RULE">IBR-Z-01</Reference>
+                    <Reference type="RULE">IBR-E-01</Reference>
+                    <Reference type="RULE">IBR-AE-01</Reference>
+                    <Reference type="RULE">IBR-IC-01</Reference>
+                    <Reference type="RULE">IBR-G-01</Reference>
+                    <Reference type="RULE">IBR-O-10</Reference>
+                    <Reference type="RULE">IBR-IG-01</Reference>
+                    <Reference type="RULE">IBR-IP-01</Reference>
+                    <Reference type="RULE">IBR-CL-17</Reference>
                     <Value type="EXAMPLE">S</Value> 
                 </Element>
                 
@@ -143,8 +136,7 @@
                     <Description>The VAT rate, represented as percentage that applies for the relevant VAT category.</Description>
                     <DataType>Percentage</DataType>
                     <Reference type="BUSINESS_TERM">BT-119</Reference>
-                    <Reference type="RULE">BR-48</Reference>
-                    <Reference type="RULE">SE-R-006</Reference>
+                    <Reference type="RULE">IBR-48</Reference>
                     <Value type="EXAMPLE">25</Value> 
                 </Element>
                 
@@ -154,24 +146,16 @@
                     <Description>A coded statement of the reason for why the amount is exempted from VAT.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-121</Reference>
-                    <Reference type="RULE">BR-CL-22</Reference>
-                    <Reference type="RULE">BR-S-10</Reference>
-                    <Reference type="RULE">BR-Z-10</Reference>
-                    <Reference type="RULE">BR-E-10</Reference>
-                    <Reference type="RULE">BR-AE-10</Reference>
-                    <Reference type="RULE">BR-IC-10</Reference>
-                    <Reference type="RULE">BR-G-10</Reference>
-                    <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-10</Reference>
-                    <Reference type="RULE">BR-IP-10</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-P0104</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-P0105</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-P0106</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-P0107</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-P0108</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-P0109</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-P0110</Reference>
-                    <Reference type="RULE">PEPPOL-EN16931-P0111</Reference>
+                    <Reference type="RULE">IBR-CL-22</Reference>
+                    <Reference type="RULE">IBR-S-10</Reference>
+                    <Reference type="RULE">IBR-Z-10</Reference>
+                    <Reference type="RULE">IBR-E-10</Reference>
+                    <Reference type="RULE">IBR-AE-10</Reference>
+                    <Reference type="RULE">IBR-IC-10</Reference>
+                    <Reference type="RULE">IBR-G-10</Reference>
+                    <Reference type="RULE">IBR-O-10</Reference>
+                    <Reference type="RULE">IBR-IG-10</Reference>
+                    <Reference type="RULE">IBR-IP-10</Reference>
                 </Element>
                 
                 <Element cardinality="0..1">
@@ -182,15 +166,15 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">BT-120</Reference>
-                    <Reference type="RULE">BR-S-10</Reference>
-                    <Reference type="RULE">BR-Z-10</Reference>
-                    <Reference type="RULE">BR-E-10</Reference>
-                    <Reference type="RULE">BR-AE-10</Reference>
-                    <Reference type="RULE">BR-IC-10</Reference>
-                    <Reference type="RULE">BR-G-10</Reference>
-                    <Reference type="RULE">BR-O-10</Reference>
-                    <Reference type="RULE">BR-IG-10</Reference>
-                    <Reference type="RULE">BR-IP-10</Reference>
+                    <Reference type="RULE">IBR-S-10</Reference>
+                    <Reference type="RULE">IBR-Z-10</Reference>
+                    <Reference type="RULE">IBR-E-10</Reference>
+                    <Reference type="RULE">IBR-AE-10</Reference>
+                    <Reference type="RULE">IBR-IC-10</Reference>
+                    <Reference type="RULE">IBR-G-10</Reference>
+                    <Reference type="RULE">IBR-O-10</Reference>
+                    <Reference type="RULE">IBR-IG-10</Reference>
+                    <Reference type="RULE">IBR-IP-10</Reference>
                     <Value type="EXAMPLE">Exempt</Value> 
                 </Element>
                 <Element>

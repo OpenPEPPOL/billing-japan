@@ -16,7 +16,6 @@
                 Allowances.
             </Description>
             <Value type="EXAMPLE">false</Value>
-            <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
 
         </Element>
         
@@ -28,18 +27,15 @@
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-98, BT-105</Reference>
             <Reference type="CODE_LIST">UNCL5189</Reference>
-            <Reference type="RULE">BR-33</Reference>
-            <Reference type="RULE">BR-38</Reference>
-            <Reference type="RULE">BR-CO-05</Reference>
-            <Reference type="RULE">BR-CO-06</Reference>
-            <Reference type="RULE">BR-CO-21</Reference>
-            <Reference type="RULE">BR-CO-22</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-CL003</Reference>
+            <Reference type="RULE">IBR-33</Reference>
+            <Reference type="RULE">IBR-38</Reference>
+            <Reference type="RULE">IBR-CO-05</Reference>
+            <Reference type="RULE">IBR-CO-06</Reference>
+            <Reference type="RULE">IBR-CO-21</Reference>
+            <Reference type="RULE">IBR-CO-22</Reference>
             <Reference type="CODE_LIST">UNCL7161</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-CL002</Reference>
-            <Reference type="RULE">DK-R-004</Reference>
-            <Reference type="RULE">BR-CL-19</Reference>
-            <Reference type="RULE">BR-CL-20</Reference>
+            <Reference type="RULE">IBR-CL-19</Reference>
+            <Reference type="RULE">IBR-CL-20</Reference>
             <Value type="EXAMPLE">95</Value>
         </Element>
         
@@ -50,13 +46,12 @@
                 The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-97, BT-104</Reference>
-            <Reference type="RULE">BR-33</Reference>
-            <Reference type="RULE">BR-38</Reference>
-            <Reference type="RULE">BR-CO-05</Reference>
-            <Reference type="RULE">BR-CO-06</Reference>
-            <Reference type="RULE">BR-CO-21</Reference>
-            <Reference type="RULE">BR-CO-22</Reference>
-            <Reference type="RULE">DK-R-004</Reference>
+            <Reference type="RULE">IBR-33</Reference>
+            <Reference type="RULE">IBR-38</Reference>
+            <Reference type="RULE">IBR-CO-05</Reference>
+            <Reference type="RULE">IBR-CO-06</Reference>
+            <Reference type="RULE">IBR-CO-21</Reference>
+            <Reference type="RULE">IBR-CO-22</Reference>
             <Value type="EXAMPLE">Discount</Value>
             
         </Element>
@@ -69,7 +64,6 @@
             </Description>
             <DataType>Percentage</DataType>
             <Reference type="BUSINESS_TERM">BT-94,BT-101</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R042</Reference>
             <Value type="EXAMPLE">20</Value>
         </Element>
         
@@ -80,19 +74,16 @@
             </Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-92,BT-99</Reference>
-            <Reference type="RULE">BR-31</Reference>
-            <Reference type="RULE">BR-36</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
-            <Reference type="RULE">BR-DEC-01</Reference>
-            <Reference type="RULE">BR-DEC-05</Reference>
+            <Reference type="RULE">IBR-31</Reference>
+            <Reference type="RULE">IBR-36</Reference>
+            <Reference type="RULE">IBR-CL-03</Reference>
+            <Reference type="RULE">IBR-DEC-01</Reference>
+            <Reference type="RULE">IBR-DEC-05</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
-                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
                 <Value type="EXAMPLE">EUR</Value>
             </Attribute>
@@ -107,18 +98,15 @@
             </Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-93,BT-100</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R041</Reference>
-            <Reference type="RULE">BR-DEC-02</Reference>
-            <Reference type="RULE">BR-DEC-06</Reference>
+            <Reference type="RULE">IBR-DEC-02</Reference>
+            <Reference type="RULE">IBR-DEC-06</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
+            <Reference type="RULE">IBR-CL-03</Reference>
             
             
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
-                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
                 <Value type="EXAMPLE">EUR</Value>
             </Attribute>
@@ -136,11 +124,11 @@
             <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-95,BT-102</Reference>
-            <Reference type="RULE">BR-32</Reference>
-            <Reference type="RULE">BR-37</Reference>
-            <Reference type="RULE">BR-O-13</Reference>
-            <Reference type="RULE">BR-O-14</Reference>
-            <Reference type="RULE">BR-CL-17</Reference>
+            <Reference type="RULE">IBR-32</Reference>
+            <Reference type="RULE">IBR-37</Reference>
+            <Reference type="RULE">IBR-O-13</Reference>
+            <Reference type="RULE">IBR-O-14</Reference>
+            <Reference type="RULE">IBR-CL-17</Reference>
             <Reference type="CODE_LIST">UNCL5305</Reference>
             <Value type="EXAMPLE">S</Value>
             
@@ -153,25 +141,24 @@
             <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
             <DataType>Percentage</DataType>
             <Reference type="BUSINESS_TERM">BT-96,BT-103</Reference>
-            <Reference type="RULE">BR-S-06</Reference>
-            <Reference type="RULE">BR-S-07</Reference>
-            <Reference type="RULE">BR-Z-06</Reference>
-            <Reference type="RULE">BR-Z-07</Reference>
-            <Reference type="RULE">BR-E-06</Reference>
-            <Reference type="RULE">BR-E-07</Reference>
-            <Reference type="RULE">BR-AE-06</Reference>
-            <Reference type="RULE">BR-AE-07</Reference>
-            <Reference type="RULE">BR-IC-06</Reference>
-            <Reference type="RULE">BR-IC-07</Reference>
-            <Reference type="RULE">BR-G-06</Reference>
-            <Reference type="RULE">BR-G-07</Reference>
-            <Reference type="RULE">BR-O-06</Reference>
-            <Reference type="RULE">BR-O-07</Reference>
-            <Reference type="RULE">BR-IG-06</Reference>
-            <Reference type="RULE">BR-IG-07</Reference>
-            <Reference type="RULE">BR-IP-06</Reference>
-            <Reference type="RULE">BR-IP-07</Reference>
-            <Reference type="RULE">SE-R-006</Reference>
+            <Reference type="RULE">IBR-S-06</Reference>
+            <Reference type="RULE">IBR-S-07</Reference>
+            <Reference type="RULE">IBR-Z-06</Reference>
+            <Reference type="RULE">IBR-Z-07</Reference>
+            <Reference type="RULE">IBR-E-06</Reference>
+            <Reference type="RULE">IBR-E-07</Reference>
+            <Reference type="RULE">IBR-AE-06</Reference>
+            <Reference type="RULE">IBR-AE-07</Reference>
+            <Reference type="RULE">IBR-IC-06</Reference>
+            <Reference type="RULE">IBR-IC-07</Reference>
+            <Reference type="RULE">IBR-G-06</Reference>
+            <Reference type="RULE">IBR-G-07</Reference>
+            <Reference type="RULE">IBR-O-06</Reference>
+            <Reference type="RULE">IBR-O-07</Reference>
+            <Reference type="RULE">IBR-IG-06</Reference>
+            <Reference type="RULE">IBR-IG-07</Reference>
+            <Reference type="RULE">IBR-IP-06</Reference>
+            <Reference type="RULE">IBR-IP-07</Reference>
             <Value type="EXAMPLE">25</Value>
             
         </Element>

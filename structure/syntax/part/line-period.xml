@@ -13,9 +13,7 @@
             <Description>The date when the Invoice period for this Invoice line starts. Format ="YYYY-MM-DD"</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-134</Reference>
-            <Reference type="RULE">BR-CO-20</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R110</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
+            <Reference type="RULE">IBR-CO-20</Reference>
             <Value type="EXAMPLE">2017-10-05</Value>
         </Element>
         <Element cardinality="0..1">
@@ -24,10 +22,8 @@
             <Description>The date when the Invoice period for this Invoice line ends. Format ="YYYY-MM-DD"</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">BT-135</Reference>
-            <Reference type="RULE">BR-30</Reference>
-            <Reference type="RULE">BR-CO-20</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R111</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-F001</Reference>
+            <Reference type="RULE">IBR-30</Reference>
+            <Reference type="RULE">IBR-CO-20</Reference>
             <Value type="EXAMPLE">2017-10-15</Value>
         </Element>
     </Element>

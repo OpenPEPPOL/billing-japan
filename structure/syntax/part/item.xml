@@ -22,7 +22,7 @@
             <Description>A name for an item.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-153</Reference>
-            <Reference type="RULE">BR-25</Reference>
+            <Reference type="RULE">IBR-25</Reference>
             <Value type="EXAMPLE">Item name</Value>
         </Element>
         
@@ -64,8 +64,8 @@
                 <Description>An item identifier based on a registered scheme.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-157</Reference>
-                <Reference type="RULE">BR-64</Reference>
-                <Reference type="RULE">BR-CL-21</Reference>
+                <Reference type="RULE">IBR-64</Reference>
+                <Reference type="RULE">IBR-CL-21</Reference>
                 
                 <Attribute>
                     <Term>schemeID</Term>
@@ -90,7 +90,7 @@
                 <Description>The code identifying the country from which the item originates.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-159</Reference>
-                <Reference type="RULE">BR-CL-15</Reference>
+                <Reference type="RULE">IBR-CL-15</Reference>
                 <Reference type="CODE_LIST">ISO3166</Reference>
                 <Value type="EXAMPLE">CN</Value>
             </Element>
@@ -106,7 +106,7 @@
                 <Description>A code for classifying the item by its type or nature.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-158</Reference>
-                <Reference type="RULE">BR-65</Reference>
+                <Reference type="RULE">IBR-65</Reference>
                 
                 
                 
@@ -114,7 +114,7 @@
                     <Term>listID</Term>
                     <Name>Item classification identifier identification scheme identifier</Name>
                     <Description>The identification scheme identifier of the Item classification identifier</Description>
-                    <Reference type="RULE">BR-CL-13</Reference>
+                    <Reference type="RULE">IBR-CL-13</Reference>
                     <Reference type="CODE_LIST">UNCL7143</Reference>
                     <Value type="EXAMPLE">STI</Value>
                 </Attribute>
@@ -145,9 +145,9 @@
                 <Description>The VAT category code for the invoiced item.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">BT-151</Reference>
-                <Reference type="RULE">BR-CO-04</Reference>
-                <Reference type="RULE">BR-O-12</Reference>
-                <Reference type="RULE">BR-CL-18</Reference>
+                <Reference type="RULE">IBR-CO-04</Reference>
+                <Reference type="RULE">IBR-O-12</Reference>
+                <Reference type="RULE">IBR-CL-18</Reference>
                 <Reference type="CODE_LIST">UNCL5305</Reference>
                 <Value type="EXAMPLE">S</Value>
             </Element>
@@ -158,15 +158,15 @@
                 <Description>The VAT rate, represented as percentage that applies to the invoiced item.</Description>
                 <DataType>Percentage</DataType>
                 <Reference type="BUSINESS_TERM">BT-152</Reference>
-                <Reference type="RULE">BR-S-05</Reference>
-                <Reference type="RULE">BR-Z-05</Reference>
-                <Reference type="RULE">BR-E-05</Reference>
-                <Reference type="RULE">BR-AE-05</Reference>
-                <Reference type="RULE">BR-IC-05</Reference>
-                <Reference type="RULE">BR-G-05</Reference>
-                <Reference type="RULE">BR-O-05</Reference>
-                <Reference type="RULE">BR-IG-05</Reference>
-                <Reference type="RULE">BR-IP-05</Reference>
+                <Reference type="RULE">IBR-S-05</Reference>
+                <Reference type="RULE">IBR-Z-05</Reference>
+                <Reference type="RULE">IBR-E-05</Reference>
+                <Reference type="RULE">IBR-AE-05</Reference>
+                <Reference type="RULE">IBR-IC-05</Reference>
+                <Reference type="RULE">IBR-G-05</Reference>
+                <Reference type="RULE">IBR-O-05</Reference>
+                <Reference type="RULE">IBR-IG-05</Reference>
+                <Reference type="RULE">IBR-IP-05</Reference>
                 <Reference type="RULE">SE-R-006</Reference>
                 <Value type="EXAMPLE">25</Value>
             </Element>
@@ -196,7 +196,7 @@
                 <Description>The name of the attribute or property of the item.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-160</Reference>
-                <Reference type="RULE">BR-54</Reference>
+                <Reference type="RULE">IBR-54</Reference>
                 <Value type="EXAMPLE">Color</Value>
             </Element>
             <Element>
@@ -205,7 +205,7 @@
                 <Description>The value of the attribute or property of the item.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-161</Reference>
-                <Reference type="RULE">BR-54</Reference>
+                <Reference type="RULE">IBR-54</Reference>
                 <Value type="EXAMPLE">Black</Value>
             </Element>
         </Element>

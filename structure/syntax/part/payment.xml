@@ -13,10 +13,8 @@
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-81</Reference>
-            <Reference type="RULE">BR-49</Reference>
-            <Reference type="RULE">BR-CL-16</Reference>
-            <Reference type="RULE">DK-R-005</Reference>
-            <Reference type="RULE">SE-R-011</Reference>
+            <Reference type="RULE">IBR-49</Reference>
+            <Reference type="RULE">IBR-CL-16</Reference>
             <Reference type="CODE_LIST">UNCL4461</Reference>
             
             
@@ -42,10 +40,6 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-83</Reference>
-            <Reference type="RULE">DK-R-008</Reference>
-            <Reference type="RULE">DK-R-009</Reference>
-            <Reference type="RULE">DK-R-010</Reference>
-            <Reference type="RULE">DK-R-011</Reference>
             <Value type="EXAMPLE">Credit transfer</Value>
         </Element>
         
@@ -64,7 +58,7 @@
                     standards, an invoice should never include a full card primary account number.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-87</Reference>
-                <Reference type="RULE">BR-51</Reference>
+                <Reference type="RULE">IBR-51</Reference>
                 <Value type="EXAMPLE">1234</Value>
             </Element>
             
@@ -99,15 +93,8 @@
                 </Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-84</Reference>
-                <Reference type="RULE">BR-50</Reference>
-                <Reference type="RULE">BR-61</Reference>
-                <Reference type="RULE">DK-R-006</Reference>
-                <Reference type="RULE">DK-R-008</Reference>
-                <Reference type="RULE">DK-R-010</Reference>
-                <Reference type="RULE">SE-R-007</Reference>
-                <Reference type="RULE">SE-R-008</Reference>
-                <Reference type="RULE">SE-R-009</Reference>
-                <Reference type="RULE">SE-R-010</Reference>
+                <Reference type="RULE">IBR-50</Reference>
+                <Reference type="RULE">IBR-61</Reference>
                 <Value type="EXAMPLE">NO99991122222</Value>
             </Element>
             
@@ -132,7 +119,6 @@
                         Such as a BIC or a national clearing code where required. No identification scheme Identifier to be used.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-86</Reference>
-                    <Reference type="RULE">DK-R-006</Reference>
                     <Value type="EXAMPLE">9999</Value>
                 </Element>
             </Element>
@@ -150,8 +136,6 @@
                 <Description>Unique identifier assigned by the Payee for referencing the direct debit mandate. Used in order to pre-notify the Buyer of a SEPA direct debit.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">BT-89</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R061</Reference>
-                <Reference type="RULE">DK-R-007</Reference>
                 <Value type="EXAMPLE">123456</Value>
                 
             </Element>
@@ -166,7 +150,6 @@
                     <Description>The account to be debited by the direct debit.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">BT-91</Reference>
-                    <Reference type="RULE">DK-R-007</Reference>
                     <Value type="EXAMPLE">12345676543</Value>
                     
                 </Element>

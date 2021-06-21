@@ -7,8 +7,8 @@
             Invoice line.
         </Description>
         <Reference type="BUSINESS_TERM">BG-27, BG-28</Reference>
-         <Reference type="RULE">BR-CO-23</Reference>
-         <Reference type="RULE">BR-CO-24</Reference>
+         <Reference type="RULE">IBR-CO-23</Reference>
+         <Reference type="RULE">IBR-CO-24</Reference>
         
         <Element>
             <Term>cbc:ChargeIndicator</Term>
@@ -16,8 +16,6 @@
                 Allowances
             </Description>
             <Value type="EXAMPLE">false</Value>
-            PEPPOL-EN16931-R043
-            <Reference type="RULE">PEPPOL-EN16931-R043</Reference>
         </Element>
         
         
@@ -28,16 +26,13 @@
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">BT-140, BT-145</Reference>
             <Reference type="CODE_LIST">UNCL5189</Reference>
-            <Reference type="RULE">BR-42</Reference>
-            <Reference type="RULE">BR-44</Reference>
-            <Reference type="RULE">BR-CO-07</Reference>
-            <Reference type="RULE">BR-CO-08</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-CL003</Reference>
+            <Reference type="RULE">IBR-42</Reference>
+            <Reference type="RULE">IBR-44</Reference>
+            <Reference type="RULE">IBR-CO-07</Reference>
+            <Reference type="RULE">IBR-CO-08</Reference>
             <Reference type="CODE_LIST">UNCL7161</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-CL002</Reference>
-            <Reference type="RULE">DK-R-004</Reference>
-            <Reference type="RULE">BR-CL-19</Reference>
-            <Reference type="RULE">BR-CL-20</Reference>
+            <Reference type="RULE">IBR-CL-19</Reference>
+            <Reference type="RULE">IBR-CL-20</Reference>
             <Value type="EXAMPLE">95</Value>
         </Element>
         
@@ -47,10 +42,10 @@
             <Description>The reason for the line level allowance or charge, expressed as text.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">BT-139, BT-144</Reference>
-            <Reference type="RULE">BR-42</Reference>
-            <Reference type="RULE">BR-44</Reference>
-            <Reference type="RULE">BR-CO-07</Reference>
-            <Reference type="RULE">BR-CO-08</Reference>
+            <Reference type="RULE">IBR-42</Reference>
+            <Reference type="RULE">IBR-44</Reference>
+            <Reference type="RULE">IBR-CO-07</Reference>
+            <Reference type="RULE">IBR-CO-08</Reference>
             <Reference type="RULE">DK-R-004</Reference>
             <Value type="EXAMPLE">Discount</Value>
             
@@ -64,7 +59,6 @@
             </Description>
             <DataType>Percentage</DataType>
             <Reference type="BUSINESS_TERM">BT-138,BT-143</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R042</Reference>
             <Value type="EXAMPLE">20</Value>            
         </Element>
         
@@ -74,19 +68,16 @@
             <Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals</Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-136,BT-141</Reference>
-            <Reference type="RULE">BR-41</Reference>
-            <Reference type="RULE">BR-43</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R040</Reference>
-            <Reference type="RULE">BR-DEC-24</Reference>
-            <Reference type="RULE">BR-DEC-27</Reference>
+            <Reference type="RULE">IBR-41</Reference>
+            <Reference type="RULE">IBR-43</Reference>
+            <Reference type="RULE">IBR-CL-03</Reference>
+            <Reference type="RULE">IBR-DEC-24</Reference>
+            <Reference type="RULE">IBR-DEC-27</Reference>
             <Reference type="RULE">UBL-DT-01</Reference>
             
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
-                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
                 <Value type="EXAMPLE">EUR</Value>
             </Attribute>
@@ -102,19 +93,15 @@
             </Description>
             <DataType>Amount</DataType>
             <Reference type="BUSINESS_TERM">BT-137,BT-142</Reference>
-            <Reference type="RULE">PEPPOL-EN16931-R041</Reference>
-            <Reference type="RULE">BR-DEC-25</Reference>
-            <Reference type="RULE">BR-DEC-28</Reference>
-            <Reference type="RULE">UBL-DT-01</Reference>
-            <Reference type="RULE">BR-CL-03</Reference>
+            <Reference type="RULE">IBR-DEC-25</Reference>
+            <Reference type="RULE">IBR-DEC-28</Reference>
+            <Reference type="RULE">IBR-CL-03</Reference>
             
             
             
             <Attribute>
                 <Term>currencyID</Term>
                 <Description>Mandatory attribute. Use BT-5</Description>
-                <Reference type="RULE">PEPPOL-EN16931-CL007</Reference>
-                <Reference type="RULE">PEPPOL-EN16931-R051</Reference>
                 <Reference type="CODE_LIST">ISO4217</Reference>
                 <Value type="EXAMPLE">EUR</Value>
             </Attribute>

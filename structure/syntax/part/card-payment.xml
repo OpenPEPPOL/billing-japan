@@ -8,7 +8,7 @@
                 invoice issuance.
             </Description>
             <Reference type="BUSINESS_TERM">BG-18</Reference>
-             <Reference type="RULE">BR-66</Reference>
+             <Reference type="RULE">IBR-66</Reference>
             
             <Element>
                 <Term>cbc:PrimaryAccountNumberID</Term>
@@ -17,7 +17,7 @@
                     standards, an invoice should never include a full card primary account number.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-87</Reference>
-                <Reference type="RULE">BR-51</Reference>
+                <Reference type="RULE">IBR-51</Reference>
                 <Value type="EXAMPLE">1234</Value>
             </Element>
             
