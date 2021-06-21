@@ -16,7 +16,6 @@
                 <Description>Identifies the Seller's electronic address to which the application level response to the invoice may be delivered.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-034</Reference>
-                <Reference type="RULE"> </Reference>
 				<Section>Shared</Section>
 
                 <Attribute>
@@ -43,7 +42,6 @@
                     <Description>An identification of the Seller.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-029</Reference>
-                    <Reference type="RULE"> </Reference>
 					<Section>Shared</Section>
  
                     <Attribute usage="Optional">
@@ -51,7 +49,6 @@
                         <Name>Scheme identifier</Name>
                         <Description>If used, the identification scheme identifier shall be chosen from the entries of the list published by the ISO/IEC 6523 maintenance agency.</Description>
 						<Reference type="BUSINESS_TERM">IBT-029-1</Reference>
-                        <Reference type="RULE"> </Reference>
                         <Reference type="CODE_LIST">ICD</Reference>
                         <Value type="EXAMPLE">0088</Value>
 						<Section>Shared</Section>
@@ -71,7 +68,6 @@
                     <Description>Unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-090</Reference>
-                    <Reference type="RULE"> </Reference>
 					<Section>Shared</Section>
                     
                     <Attribute usage="Optional">
@@ -79,8 +75,7 @@
                         <Name>Seller or bank assigned creditor identifier identification scheme identifier</Name>
                         <Description>For bank assigned creditor identifier (IBT-090), value MUST be "SEPA"</Description>
 						<Reference type="BUSINESS_TERM">IBT-090-1</Reference>
-                        <Reference type="RULE"> </Reference>
-                        <Reference type="CODE_LIST">SEPA</Reference>
+                         <Reference type="CODE_LIST">SEPA</Reference>
 						<Section>Shared</Section>
                     </Attribute>
                     
@@ -112,7 +107,6 @@
                 <Name>SELLER POSTAL ADDRESS</Name>
                 <Description>A group of business terms providing information about the address of the Seller.</Description>
                 <Reference type="BUSINESS_TERM">IBG-05</Reference>
-                <Reference type="RULE"> </Reference>
                 
                 <Element cardinality="0..1">
                     <Term>cbc:StreetName</Term>
@@ -120,7 +114,6 @@
                     <Description>The main address line in an address.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-035</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">Main Street 1</Value>
 					<Section>Shared</Section>
                 </Element>
@@ -141,7 +134,6 @@
                     <Description>The common name of the city, town or village, where the Seller address is located.</Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-037</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">London</Value>
 					<Section>Shared</Section>
                 </Element>
@@ -153,7 +145,6 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-038</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">W1G 8LZ</Value>
 					<Section>Shared</Section>
                 </Element>
@@ -195,8 +186,7 @@
                         <Description>A code that identifies the country.</Description>
                         <DataType>Text</DataType>
                         <Reference type="BUSINESS_TERM">IBT-040</Reference>
-                        <Reference type="RULE">BR-009</Reference>
-                        <Reference type="CODE_LIST">ISO3166</Reference>
+                       <Reference type="CODE_LIST">ISO3166</Reference>
                         <Value type="EXAMPLE">GB</Value>
 						<Section>Shared</Section>
                     </Element>
@@ -215,7 +205,6 @@
                     <Description>The Seller's TAX identifier (also known as Seller TAX identification number).</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-031</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">NO999888777</Value>
 					<Section>Aligned</Section>
                 </Element>
@@ -244,7 +233,6 @@
                     <Description>The local identification (defined by the Seller’s address) of the Seller for tax purposes or a reference that enables the Seller to state his registered tax status.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-032</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">NO999888777</Value>
 					<Section>Aligned</Section>
                 </Element>
@@ -275,7 +263,6 @@
                     </Description>
                     <DataType>Text</DataType>
                     <Reference type="BUSINESS_TERM">IBT-027</Reference>
-                    <Reference type="RULE"> </Reference>
                     <Value type="EXAMPLE">Full Formal Seller Name LTD.</Value>
 					<Section>Shared</Section>
                 </Element>
@@ -287,7 +274,6 @@
                     </Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-030</Reference>
-                    <Reference type="RULE"> </Reference>
 					<Section>Shared</Section>
 
                     <Attribute usage="Optional">

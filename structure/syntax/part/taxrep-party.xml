@@ -5,7 +5,7 @@
         <Name>SELLER TAX REPRESENTATIVE PARTY</Name>
         <Description>A group of business terms providing information about the Seller's tax representative.
         </Description>
-        <Reference type="BUSINESS_TERM">BG-11</Reference>
+        <Reference type="BUSINESS_TERM">IBG-11</Reference>
         
         <Element>
             <Term>cac:PartyName</Term>
@@ -16,9 +16,9 @@
                 <Name>Seller tax representative name</Name>
                 <Description>The full name of the Seller's tax representative party.</Description>
                 <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">BT-62</Reference>
-                <Reference type="RULE">BR-18</Reference>
+                <Reference type="BUSINESS_TERM">IBT-062</Reference>
                 <Value type="EXAMPLE">Tax Representative Name AS</Value>
+				<Section>Aligned</Section>
             </Element>
         </Element>
         
@@ -29,16 +29,16 @@
                 party. Sufficient components of the address are to be filled to comply with legal requirements.
             </Description>
             <Reference type="BUSINESS_TERM">BG-12</Reference>
-            <Reference type="RULE">BR-19</Reference>
-            
+ 			<Section>Shared</Section>           
             
             <Element cardinality="0..1">
                 <Term>cbc:StreetName</Term>
                 <Name>Tax representative address line 1</Name>
                 <Description>The main address line in an address.</Description>
                 <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">BT-64</Reference>
+                <Reference type="BUSINESS_TERM">IBT-064</Reference>
                 <Value type="EXAMPLE">Lille gatan 545</Value>
+ 			<Section>Shared</Section>           
             </Element>
             
             <Element cardinality="0..1">
@@ -48,9 +48,10 @@
                     main line.
                 </Description>
                 <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">BT-65</Reference>
+                <Reference type="BUSINESS_TERM">IBT-065</Reference>
                 <Value type="EXAMPLE">Po Box 987</Value>
-            </Element>
+				<Section>Shared</Section>
+			</Element>
             
             <Element cardinality="0..1">
                 <Term>cbc:CityName</Term>
@@ -58,8 +59,9 @@
                 <Description>The common name of the city, town or village, where the tax representative address is located.
                 </Description>
                 <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">BT-66</Reference>
+                <Reference type="BUSINESS_TERM">IBT-066</Reference>
                 <Value type="EXAMPLE">Göteborg</Value>
+				<Section>Shared</Section>
             </Element>
             
             <Element cardinality="0..1">
@@ -68,8 +70,9 @@
                 <Description>The identifier for an addressable group of properties according to the relevant postal service.
                 </Description>
                 <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">BT-67</Reference>
+                <Reference type="BUSINESS_TERM">BT-067</Reference>
                 <Value type="EXAMPLE">12345</Value>
+				<Section>Shared</Section>
             </Element>
             
             <Element cardinality="0..1">
@@ -77,8 +80,9 @@
                 <Name>Tax representative country subdivision</Name>
                 <Description>The subdivision of a country.</Description>
                 <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">BT-68</Reference>
+                <Reference type="BUSINESS_TERM">IBT-068</Reference>
                 <Value type="EXAMPLE">Region Vest</Value>
+				<Section>Shared</Section>
             </Element>
             
             
@@ -93,9 +97,10 @@
                         main line.
                     </Description>
                     <DataType>Text</DataType>
-                    <Reference type="BUSINESS_TERM">BT-164</Reference>
+                    <Reference type="BUSINESS_TERM">IBT-164</Reference>
                     <Value type="EXAMPLE">A87</Value>
-                </Element>
+					<Section>Shared</Section>
+              </Element>
             </Element>
             
             <Element>
@@ -107,54 +112,25 @@
                     <Name>Tax representative country code</Name>
                     <Description>A code that identifies the country.</Description>
                     <DataType>Code</DataType>
-                    <Reference type="BUSINESS_TERM">BT-69</Reference>
-                    <Reference type="RULE">BR-20</Reference>
-                    <Reference type="RULE">BR-CL-14</Reference>
+                    <Reference type="BUSINESS_TERM">IBT-069</Reference>
                     <Reference type="CODE_LIST">ISO3166</Reference>
                     <Value type="EXAMPLE">SE</Value>
+					<Section>Shared</Section>
                 </Element>
             </Element>
         </Element>
         
         <Element>
             <Term>cac:PartyTaxScheme</Term>
-            <Name>PARTY VAT IDENTIFIER</Name>
+            <Name>PARTY TAX IDENTIFIER</Name>
             
             <Element>
                 <Term>cbc:CompanyID</Term>
-                <Name>Seller tax representative VAT identifier</Name>
-                <Description>The VAT identifier of the Seller's tax representative party.</Description>
+                <Name>Seller tax representative TAX identifier</Name>
+                <Description>The TAX identifier of the Seller's tax representative party.</Description>
                 <DataType>Identifier</DataType>
-                <Reference type="BUSINESS_TERM">BT-63</Reference>
-                <Reference type="RULE">BR-56</Reference>
-                <Reference type="RULE">BR-CO-09</Reference>
-                <Reference type="RULE">BR-S-02</Reference>
-                <Reference type="RULE">BR-S-03</Reference>
-                <Reference type="RULE">BR-S-04</Reference>
-                <Reference type="RULE">BR-Z-02</Reference>
-                <Reference type="RULE">BR-Z-03</Reference>
-                <Reference type="RULE">BR-Z-04</Reference>
-                <Reference type="RULE">BR-E-02</Reference>
-                <Reference type="RULE">BR-E-03</Reference>
-                <Reference type="RULE">BR-E-04</Reference>
-                <Reference type="RULE">BR-AE-02</Reference>
-                <Reference type="RULE">BR-AE-03</Reference>
-                <Reference type="RULE">BR-AE-04</Reference>
-                <Reference type="RULE">BR-IC-02</Reference>
-                <Reference type="RULE">BR-IC-03</Reference>
-                <Reference type="RULE">BR-IC-04</Reference>
-                <Reference type="RULE">BR-G-02</Reference>
-                <Reference type="RULE">BR-G-03</Reference>
-                <Reference type="RULE">BR-G-04</Reference>
-                <Reference type="RULE">BR-O-02</Reference>
-                <Reference type="RULE">BR-O-03</Reference>
-                <Reference type="RULE">BR-O-04</Reference>
-                <Reference type="RULE">BR-IG-02</Reference>
-                <Reference type="RULE">BR-IG-03</Reference>
-                <Reference type="RULE">BR-IG-04</Reference>
-                <Reference type="RULE">BR-IP-02</Reference>
-                <Reference type="RULE">BR-IP-03</Reference>
-                <Reference type="RULE">BR-IP-04</Reference>
+                <Reference type="BUSINESS_TERM">IBT-063</Reference>
+				<Section>Aligned</Section>
                 <Value type="EXAMPLE">FR932874294</Value>
             </Element>
             
@@ -164,8 +140,9 @@
                 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Description>Mandatory element. Use “VAT”</Description>
-                    <Value type="DEFAULT">VAT</Value>
+                    <Description>Mandatory element. As example “TAX”</Description>
+					<Reference type="BUSINESS_TERM">IBT-063-1</Reference>
+                    <Value type="EXAMPLE">VAT</Value>
                 </Element>
             </Element>
         </Element>
