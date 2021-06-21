@@ -46,7 +46,7 @@
     <Resource>
         <Identifier>ubl-pint</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/PEPPOL-PINT-UBL.sch</Path>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
         <Title>Rules for PEPPOL PINT</Title>
     </Resource>
     
