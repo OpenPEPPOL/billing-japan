@@ -1,0 +1,24 @@
+
+= Value added tax point date code
+
+A subset of values from {UNCL2005} shall be used.
+
+include::../../syntax/codelists/taxpoint-date.adoc[]
+
+Valid values are listed in the table below:
+
+[cols="1,4", options="header"]
+.Code list
+|===
+| Code
+| Description
+
+| 3
+| Invoice document issue date time
+
+| 35
+| Delivery date/time, actual
+
+| 432
+| Paid to date
+|===

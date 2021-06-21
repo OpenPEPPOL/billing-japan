@@ -1,0 +1,11 @@
+
+= Tender reference
+
+To identify the call for tender or lot the invoice relates to, use the 'OriginatorDocumentReference'. The identifier is, in most cases, the Procurement Procedure Identifier.
+
+
+.UBL example of tender reference
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/Snippet-refs.xml[tags=tender]
+----

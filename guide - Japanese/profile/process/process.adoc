@@ -1,0 +1,33 @@
+
+= General invoicing process
+
+The invoicing process includes issuing and sending the invoice and the credit note from the supplier to the customer and the reception  and handling of the same at the customer’s site.
+
+The invoicing process is shown in this work flow:
+
+* A supplier issues and sends an invoice to a customer. The invoice refers to one order and a specification of delivered goods and services.
+
+An invoice may also refer to a contract or a frame agreement. The invoice may specify articles (goods and services) with article number or article description.
+
+* The customer receives the invoice and processes it in the invoice control system leading to one of the following results:
+  .. The customer fully approves the invoice, posts it in the accounting system and passes it on to be paid.
+  .. The customer completely rejects the invoice, contacts the supplier and requests a credit note.
+  .. The customer disputes parts of the invoice, contacts the supplier and requests a credit note and a new invoice.
+
+The diagram below shows the basic invoicing process with the use of this PEPPOL BIS profile. This process assumes that both the invoice and the credit note are exchanged electronically.
+
+image::../shared/images/process.png[The invoicing process, align="center"]
+
+This profile covers the following invoice processes:
+
+
+[horizontal]
+P1:: Invoicing of deliveries of goods and services against purchase orders, based on a contract
+P2:: Invoicing deliveries of goods and services based on a contract
+P3:: Invoicing the delivery of an incidental purchase order
+P4:: Pre-payment
+P5:: Spot payment
+P6:: Payment in advance of delivery
+P7:: Invoices with references to a despatch advice
+P8:: Invoices with references to a despatch advice and a receiving advice
+P9:: Credit notes or invoices with negative amounts, issued for a variety of reasons including the return of empty packaging
