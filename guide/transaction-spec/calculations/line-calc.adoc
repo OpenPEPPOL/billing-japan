@@ -18,7 +18,7 @@ include::../../syntax/priceamount.adoc[]
 [[lineamount-calc]]
 == Invoice line net amount (BT-131)
 
-The invoice line net amount (BT-131) is as the name implies the *net* amount without VAT, and inclusive of line level allowance and charges.
+The invoice line net amount (BT-131) is as the name implies the *net* amount without CT, and inclusive of line level allowance and charges.
 
 The formula for calculating the invoice line net amount is:
 

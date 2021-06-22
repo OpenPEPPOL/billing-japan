@@ -24,24 +24,24 @@ Formulas for the calculations of totals are as follows:
 
 
 | BT-109
-| Invoice total amount without VAT
+| Invoice total amount without CT
 | stem:[\ \ \ \ "BT-106: Sum of invoice line net amounts"] +
 stem:[- \ "BT-107: Sum of allowances on document level"] +
 stem:[+ \ "BT-108: Sum of charges on document level"]
 
 | BT-110
-| Invoice total VAT amount
-| stem:[sum("BT-117: VAT category tax amount")]
+| Invoice total CT amount
+| stem:[sum("BT-117: CT category tax amount")]
 
 
 | BT-112
-| Invoice total amount with VAT
-| stem:[\ \ \ \ "BT-109: Invoice total amount without VAT"] +
-stem:[+ \ "BT-110: Invoice total VAT amount"]
+| Invoice total amount with CT
+| stem:[\ \ \ \ "BT-109: Invoice total amount without CT"] +
+stem:[+ \ "BT-110: Invoice total CT amount"]
 
 | BT-115
 | Amount due for payment
-| stem:[\ \ \ \ "BT-112: Invoice total amount with VAT"] +
+| stem:[\ \ \ \ "BT-112: Invoice total amount with CT"] +
 stem:[- \ "BT-113: Paid amount"] +
 stem:[+ \ "BT-114: Rounding amount"]
 

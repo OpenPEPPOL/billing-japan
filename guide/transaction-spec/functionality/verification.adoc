@@ -12,4 +12,3 @@ This process forms part of the Buyer’s internal business controls. The invoice
 
 An invoice should also contain sufficient information that allows the received invoice to be transferred to a responsible authority, person or department, for verification and approval.
 
-Detailed requirements for supporing accounting functionality can be found at <<verificationreq>>

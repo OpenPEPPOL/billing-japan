@@ -5,4 +5,3 @@ The invoice is used to carry Tax related information from the Seller to the Buye
 
 The invoice shall allow the determination of the Tax regime, the calculation and description of the tax, in accordance with the {Tax-dir} and subsequent amendments.
 
-Detailed requirements for supporing accounting functionality can be found at <<taxreq>>
