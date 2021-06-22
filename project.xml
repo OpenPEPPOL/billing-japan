@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>PEPPOL BIS PINT</Name>
+    <Name>Peppol BIS Japan Billing</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
