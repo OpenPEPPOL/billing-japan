@@ -2,16 +2,16 @@
 = Introduction to openPEPPOL and BIS
 
 [preface]
-This {peppol} BIS Japan Billing provides a set of specifications for implementing a {peppol} business process in Japan. The document is concerned with clarifying requirements for ensuring international interoperability while supporting the Japanese domestic business processes and provides guidelines for the support and implementation of these requirements.
+This {peppol} BIS Japan Billing provides a set of specifications for implementing a {peppol} billing business process in Japan. The document is concerned with clarifying requirements for ensuring international interoperability while supporting the Japanese domestic business processes and provides guidelines for the support and implementation of these requirements.
 
-This specification is based on the Peppol International model. Any instance documents following this Peppol BIS Japan Billing will always be compliant with the Peppol International model (PINT).
+This specification is based on the Peppol International model. Any instance documents following this Peppol BIS Japan Billing will always be compliant with the Peppol International model ({PINT}).
 
 The purpose of this document is to describe the use of the invoice and credit note messages in Peppol in Japan, and to facilitate an efficient implementation and increased use of electronic collaboration
 regarding the billing process based on these formats.
 
 .Statement of copyright
 ****
-This Peppol Business Interoperability Specification (Peppol BIS) document is based on the PINT and is the country specification for Japan. 
+This Peppol Business Interoperability Specification (Peppol BIS) document is based on the {PINT} and is the country specification for Japan. 
 
 OpenPEPPOL AISBL holds the copyright of this Peppol BIS.
 

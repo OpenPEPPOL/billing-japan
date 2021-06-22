@@ -32,8 +32,6 @@ include::../profile/process/index.adoc[]
 
 include::../transaction-spec/functionality/index.adoc[]
 
-include::../transaction-spec/requirements/index.adoc[]
-
 include::../transaction-spec/datatypes/index.adoc[]
 
 include::../transaction-spec/vat-info/vat-info.adoc[]
