@@ -1,0 +1,13 @@
+[[peppol_rules]]
+= Peppol International transaction business rules
+
+The following rules have been defined by {openpeppol} to support the Peppol International model {PiNT}.
+These rules apply in *all* profiles that use this transaction specification.
+
+.Peppol transaction business rules
+[cols="1,4", options="header"]
+|====
+|Rule
+|Message/Context/Test
+
+|====

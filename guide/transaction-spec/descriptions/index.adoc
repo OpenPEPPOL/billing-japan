@@ -20,8 +20,6 @@ include::vat-currency.adoc[]
 
 include::payment.adoc[]
 
-include::intrastat.adoc[]
-
 include::item.adoc[]
 
 include::price.adoc[]

@@ -6,8 +6,6 @@
 
 :leveloffset: +1
 
-include::peppol_rules.adoc[]
-
-include::tc434_rules.adoc[]
+include::pint_rules.adoc[]
 
 :leveloffset: -1
