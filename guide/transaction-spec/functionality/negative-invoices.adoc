@@ -2,7 +2,7 @@
 = Negative invoices and credit notes
 
 
-In line with requirements of {EN16931} this BIS supports negative grand totals. This represents a significant change in comparison to {openpeppol}’s previous specifications where invoices and credit notes have non-negative total.
+This BIS supports negative grand totals. 
 
 The argument for negative invoices is to open up for a wider spectrum of invoicing processes.
 

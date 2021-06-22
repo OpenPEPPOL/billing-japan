@@ -3,7 +3,7 @@
 [[requirements]]
 = Invoice and credit note business requirements
 
-The table below gives an overview of the business requirements from {tc434} supported by this BIS:
+The table below gives an overview of the business requirements supported by this BIS:
 
 ====
 Legend::
