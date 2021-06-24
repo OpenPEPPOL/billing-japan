@@ -4,18 +4,16 @@
 
 This {peppol} BIS provides a set of specifications for implementing a {peppol} business process.
 
-This specification, is a Country Specification of {PINT}, following the guidance given in chapter 7 of the {PINT}. Any instance documents compliant to this specification will be compliant with the PINT ({PINT}).
+This specification, is a Country Specification of the Peppol International model ({pint}). Any instance documents compliant to this specification will be compliant with the PINT.
 
 The purpose of this document is to facilitate an efficient implementation and increased use of electronic collaboration regarding the billing process.
 
 
 .Statement of copyright
 ****
-This Peppol Business Interoperability Specification (Peppol BIS) document is a Country Specification based on PINT. The restrictions on PINT implemented in this Peppol BIS appear from the conformance statement provided in appendix A.
+This Peppol Business Interoperability Specification (Peppol BIS) document is a Country Specification based on the PINT. The restrictions on PINT implemented in this Peppol BIS are identified in the conformance statement provided in appendix A.
 
-The copyright of PINT is owned by OpenPEPPOL and its members.
-
-OpenPEPPOL AISBL holds the copyright of this Peppol BIS. 
+The copyright of PINT is owned by OpenPEPPOL and its members.cOpenPEPPOL AISBL holds the copyright of this Peppol BIS. 
 
 This PEPPOL BIS document may not be modified, re-distribute, sold or repackaged in any other way without the prior consent of OpenPEPPOL AISBL.
 ****
@@ -41,7 +39,7 @@ This document is concerned with clarifying requirements for ensuring interoperab
 
 == Audience
 
-The audience for this document is organisations wishing to be PEPPOL enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
+The audience for this document is organisations wishing to be Peppol enabled for exchanging electronic invoices, and/or their ICT-suppliers. These organisations may be:
 
      * Service providers
      * Contracting Authorities (CA)
@@ -54,4 +52,4 @@ More specifically, roles addressed are the following:
     * ICT Developers
     * Business Experts
 
-For further information on PEPPOL/OpenPEPPOL, please see {common}
+For further information on Peppol/OpenPEPPOL, please see {common}

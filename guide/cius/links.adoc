@@ -23,4 +23,4 @@
 
 
 //PINT
-:PINT:https://openpeppol.atlassian.net/wiki/spaces/PINT/pages/2312470562/PINT+latest+document+versions[PINT]
+:pint: https://openpeppol.atlassian.net/wiki/spaces/PINT/pages/2312470562/PINT+latest+document+versions[PINT]
