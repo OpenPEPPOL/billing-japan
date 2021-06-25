@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project xmlns="urn:fdc:difi.no:2017:vefa:structure:Project-1">
 
-    <Name>Peppol BIS Japan Billing</Name>
+    <Name>PEPPOL BIS PINT</Name>
 
     <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
@@ -36,13 +36,6 @@
         <Title>UBL Credit Note</Title>
     </Resource>
 
-<!--     
-	<Resource>
-        <Identifier>ubl-tc434</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
-        <Title>EN16931  model bound to UBL</Title>
-</Resource> -->
     <Resource>
         <Identifier>ubl-pint</Identifier>
         <Type>native:Schematron</Type>
@@ -50,6 +43,12 @@
         <Title>Rules for PEPPOL PINT</Title>
     </Resource>
     
+	<Resource>
+        <Identifier>ubl-tc434</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
+        <Title>EN16931  model bound to UBL</Title>
+	</Resource>
   
     <Resource>
         <Type>native:File</Type>
