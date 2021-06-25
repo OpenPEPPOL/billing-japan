@@ -52,6 +52,35 @@
     
   
     <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
+        <Title>Schematron for PEPPOL PINT rules (UBL)</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">PINT-UBL-validation-preprocessed.sch</Property>
+    </Resource>
+    <!--    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
+        <Title>Schematron for TC434 rules (UBL)</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">CEN-EN16931-UBL.sch</Property>
+    </Resource>
+    -->
+    <Resource>
+        <Type>native:File</Type>
+        <Path>stylesheet/stylesheet-ubl.xslt</Path>
+        <Title>Stylesheet for UBL instances</Title>
+        <Property key="download">stylesheet-ubl.xslt</Property>
+    </Resource>
+    <!--
+    <Resource>
+        <Type>native:File</Type>
+        <Path>mapping/mapping-cii-ubl.xls</Path>
+        <Title>Excel mappling table cii to ubl</Title>
+        <Property key="download">mapping-cii-ubl.xls</Property>
+    </Resource> -->
+
+    <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/icd.xml</Path>
     </Resource>
@@ -120,35 +149,4 @@
         <Path>structure/codelist/VATEX.xml</Path>
     </Resource>
 
-
-
-    
-    <Resource>
-        <Type>native:File</Type>
-        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
-        <Title>Schematron for PEPPOL PINT rules (UBL)</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">PINT-UBL-validation-preprocessed.sch</Property>
-    </Resource>
-    <!--    <Resource>
-        <Type>native:File</Type>
-        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
-        <Title>Schematron for TC434 rules (UBL)</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">CEN-EN16931-UBL.sch</Property>
-    </Resource>
-    -->
-    <Resource>
-        <Type>native:File</Type>
-        <Path>stylesheet/stylesheet-ubl.xslt</Path>
-        <Title>Stylesheet for UBL instances</Title>
-        <Property key="download">stylesheet-ubl.xslt</Property>
-    </Resource>
-    <!--
-    <Resource>
-        <Type>native:File</Type>
-        <Path>mapping/mapping-cii-ubl.xls</Path>
-        <Title>Excel mappling table cii to ubl</Title>
-        <Property key="download">mapping-cii-ubl.xls</Property>
-    </Resource> -->
 </Project>
