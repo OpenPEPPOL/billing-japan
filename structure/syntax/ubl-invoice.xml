@@ -16,9 +16,9 @@
         <Element>
             <Term>cbc:CustomizationID</Term>
             <Name languageID="en-GB">Specification identifier</Name>
-            <Name languageID="ja-JP">仕様識別子</Name>
+            <Name languageID="ja-JP">Specification identifier</Name>
             <Description languageID="en-GB">An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
-            <Description languageID="ja-JP">インスタンスドキュメントに含まれるデータが準拠するセマンティックコンテンツ、カーディナリティ、およびビジネスルールに関するルールの全セットを含む仕様の識別</Description>
+            <Description languageID="ja-JP">An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">IBT-024</Reference>
             <Value type="EXAMPLE">urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</Value>
