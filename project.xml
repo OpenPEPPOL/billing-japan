@@ -3,7 +3,7 @@
 
     <Name>PEPPOL BIS PINT</Name>
 
-    <Documentation path="bis/">Business Interoperability Specifications (BIS)</Documentation>
+    <Documentation path="bis/">Japan Standard Commercial Invoice process (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
@@ -28,7 +28,7 @@
     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-invoice.xml</Path>
-        <Title>UBL Invoice</Title>
+        <Title>Standard Commercial Invoice, message specification</Title>
     </Resource>
 <!--     <Resource>
         <Type>Structure-1</Type>
