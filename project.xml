@@ -30,11 +30,11 @@
         <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>UBL Invoice</Title>
     </Resource>
-    <Resource>
+<!--     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-creditnote.xml</Path>
         <Title>UBL Credit Note</Title>
-    </Resource>
+    </Resource> -->
 
     <Resource>
         <Identifier>ubl-pint</Identifier>
@@ -112,10 +112,10 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1153.xml</Path>
     </Resource>
-    <Resource>
+<!--     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL2005.xml</Path>
-    </Resource>
+    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL4461.xml</Path>
@@ -132,13 +132,13 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
     </Resource>   
-    <Resource>
+<!--     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/SEPA.xml</Path>
-    </Resource> 
-    <Resource>
+    </Resource>  -->
+<!--     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/VATEX.xml</Path>
-    </Resource>
+    </Resource> -->
 
 </Project>
