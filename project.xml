@@ -11,7 +11,7 @@
     <Resource>
         <Type>Doc-1</Type>
         <Path>bis/</Path>
-        <Title>Business Interoperability Specifications (BIS)</Title>
+        <Title>Japan Standard Commercial Invoice process (BIS)</Title>
     </Resource>
     <Resource>
         <Type>Doc-1</Type>
@@ -50,6 +50,22 @@
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
         <Property key="download">PINT-UBL-validation-preprocessed.sch</Property>
     </Resource>
+	
+    <Resource>
+        <Identifier>ubl-pint</Identifier>
+        <Type>native:Schematron</Type>
+        <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
+        <Title>Rules for Japanese Invoice</Title>
+    </Resource>
+    
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
+        <Title>Schematron for Japanese rules (UBL)</Title>
+        <Description>Schematron file containing Japanese rules according to ISO Schematron.</Description>
+        <Property key="download">Japan-UBL-validation-preprocessed.sch</Property>
+    </Resource>
+
     <!--    <Resource>
         <Type>native:File</Type>
         <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
