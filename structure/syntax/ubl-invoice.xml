@@ -381,9 +381,9 @@
 
         <Include>part/taxrep-party.xml</Include>
 
-<!-- HINGAÐ -->
-
         <Include>part/delivery.xml</Include>
+
+<!-- HINGAÐ -->
 
         <Element cardinality="0..n">
         <Term>cac:PaymentMeans</Term>
@@ -391,46 +391,56 @@
         <Description>A group of business terms providing information about the payment.</Description>
         <Reference type="BUSINESS_TERM">BG-16</Reference>
         
-        <Element>
-            <Term>cbc:PaymentMeansCode</Term>
-            <Name>Payment means type code</Name>
-            <Description>The means, expressed as code, for how a payment is expected to be or has been settled.
-            </Description>
-            <DataType>Code</DataType>
-            <Reference type="BUSINESS_TERM">IBT-81</Reference>
-            <Reference type="CODE_LIST">UNCL4461</Reference>
-            
-            <Attribute usage="Optional">
-                <Term>name</Term>
-                <Name>Payment means text</Name>
-                <Description>The means, expressed as text, for how a payment is expected to be or has been settled.
-                </Description>
-                <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">IBT-82</Reference>
-                <Value type="EXAMPLE">Credit transfer</Value>
-            </Attribute>
-            
-            <Value type="EXAMPLE">30</Value>
-            
-        </Element>
+			<Element cardinality="0..1">
+				<Term>cbc:ID</Term>
+				<Name>Payment Instructions ID</Name>
+				<Description>An identifier for the payment instructions.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">IBT-178</Reference>
+				<Value type="EXAMPLE">2</Value>
+				<Section>Aligned</Section>
+			</Element>
+
+			<Element>
+				<Term>cbc:PaymentMeansCode</Term>
+				<Name>Payment means type code</Name>
+				<Description>The means, expressed as code, for how a payment is expected to be or has been settled.
+				</Description>
+				<DataType>Code</DataType>
+				<Reference type="BUSINESS_TERM">IBT-081</Reference>
+				<Reference type="CODE_LIST">UNCL4461</Reference>
+				<Section>Aligned</Section>
+				
+				<Attribute usage="Optional">
+					<Term>name</Term>
+					<Name>Payment means text</Name>
+					<Description>The means, expressed as text, for how a payment is expected to be or has been settled.
+					</Description>
+					<DataType>Text</DataType>
+					<Reference type="BUSINESS_TERM">IBT-082</Reference>
+					<Value type="EXAMPLE">Credit transfer</Value>
+					<Section>Shared</Section>
+				</Attribute>
+				
+				<Value type="EXAMPLE">30</Value>
+				
+			</Element>
         
-        <Element cardinality="0..1">
-            <Term>cbc:PaymentID</Term>
-            <Name>Remittance information</Name>
-            <Description>A textual value used to establish a link between the payment and the Invoice, issued by the
-                Seller. Used for creditor's critical reconciliation information. This information element helps the Seller to assign an incoming payment to the relevant payment process.
-            </Description>
-            <DataType>Text</DataType>
-            <Reference type="BUSINESS_TERM">IBT-83</Reference>
-            <Value type="EXAMPLE">432948234234234</Value>
-        </Element>
-        
+			<Element cardinality="0..1">
+				<Term>cbc:PaymentID</Term>
+				<Name>Remittance information</Name>
+				<Description>A textual value used for payment routing or to establish a link between the payment and the Invoice.</Description>
+				<DataType>Text</DataType>
+				<Reference type="BUSINESS_TERM">IBT-083</Reference>
+				<Value type="EXAMPLE">432948234234234</Value>
+			</Element>
+
             <Include>part/card-payment.xml</Include>
-            
+
             <Include>part/credit-transfer.xml</Include>
-            
+
             <Include>part/payment-mandate.xml</Include>
-            
+
         </Element>
 
         <Element cardinality="0..1">
