@@ -37,13 +37,25 @@
     <rule context="/ubl:Invoice[cac:AccountingSupplierParty/cac:Party/cac:PostalAddress/cac:Country/cbc:IdentificationCode = 'JP' ]">
       <assert id="jp-br-co-01" flag="fatal" test="(     round(cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/xs:decimal(cbc:Percent)) != 0      and (     xs:decimal(cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount) >= floor(xs:decimal(cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount) * (cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/xs:decimal(cbc:Percent) div 100)))     and (     xs:decimal(cac:TaxTotal/cac:TaxSubtotal/cbc:TaxAmount) &lt;= ceiling(xs:decimal(cac:TaxTotal/cac:TaxSubtotal/cbc:TaxableAmount) * (cac:TaxTotal/cac:TaxSubtotal/cac:TaxCategory/xs:decimal(cbc:Percent) div 100)))     )">[jp-br-co-01]-VAT category tax amount (BT-117) = VAT category taxable amount (BT-116) x (VAT category rate (BT-119) / 100), rounded to integer. The rounded result amount SHALL be between the floor and the ceiling.</assert>
     </rule>
-    <rule context="//*[@currencyID=‘JPY’]">
-      <assert id="jp-br-02" flag="fatal" test="matches(normalize-space(),‘^-?[1-9][0-9]*$’)">[jp-br-02]- Amount shall be integer.</assert>
+    <rule context="//*[@currencyID='JPY']">
+      <assert id="jp-br-02" flag="fatal" test="matches(normalize-space(),'^-?[1-9][0-9]*$')">[jp-br-02]- Amount shall be integer.</assert>
+    </rule>
+    <rule context="ubl:Invoice/*[local-name()!='InvoiceLine']/*[@currencyID='JPY'] | ubl:Invoice/*[local-name()!='InvoiceLine']/*/*[@currencyID='JPY'] | //cac:InvoiceLine/cbc:LineExtensionAmount[@currencyID='JPY']">
+      <assert id="jp-br-03" flag="fatal" test="matches(normalize-space(.),'^-?[1-9][0-9]*$')">[jp-br-03]- Amount shall be integer.</assert>
     </rule>
   </pattern>
   <pattern id="Codesmodel">
     <rule flag="fatal" context="cbc:InvoiceTypeCode | cbc:CreditNoteTypeCode">
-      <assert id="ibr-cl-01" flag="fatal" test="(self::cbc:InvoiceTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 80 82 84 380 383 386 393 395 575 623 780 ', concat(' ', normalize-space(.), ' '))))) or (self::cbc:CreditNoteTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 81 83 381 396 532 ', concat(' ', normalize-space(.), ' ')))))">[ibr-cl-01]-The document type code MUST be coded by the invoice and credit note related code lists of UNTDID 1001.</assert>
+      <assert id="jp-cl-01" flag="fatal" test="(self::cbc:InvoiceTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 80 82 84 380 383 386 393 395 575 623 780 ', concat(' ', normalize-space(.), ' '))))) or (self::cbc:CreditNoteTypeCode and ((not(contains(normalize-space(.), ' ')) and contains(' 81 83 381 396 532 ', concat(' ', normalize-space(.), ' ')))))">[jp-cl-01]-The document type code MUST be coded by the Japanese invoice and Japanese credit note related code lists of UNTDID 1001.</assert>
+    </rule>
+    <rule flag="fatal" context="cac:PaymentMeans/cbc:PaymentMeansCode">
+      <assert id="jp-cl-02" flag="fatal" test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 70 74 75 76 77 78 91 92 93 94 95 96 97 ZZZ Z01 Z02 ',concat(' ',normalize-space(.),' ') ) ) )">[jp-cl-02]-Payment means in a Japanese invoice MUST be coded using a restricted version of the UNCL4461 code list (adding Z01 and Z02)</assert>
+    </rule>
+    <rule flag="fatal" context="cac:TaxCategory/cbc:ID">
+      <assert id="jp-cl-03" flag="fatal" test="( ( not(contains(normalize-space(.),' ')) and contains( ' AA S Z G O E ',concat(' ',normalize-space(.),' ') ) ) )">[jp-cl-03]- Japaese invoice tax categories MUST be coded using UNCL5305 code list</assert>
+    </rule>
+    <rule flag="fatal" context="cac:ClassifiedTaxCategory/cbc:ID">
+      <assert id="jp-cl-04" flag="fatal" test="( ( not(contains(normalize-space(.),' ')) and contains( ' AA S Z G O E ',concat(' ',normalize-space(.),' ') ) ) )">[jp-cl-04]- Japanese invoice tax categories MUST be coded using UNCL5305 code list</assert>
     </rule>
   </pattern>
 </schema>
