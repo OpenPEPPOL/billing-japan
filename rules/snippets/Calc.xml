@@ -224,8 +224,8 @@
         <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
         <cbc:MultiplierFactorNumeric>20</cbc:MultiplierFactorNumeric><!--2-->
-        <cbc:Amount currencyID="EUR">200</cbc:Amount> <!--3-->
-        <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount><!--1-->
+        <cbc:Amount currencyID="JPY">200</cbc:Amount> <!--3-->
+        <cbc:BaseAmount currencyID="JPY">1000</cbc:BaseAmount><!--1-->
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -240,7 +240,7 @@
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="EUR">200</cbc:Amount><!--1-->
+        <cbc:Amount currencyID="JPY">200</cbc:Amount><!--1-->
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -251,10 +251,10 @@
     </cac:AllowanceCharge>
     <!-- end::allowance2[] -->
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">1225.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="JPY">1225</cbc:TaxAmount>
         <cac:TaxSubtotal>
-            <cbc:TaxableAmount currencyID="EUR">4900.0</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="EUR">1225</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="JPY">4900</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="JPY">1225</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
@@ -264,8 +264,8 @@
             </cac:TaxCategory>
         </cac:TaxSubtotal>
         <cac:TaxSubtotal>
-            <cbc:TaxableAmount currencyID="EUR">1000.0</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="EUR">0</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="JPY">1000</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="JPY">0</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>E</cbc:ID>
                 <cbc:Percent>0</cbc:Percent>
@@ -277,22 +277,22 @@
         </cac:TaxSubtotal>
     </cac:TaxTotal>
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID ="SEK">9324.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID ="SEK">9324</cbc:TaxAmount>
     </cac:TaxTotal>
     <cac:LegalMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="EUR">5900</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="EUR">5900</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="EUR">7125</cbc:TaxInclusiveAmount>
-        <cbc:AllowanceTotalAmount currencyID="EUR">200</cbc:AllowanceTotalAmount>
-        <cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
-        <cbc:PrepaidAmount currencyID="EUR">1000</cbc:PrepaidAmount>
-        <cbc:PayableAmount currencyID="EUR">6125.00</cbc:PayableAmount>
+        <cbc:LineExtensionAmount currencyID="JPY">5900</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="JPY">5900</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="JPY">7125</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="JPY">200</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="JPY">200</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="JPY">1000</cbc:PrepaidAmount>
+        <cbc:PayableAmount currencyID="JPY">6125</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <cac:InvoiceLine>
     <cbc:ID>1</cbc:ID>
         <cbc:Note>Testing note on line level</cbc:Note>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="EUR">4000.00</cbc:LineExtensionAmount>
+        <cbc:LineExtensionAmount currencyID="JPY">4000</cbc:LineExtensionAmount>
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
         <cac:InvoicePeriod>
             <cbc:StartDate>2017-12-01</cbc:StartDate>
@@ -312,14 +312,14 @@
             <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
             <cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
-            <cbc:Amount currencyID="EUR">1</cbc:Amount>
-            <cbc:BaseAmount currencyID="EUR">100</cbc:BaseAmount>
+            <cbc:Amount currencyID="JPY">1</cbc:Amount>
+            <cbc:BaseAmount currencyID="JPY">100</cbc:BaseAmount>
         </cac:AllowanceCharge>
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
             <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-            <cbc:Amount currencyID="EUR">101</cbc:Amount>
+            <cbc:Amount currencyID="JPY">101</cbc:Amount>
         </cac:AllowanceCharge>
         <cac:Item>
             <cbc:Description>Description of item</cbc:Description>
@@ -354,12 +354,12 @@
         </cac:Item>
         <!-- tag::price[] -->
         <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">410</cbc:PriceAmount><!--3-->
+            <cbc:PriceAmount currencyID="JPY">410</cbc:PriceAmount><!--3-->
             <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
             <cac:AllowanceCharge>
                 <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-                <cbc:Amount currencyID="EUR">40</cbc:Amount><!--2-->
-                <cbc:BaseAmount currencyID="EUR">450</cbc:BaseAmount><!--1-->
+                <cbc:Amount currencyID="JPY">40</cbc:Amount><!--2-->
+                <cbc:BaseAmount currencyID="JPY">450</cbc:BaseAmount><!--1-->
             </cac:AllowanceCharge>
         </cac:Price>
         <!-- end::price[] -->
@@ -369,7 +369,7 @@
         <cbc:Note>Testing note on line level</cbc:Note>
         <!-- tag::lineamount[] -->
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity><!--3-->
-        <cbc:LineExtensionAmount currencyID="EUR">1000.00</cbc:LineExtensionAmount><!--4-->
+        <cbc:LineExtensionAmount currencyID="JPY">1000</cbc:LineExtensionAmount><!--4-->
         
         <!-- Code omitted for clarity-->
         
@@ -410,7 +410,7 @@
         </cac:Item>
         <!-- tag::lineamount[] -->
         <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">200</cbc:PriceAmount><!--1-->
+            <cbc:PriceAmount currencyID="JPY">200</cbc:PriceAmount><!--1-->
             <cbc:BaseQuantity unitCode="C62">2</cbc:BaseQuantity><!--2-->
         </cac:Price>
         <!-- end::lineamount[] -->
@@ -420,7 +420,7 @@
         <cbc:Note>Testing note on line level</cbc:Note>
         <!-- tag::lineamount2[] -->
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity><!--4-->
-        <cbc:LineExtensionAmount currencyID="EUR">900.00</cbc:LineExtensionAmount><!--5-->
+        <cbc:LineExtensionAmount currencyID="JPY">900</cbc:LineExtensionAmount><!--5-->
         
         <!-- Code omitted for clarity-->
         
@@ -439,14 +439,14 @@
             <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Charge</cbc:AllowanceChargeReason>
             <cbc:MultiplierFactorNumeric>1</cbc:MultiplierFactorNumeric>
-            <cbc:Amount currencyID="EUR">1</cbc:Amount><!--2-->
-            <cbc:BaseAmount currencyID="EUR">100</cbc:BaseAmount>
+            <cbc:Amount currencyID="JPY">1</cbc:Amount><!--2-->
+            <cbc:BaseAmount currencyID="JPY">100</cbc:BaseAmount>
         </cac:AllowanceCharge>
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
             <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-            <cbc:Amount currencyID="EUR">101</cbc:Amount><!--3-->
+            <cbc:Amount currencyID="JPY">101</cbc:Amount><!--3-->
         </cac:AllowanceCharge>
         
         <!-- Code omitted for clarity-->
@@ -479,7 +479,7 @@
         </cac:Item>
         <!-- tag::lineamount2[] -->
         <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">100</cbc:PriceAmount><!--1-->
+            <cbc:PriceAmount currencyID="JPY">100</cbc:PriceAmount><!--1-->
         </cac:Price>
         <!-- end::lineamount2[] -->
     </cac:InvoiceLine>    
