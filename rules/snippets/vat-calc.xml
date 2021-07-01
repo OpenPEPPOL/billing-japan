@@ -9,7 +9,7 @@
     <cbc:IssueDate>2017-11-13</cbc:IssueDate>
     <cbc:DueDate>2017-12-01</cbc:DueDate>
     <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
-    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cbc:DocumentCurrencyCode>JPY</cbc:DocumentCurrencyCode>
     <cbc:AccountingCost>4025:123:4343</cbc:AccountingCost>
     <cbc:BuyerReference>0150abc</cbc:BuyerReference>
     <cac:AccountingSupplierParty>
@@ -121,7 +121,7 @@
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="EUR">200</cbc:Amount><!--1-->
+        <cbc:Amount currencyID="JPY">200</cbc:Amount><!--1-->
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -134,7 +134,7 @@
     <cac:AllowanceCharge>
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="EUR">100</cbc:Amount><!--2-->
+        <cbc:Amount currencyID="JPY">100</cbc:Amount><!--2-->
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -145,11 +145,11 @@
     </cac:AllowanceCharge>
  
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">1250.00</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="JPY">1250</cbc:TaxAmount>
         
         <cac:TaxSubtotal><!--3-->
-            <cbc:TaxableAmount currencyID="EUR">5000.0</cbc:TaxableAmount><!--4-->
-            <cbc:TaxAmount currencyID="EUR">1250</cbc:TaxAmount><!--5-->
+            <cbc:TaxableAmount currencyID="JPY">5000</cbc:TaxableAmount><!--4-->
+            <cbc:TaxAmount currencyID="JPY">1250</cbc:TaxAmount><!--5-->
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25</cbc:Percent>
@@ -160,8 +160,8 @@
         </cac:TaxSubtotal>
         
         <cac:TaxSubtotal><!--6-->
-            <cbc:TaxableAmount currencyID="EUR">2000.0</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="EUR">0</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="JPY">2000</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="JPY">0</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>E</cbc:ID>
                 <cbc:Percent>0</cbc:Percent>
@@ -174,12 +174,12 @@
     </cac:TaxTotal>
     <!-- end::vat-calc[] -->
     <cac:LegalMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="EUR">6900</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="EUR">7000</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="EUR">8250</cbc:TaxInclusiveAmount>
-        <cbc:AllowanceTotalAmount currencyID="EUR">100</cbc:AllowanceTotalAmount>
-        <cbc:ChargeTotalAmount currencyID="EUR">200</cbc:ChargeTotalAmount>
-        <cbc:PayableAmount currencyID="EUR">8250</cbc:PayableAmount>
+        <cbc:LineExtensionAmount currencyID="JPY">6900</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="JPY">7000</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="JPY">8250</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="JPY">100</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="JPY">200</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="JPY">8250</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <!-- tag::vat-calc[] -->
    
@@ -187,7 +187,7 @@
     <cbc:ID>1</cbc:ID>
         <cbc:Note>Testing note on line level</cbc:Note>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="EUR">4000.00</cbc:LineExtensionAmount>
+        <cbc:LineExtensionAmount currencyID="JPY">4000</cbc:LineExtensionAmount>
         <!-- end::vat-calc[] -->
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
         <cac:InvoicePeriod>
@@ -224,7 +224,7 @@
             <!-- end::vat-calc[] -->
         </cac:Item>
         <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">400</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="JPY">400</cbc:PriceAmount>
         </cac:Price>
     </cac:InvoiceLine>
     <!-- tag::vat-calc[] -->
@@ -232,7 +232,7 @@
     <cac:InvoiceLine>
         <cbc:ID>2</cbc:ID>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="EUR">2000.00</cbc:LineExtensionAmount> 
+        <cbc:LineExtensionAmount currencyID="JPY">2000</cbc:LineExtensionAmount> 
         <!-- end::vat-calc[] -->
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
         <cac:Item>
@@ -259,14 +259,14 @@
             <!-- end::vat-calc[] -->
         </cac:Item>
         <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">200</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="JPY">200</cbc:PriceAmount>
         </cac:Price>
     </cac:InvoiceLine>
     <!-- tag::vat-calc[] -->
     <cac:InvoiceLine>
         <cbc:ID>3</cbc:ID>
         <cbc:InvoicedQuantity unitCode="C62">10</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="EUR">900.00</cbc:LineExtensionAmount>    
+        <cbc:LineExtensionAmount currencyID="JPY">900</cbc:LineExtensionAmount>    
         <!-- end::vat-calc[] -->
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>     
         <cac:Item>
@@ -298,7 +298,7 @@
             </cac:AdditionalItemProperty>
         </cac:Item>
         <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">90</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="JPY">90</cbc:PriceAmount>
         </cac:Price>
 
     </cac:InvoiceLine>    
