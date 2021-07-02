@@ -16,7 +16,7 @@
                 Allowances.
             </Description>
             <Value type="EXAMPLE">false</Value>
-
+<Section>Shared</Section>
         </Element>
         
         <Element cardinality="0..1">
@@ -25,17 +25,12 @@
             <Description>The reason for the document level allowance or charge, expressed as a code. For allowances a subset of codelist UNCL5189 is to be used, and for charges codelist UNCL7161 applies.
                 The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
             <DataType>Code</DataType>
-            <Reference type="BUSINESS_TERM">BT-98, BT-105</Reference>
+            <Reference type="BUSINESS_TERM">IBT-98, IBT-105</Reference>
             <Reference type="CODE_LIST">UNCL5189</Reference>
-            <Reference type="RULE">ibr-33</Reference>
-            <Reference type="RULE">ibr-38</Reference>
-            <Reference type="RULE">ibr-co-05</Reference>
-            <Reference type="RULE">ibr-co-06</Reference>
-            <Reference type="RULE">ibr-co-21</Reference>
-            <Reference type="RULE">ibr-co-22</Reference>
             <Reference type="CODE_LIST">UNCL7161</Reference>
             <Value type="EXAMPLE">95</Value>
-        </Element>
+			<Section>Shared</Section>
+		</Element>
         
         <Element cardinality="0..1">
             <Term>cbc:AllowanceChargeReason</Term>
@@ -43,15 +38,10 @@
             <Description>The reason for the document level allowance or charge, expressed as text.
                 The Document level allowance reason code and the Document level allowance reason shall indicate the same allowance reason</Description>
             <DataType>Text</DataType>
-            <Reference type="BUSINESS_TERM">BT-97, BT-104</Reference>
-            <Reference type="RULE">ibr-33</Reference>
-            <Reference type="RULE">ibr-38</Reference>
-            <Reference type="RULE">ibr-co-05</Reference>
-            <Reference type="RULE">ibr-co-06</Reference>
-            <Reference type="RULE">ibr-co-21</Reference>
-            <Reference type="RULE">ibr-co-22</Reference>
+            <Reference type="BUSINESS_TERM">IBT-97, IBT-104</Reference>
             <Value type="EXAMPLE">Discount</Value>
-            
+
+<Section>Shared</Section>            
         </Element>
         
         <Element cardinality="0..1">
@@ -61,8 +51,10 @@
                 calculate the document level allowance or charge amount. To state 20%, use value 20.
             </Description>
             <DataType>Percentage</DataType>
-            <Reference type="BUSINESS_TERM">BT-94,BT-101</Reference>
+            <Reference type="BUSINESS_TERM">IBT-94, IBT-101</Reference>
             <Value type="EXAMPLE">20</Value>
+
+<Section>Shared</Section>
         </Element>
         
         <Element>
@@ -71,13 +63,12 @@
             <Description>The amount of an allowance or a charge, without VAT. Must be rounded to maximum 2 decimals
             </Description>
             <DataType>Amount</DataType>
-            <Reference type="BUSINESS_TERM">BT-92,BT-99</Reference>
-            <Reference type="RULE">ibr-31</Reference>
-            <Reference type="RULE">ibr-36</Reference>
-            
+            <Reference type="BUSINESS_TERM">IBT-92,IBT-99</Reference>
+<Section>Shared</Section>
+             
             <Attribute>
                 <Term>currencyID</Term>
-                <Description>Mandatory attribute. Use BT-5</Description>
+                <Description>Mandatory attribute. Use IBT-5</Description>
                 <Reference type="CODE_LIST">ISO4217</Reference>
                 <Value type="EXAMPLE">EUR</Value>
             </Attribute>
@@ -91,12 +82,12 @@
                 calculate the document level allowance or charge amount. Must be rounded to maximum 2 decimals
             </Description>
             <DataType>Amount</DataType>
-            <Reference type="BUSINESS_TERM">BT-93,BT-100</Reference>
-            
+            <Reference type="BUSINESS_TERM">IBT-93,IBT-100</Reference>
+<Section>Shared</Section>
             
             <Attribute>
                 <Term>currencyID</Term>
-                <Description>Mandatory attribute. Use BT-5</Description>
+                <Description>Mandatory attribute. Use IBT-5</Description>
                 <Reference type="CODE_LIST">ISO4217</Reference>
                 <Value type="EXAMPLE">EUR</Value>
             </Attribute>
@@ -113,21 +104,19 @@
             <Name>Document level allowance or charge VAT category code</Name>
             <Description>A coded identification of what VAT category applies to the document level allowance or charge.</Description>
             <DataType>Code</DataType>
-            <Reference type="BUSINESS_TERM">BT-95,BT-102</Reference>
+            <Reference type="BUSINESS_TERM">IBT-95,IBT-102</Reference>
             <Reference type="CODE_LIST">UNCL5305</Reference>
             <Value type="EXAMPLE">S</Value>
-            
-            
-        </Element>
+<Section>Aligned</Section>
+         </Element>
         
         <Element cardinality="0..1">
             <Term>cbc:Percent</Term>
             <Name>Document level allowance or charge VAT rate</Name>
             <Description>The VAT rate, represented as percentage that applies to the document level allowance or charge.</Description>
             <DataType>Percentage</DataType>
-            <Reference type="BUSINESS_TERM">BT-96,BT-103</Reference>
+            <Reference type="BUSINESS_TERM">IBT-96,IBT-103</Reference>
             <Value type="EXAMPLE">25</Value>
-            
         </Element>
         
         <Element>
@@ -138,9 +127,9 @@
                 <Term>cbc:ID</Term>
                 <Description>Mandatory element. Use “VAT”</Description>
                 <Value type="DEFAULT">VAT</Value>
-            </Element>
+<Section>Aligned</Section>
+             </Element>
         </Element>
     </Element>
-
 </Element>
         

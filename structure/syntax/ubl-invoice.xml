@@ -383,13 +383,11 @@
 
         <Include>part/delivery.xml</Include>
 
-<!-- HINGAÐ -->
-
         <Element cardinality="0..n">
         <Term>cac:PaymentMeans</Term>
         <Name>PAYMENT INSTRUCTIONS</Name>
         <Description>A group of business terms providing information about the payment.</Description>
-        <Reference type="BUSINESS_TERM">BG-16</Reference>
+        <Reference type="BUSINESS_TERM">IBG-16</Reference>
         
 			<Element cardinality="0..1">
 				<Term>cbc:ID</Term>
@@ -433,6 +431,7 @@
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">IBT-083</Reference>
 				<Value type="EXAMPLE">432948234234234</Value>
+				<Section>Shared</Section>
 			</Element>
 
             <Include>part/card-payment.xml</Include>
@@ -443,28 +442,105 @@
 
         </Element>
 
-        <Element cardinality="0..1">
+        <Element cardinality="0..n">
             <Term>cac:PaymentTerms</Term>
             <Name>PAYMENT TERMS</Name>
+			<Reference type="BUSINESS_TERM">IBG-16</Reference>
 
-            <Element>
+			<Element cardinality="0..1">
+				<Term>cbc:PaymentMeansID</Term>
+				<Name>Terms payment instructions ID</Name>
+				<Description>The payment instructions that apply to these payment terms.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">IBT-187</Reference>
+				<Value type="EXAMPLE">1</Value>
+				<Section>Aligned</Section>
+			</Element>
+
+            <Element  cardinality="0..1">
                 <Term>cbc:Note</Term>
                 <Name>Payment terms</Name>
-                <Description>A textual description of the payment terms that apply to the amount due for payment (Including
-                    description of possible penalties). In case the Amount due for payment (IBT-115) is positive, either the Payment due date (IBT-9) or the Payment terms (IBT-20) shall be present.
-                </Description>
+                <Description>A textual description of the payment terms that apply to the amount due for payment (Including description of possible penalties). In case the Amount due for payment (IBT-115) is positive, either the Payment due date (IBT-9) or the Payment terms (IBT-20) shall be present.</Description>
                 <DataType>Text</DataType>
-                <Reference type="BUSINESS_TERM">IBT-20</Reference>
+                <Reference type="BUSINESS_TERM">IBT-020</Reference>
                 <Value type="EXAMPLE">Net within 30 days</Value>
+				<Section>Shared</Section>
             </Element>
-        </Element>
+
+			<Element  cardinality="0..1">
+					<Term>cbc:Amount</Term>
+					<Name>Terms amount</Name>
+					<Description>The payment amount that these terms apply to.</Description>
+					<DataType>Amount</DataType>
+					<Reference type="BUSINESS_TERM">IBT-176</Reference>
+					<Value type="EXAMPLE">100.00</Value>
+					<Section>Aligned</Section>
+			</Element>
+
+			<Element  cardinality="0..1">
+					<Term>cbc:InstallmentDueDate</Term>
+					<Name>Terms installment due date</Name>
+					<Description>The date before end of which the terms amount shall be settled.</Description>
+					<DataType>Date</DataType>
+					<Reference type="BUSINESS_TERM">IBT-177</Reference>
+					<Value type="EXAMPLE">2021-01-01</Value>
+					<Section>Aligned</Section>
+			</Element>
+		</Element>
+
+        <Element cardinality="0..n">
+            <Term>cac:PrepaidPayment</Term>
+            <Name>PAID AMOUNTS</Name>
+			<Reference type="BUSINESS_TERM">IBG-35</Reference>
+
+			<Element cardinality="0..1">
+				<Term>cbc:ID</Term>
+				<Name>Payment identifier</Name>
+				<Description>An identifier that references the payment, such as bank transfer identifier.</Description>
+				<DataType>Identifier</DataType>
+				<Reference type="BUSINESS_TERM">IBT-179</Reference>
+				<Value type="EXAMPLE">1</Value>
+				<Section>Aligned</Section>
+			</Element>
+
+            <Element  cardinality="0..1">
+                <Term>cbc:PaidAmount</Term>
+                <Name>Paid amount</Name>
+                <Description>The amount of the payment in the invoice currency.</Description>
+                <DataType>Amount</DataType>
+                <Reference type="BUSINESS_TERM">IBT-180</Reference>
+                <Value type="EXAMPLE">100.00</Value>
+				<Section>Aligned</Section>
+            </Element>
+
+			<Element  cardinality="0..1">
+					<Term>cbc:ReceivedDate</Term>
+					<Name>The date when the paid amount is debited to the invoice.</Name>
+					<Description>The date when the prepaid amount was received by the seller.</Description>
+					<DataType>Date</DataType>
+					<Reference type="BUSINESS_TERM">IBT-181</Reference>
+					<Value type="EXAMPLE">2021-01-01</Value>
+					<Section>Aligned</Section>
+			</Element>
+
+			<Element  cardinality="0..1">
+					<Term>cbc:InstructionID</Term>
+					<Name>Payment type</Name>
+					<Description>The date before end of which the terms amount shall be settled.</Description>
+					<DataType>Code</DataType>
+					<Reference type="BUSINESS_TERM">IBT-182</Reference>
+					<Value type="EXAMPLE">None</Value>
+					<Section>Aligned</Section>
+			</Element>
+		</Element>
         
+<!-- HINGAÐ -->
+
         <Include>part/allowance-charge.xml</Include>
         
         <Include>part/tax-total.xml</Include>
      
         <Include>part/monetary-totals.xml</Include>
-    
    
         <Element cardinality="1..n">
             <Term>cac:InvoiceLine</Term>
