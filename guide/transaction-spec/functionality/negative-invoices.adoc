@@ -9,7 +9,7 @@ The argument for negative invoices is to open up for a wider spectrum of invoici
 Examples of such processes are
 
 *	Preliminary (estimated) consumption invoice that is balanced out in a later meter-based invoice;
-*	Pre-payment (with or without VAT) is settled through a final invoice; and
+*	Pre-payment (with or without CT) is settled through a final invoice; and
 * Some user communities prefer to use negative invoice rather than credit note when correcting transactions.
 
 ====

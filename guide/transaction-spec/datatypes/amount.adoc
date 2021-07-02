@@ -2,8 +2,7 @@
 
 An amount states a numerical monetary value. The currency of the amount is defined as a separate business term.
 
-IMPORTANT: Amount is floating up to two fraction digits.
-
+IMPORTANT:Amounts in JPY have no fraction digits. 
 
 [cols="1s,1,1,1", options="header"]
 |===
@@ -15,5 +14,5 @@ IMPORTANT: Amount is floating up to two fraction digits.
 |Content
 |Mandatory
 |Decimal
-|10000.25
+|10000
 |===

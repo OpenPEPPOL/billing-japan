@@ -13,6 +13,6 @@ stem:[+ "Document level charge amount (BT-99)" - "Document level allowance amoun
 stem:["CT category tax amount (BT-117)" = "CT category taxable amount (BT-116)" times ("CT rate (BT-119)" div 100)]
 ====
 
-IMPORTANT: For VAT Breakdown where the CT Category is "Not subject to CT" (O), the CT category tax amount shall be zero.
+IMPORTANT: For CT Breakdown where the CT Category is "Not subject to CT" (O), the CT category tax amount shall be zero.
 
 include::../../syntax/vat-calc.adoc[]

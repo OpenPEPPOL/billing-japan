@@ -10,7 +10,7 @@
     <cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode><!--1-->
     <!-- end::negative[] -->
     <cbc:Note>Please note we have a new phone number: 22 22 22 22</cbc:Note>
-    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cbc:DocumentCurrencyCode>JPY</cbc:DocumentCurrencyCode>
     <cbc:AccountingCost>4025:123:4343</cbc:AccountingCost>
     <cbc:BuyerReference>0150abc</cbc:BuyerReference>
     <cac:BillingReference>
@@ -122,7 +122,7 @@
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
             <cbc:AllowanceChargeReason>Insurance</cbc:AllowanceChargeReason>
-            <cbc:Amount currencyID="EUR">25</cbc:Amount><!--2-->
+            <cbc:Amount currencyID="JPY">25</cbc:Amount><!--2-->
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
@@ -133,10 +133,10 @@
         </cac:AllowanceCharge>
     <!-- end::negative[] -->
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">331.25</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="JPY">331</cbc:TaxAmount>
         <cac:TaxSubtotal>
-            <cbc:TaxableAmount currencyID="EUR">1325</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="EUR">331.25</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="JPY">1325</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="JPY">331</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
@@ -148,11 +148,11 @@
     </cac:TaxTotal>
     <!-- tag::negative[] -->
     <cac:LegalMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="EUR">1300</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="EUR">1325</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="EUR">1656.25</cbc:TaxInclusiveAmount>
-        <cbc:ChargeTotalAmount currencyID="EUR">25</cbc:ChargeTotalAmount>
-        <cbc:PayableAmount currencyID="EUR">1656.25</cbc:PayableAmount>
+        <cbc:LineExtensionAmount currencyID="JPY">1300</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="JPY">1325</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="JPY">1656</cbc:TaxInclusiveAmount>
+        <cbc:ChargeTotalAmount currencyID="JPY">25</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="JPY">1656</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <!-- end::negative[] -->
     <!-- tag::negative[] -->
@@ -160,7 +160,7 @@
 <cac:CreditNoteLine>
     <cbc:ID>1</cbc:ID><!--3-->
     <cbc:CreditedQuantity unitCode="DAY">7</cbc:CreditedQuantity>
-    <cbc:LineExtensionAmount currencyID= "EUR">2800</cbc:LineExtensionAmount>
+    <cbc:LineExtensionAmount currencyID= "JPY">2800</cbc:LineExtensionAmount>
     <!-- end::negative[] -->
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
        <cac:OrderLineReference>
@@ -189,7 +189,7 @@
     <!-- tag::negative[] -->
     <!-- Code omitted for clarity -->
     <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">400</cbc:PriceAmount>
+        <cbc:PriceAmount currencyID="JPY">400</cbc:PriceAmount>
     </cac:Price>
     <!-- end::negative[] -->
     </cac:CreditNoteLine>
@@ -198,7 +198,7 @@
 <cac:CreditNoteLine>
     <cbc:ID>2</cbc:ID><!--4-->
     <cbc:CreditedQuantity unitCode="DAY">-3</cbc:CreditedQuantity>
-    <cbc:LineExtensionAmount currencyID="EUR">-1500</cbc:LineExtensionAmount>
+    <cbc:LineExtensionAmount currencyID="JPY">-1500</cbc:LineExtensionAmount>
     <!-- end::negative[] -->
     <cac:OrderLineReference>
         <cbc:LineID>123</cbc:LineID>
@@ -226,7 +226,7 @@
     <!-- tag::negative[] -->
     <!-- Code omitted for clarity -->
     <cac:Price>
-        <cbc:PriceAmount currencyID="EUR">500</cbc:PriceAmount>
+        <cbc:PriceAmount currencyID="JPY">500</cbc:PriceAmount>
     </cac:Price>
     <!-- end::negative[] -->
 </cac:CreditNoteLine>

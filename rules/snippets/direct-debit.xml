@@ -10,7 +10,7 @@
     <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
     <cbc:Note>Please note we have a new phone number: 22 22 22 22</cbc:Note>
     <cbc:TaxPointDate>2017-12-01</cbc:TaxPointDate>
-    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cbc:DocumentCurrencyCode>JPY</cbc:DocumentCurrencyCode>
     <cbc:AccountingCost>4025:123:4343</cbc:AccountingCost>
     <cbc:BuyerReference>0150abc</cbc:BuyerReference>
     <cac:InvoicePeriod>
@@ -208,8 +208,8 @@
         <cbc:AllowanceChargeReasonCode>FC</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Freight service</cbc:AllowanceChargeReason>
         <cbc:MultiplierFactorNumeric>2</cbc:MultiplierFactorNumeric>
-        <cbc:Amount currencyID="EUR">20</cbc:Amount>
-        <cbc:BaseAmount currencyID="EUR">1000</cbc:BaseAmount>
+        <cbc:Amount currencyID="JPY">20</cbc:Amount>
+        <cbc:BaseAmount currencyID="JPY">1000</cbc:BaseAmount>
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -222,7 +222,7 @@
         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
         <cbc:AllowanceChargeReasonCode>65</cbc:AllowanceChargeReasonCode>
         <cbc:AllowanceChargeReason>Production error discount</cbc:AllowanceChargeReason>
-        <cbc:Amount currencyID="EUR">10</cbc:Amount>
+        <cbc:Amount currencyID="JPY">10</cbc:Amount>
         <cac:TaxCategory>
             <cbc:ID>S</cbc:ID>
             <cbc:Percent>25</cbc:Percent>
@@ -232,10 +232,10 @@
         </cac:TaxCategory>
     </cac:AllowanceCharge>
     <cac:TaxTotal>
-        <cbc:TaxAmount currencyID="EUR">952.50</cbc:TaxAmount>
+        <cbc:TaxAmount currencyID="JPY">952.50</cbc:TaxAmount>
         <cac:TaxSubtotal>
-            <cbc:TaxableAmount currencyID="EUR">3810.0</cbc:TaxableAmount>
-            <cbc:TaxAmount currencyID="EUR">952.50</cbc:TaxAmount>
+            <cbc:TaxableAmount currencyID="JPY">3810.0</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="JPY">952.50</cbc:TaxAmount>
             <cac:TaxCategory>
                 <cbc:ID>S</cbc:ID>
                 <cbc:Percent>25.0</cbc:Percent>
@@ -246,18 +246,18 @@
         </cac:TaxSubtotal>
     </cac:TaxTotal>
     <cac:LegalMonetaryTotal>
-        <cbc:LineExtensionAmount currencyID="EUR">3800</cbc:LineExtensionAmount>
-        <cbc:TaxExclusiveAmount currencyID="EUR">3810</cbc:TaxExclusiveAmount>
-        <cbc:TaxInclusiveAmount currencyID="EUR">4762.5</cbc:TaxInclusiveAmount>
-        <cbc:AllowanceTotalAmount currencyID="EUR">10</cbc:AllowanceTotalAmount>
-        <cbc:ChargeTotalAmount currencyID="EUR">20</cbc:ChargeTotalAmount>
-        <cbc:PrepaidAmount currencyID="EUR">1000</cbc:PrepaidAmount>
-        <cbc:PayableAmount currencyID="EUR">3762.50</cbc:PayableAmount>
+        <cbc:LineExtensionAmount currencyID="JPY">3800</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="JPY">3810</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="JPY">4762.5</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="JPY">10</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="JPY">20</cbc:ChargeTotalAmount>
+        <cbc:PrepaidAmount currencyID="JPY">1000</cbc:PrepaidAmount>
+        <cbc:PayableAmount currencyID="JPY">3762.50</cbc:PayableAmount>
     </cac:LegalMonetaryTotal>
     <cac:InvoiceLine>
         <cbc:ID>1</cbc:ID>
         <cbc:InvoicedQuantity unitCode="C62">2</cbc:InvoicedQuantity>
-        <cbc:LineExtensionAmount currencyID="EUR">3800.00</cbc:LineExtensionAmount>
+        <cbc:LineExtensionAmount currencyID="JPY">3800.00</cbc:LineExtensionAmount>
         <cbc:AccountingCost>Konteringsstreng</cbc:AccountingCost>
         <cac:InvoicePeriod>
             <cbc:StartDate>2017-12-01</cbc:StartDate>
@@ -275,14 +275,14 @@
             <cbc:AllowanceChargeReasonCode>CG</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Cleaning</cbc:AllowanceChargeReason>
             <cbc:MultiplierFactorNumeric>10</cbc:MultiplierFactorNumeric>
-            <cbc:Amount currencyID="EUR">1</cbc:Amount>
-            <cbc:BaseAmount currencyID="EUR">10</cbc:BaseAmount>
+            <cbc:Amount currencyID="JPY">1</cbc:Amount>
+            <cbc:BaseAmount currencyID="JPY">10</cbc:BaseAmount>
         </cac:AllowanceCharge>
         <cac:AllowanceCharge>
             <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
             <cbc:AllowanceChargeReasonCode>95</cbc:AllowanceChargeReasonCode>
             <cbc:AllowanceChargeReason>Discount</cbc:AllowanceChargeReason>
-            <cbc:Amount currencyID="EUR">101</cbc:Amount>
+            <cbc:Amount currencyID="JPY">101</cbc:Amount>
         </cac:AllowanceCharge>
         <cac:Item>
             <cbc:Description>Description of item</cbc:Description>
@@ -315,12 +315,12 @@
             </cac:AdditionalItemProperty>
         </cac:Item>
         <cac:Price>
-            <cbc:PriceAmount currencyID="EUR">1950</cbc:PriceAmount>
+            <cbc:PriceAmount currencyID="JPY">1950</cbc:PriceAmount>
             <cbc:BaseQuantity unitCode="C62">1</cbc:BaseQuantity>
             <cac:AllowanceCharge>
                 <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
-                <cbc:Amount currencyID="EUR">200</cbc:Amount>
-                <cbc:BaseAmount currencyID="EUR">2150</cbc:BaseAmount>
+                <cbc:Amount currencyID="JPY">200</cbc:Amount>
+                <cbc:BaseAmount currencyID="JPY">2150</cbc:BaseAmount>
             </cac:AllowanceCharge>
         </cac:Price>
     </cac:InvoiceLine>
