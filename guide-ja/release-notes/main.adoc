@@ -1,0 +1,19 @@
+= PEPPOL BIS Billing v3 のリリースノート
+openPEPPOL AISBL <http://www.peppol.eu/>
+:icons: font
+:source-highlighter: coderay
+:toc: left
+:toclevels: 2
+:sourcedir: .
+:imagesdir: images
+:title-logo-image: peppol.png
+
+****
+IMPORTANT: コードリストの変更は、有効なコードのみを強制する検証アーティファクトの変更によっても反映されます。すべての検証の変更は、 UBL と CII の両方の検証ルールに適用されます。
+****
+
+:leveloffset: +1
+
+include::v0.9.0.adoc[]
+
+:leveloffset: -1

@@ -1,0 +1,39 @@
+# Japanese translations for PACKAGE package
+# Copyright (C) 2021 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Automatically generated, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2021-07-02 16:49+0900\n"
+"PO-Revision-Date: 2021-07-02 16:49+0900\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. type: Title =
+#: guide/bis/main.adoc:3
+#, no-wrap
+msgid "{doctitle}"
+msgstr ""
+
+#. type: Plain text
+#: guide/bis/main.adoc:6
+msgid "{name-op-en} v{version}"
+msgstr ""
+
+#. type: Title =
+#: guide/bis/main.adoc:21
+#, no-wrap
+msgid "Link to main site of documentation"
+msgstr ""
+
+#. type: Plain text
+#: guide/bis/main.adoc:24
+msgid "link:/poacc/billing-japan/[Main documentation site]"
+msgstr ""
