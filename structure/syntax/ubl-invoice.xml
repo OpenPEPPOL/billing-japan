@@ -614,8 +614,6 @@
 				<Section>Shared</Section>
             </Element>
             
-<!-- HINGAÐ -->
-
             <Include>part/line-period.xml</Include>
 
             <Element cardinality="0..1">
@@ -629,6 +627,7 @@
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-132</Reference>
                     <Value type="EXAMPLE">3</Value>
+					<Section>Shared</Section>
                 </Element>
             </Element>
 
@@ -642,15 +641,18 @@
                     <Description>An identifier for an object on which the invoice line is based, given by the Seller.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-128</Reference>
+                    <Value type="EXAMPLE">AB12345</Value>
+					<Section>Shared</Section>
                     
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
                         <Name>Invoice line object identifier identification scheme identifier</Name>
                         <Description>The identification scheme identifier of the Invoice line object identifier.</Description>
                         <Reference type="CODE_LIST">UNCL1153</Reference>
-                        <Value type="EXAMPLE">ABZ</Value>
+						<Reference type="BUSINESS_TERM">IBT-128-1</Reference>
+						<Value type="EXAMPLE">ABZ</Value>
+						<Section>Shared</Section>
                     </Attribute>
-                    <Value type="EXAMPLE">AB12345</Value>
                 </Element>
                 
                 <Element>
@@ -660,10 +662,13 @@
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">IBT-128</Reference>
                     <Value type="DEFAULT">130</Value>
-                </Element>
-                
-            </Element>
+					<Section>Shared</Section>
+				</Element>
+ 
+			</Element>
             
+<!-- HINGAÐ -->
+
             <Include>part/line-allowance-charge.xml</Include>
 
             <Include>part/item.xml</Include>
