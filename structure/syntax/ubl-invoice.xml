@@ -667,8 +667,6 @@
  
 			</Element>
             
-<!-- HINGAÐ -->
-
             <Include>part/line-allowance-charge.xml</Include>
 
             <Include>part/item.xml</Include>
@@ -677,5 +675,4 @@
           
         </Element>
     </Document>
-
 </Structure>
