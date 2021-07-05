@@ -534,8 +534,6 @@
 			</Element>
 		</Element>
         
-<!-- HINGAÐ -->
-
         <Include>part/allowance-charge.xml</Include>
         
         <Include>part/tax-total.xml</Include>
@@ -546,7 +544,7 @@
             <Term>cac:InvoiceLine</Term>
             <Name>INVOICE LINE</Name>
             <Description>A group of business terms providing information on individual Invoice lines.</Description>
-            <Reference type="BUSINESS_TERM">BG-25</Reference>
+            <Reference type="BUSINESS_TERM">IBG-25</Reference>
             
             <Element>
                 <Term>cbc:ID</Term>
@@ -555,17 +553,18 @@
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-126</Reference>
                 <Value type="EXAMPLE">12</Value>
-            </Element>
+				<Section>Shared</Section>
+			</Element>
 
             <Element cardinality="0..1">
                 <Term>cbc:Note</Term>
                 <Name>Invoice line note</Name>
-                <Description>A textual note that gives unstructured information that is relevant to the Invoice line.
-                </Description>
+                <Description>A textual note that gives unstructured information that is relevant to the Invoice line.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-127</Reference>
                 <Value type="EXAMPLE">New article number 12345</Value>
-            </Element>
+				<Section>Shared</Section>
+			</Element>
 
             <Element>
                 <Term>cbc:InvoicedQuantity</Term>
@@ -573,55 +572,51 @@
                 <Description>The quantity of items (goods or services) that is charged in the Invoice line.</Description>
                 <DataType>Quantity</DataType>
                 <Reference type="BUSINESS_TERM">IBT-129</Reference>
+                <Value type="EXAMPLE">100</Value>
+				<Section>Shared</Section>
 
                 <Attribute>
                     <Term>unitCode</Term>
                     <Name>Invoiced quantity unit of measure</Name>
-                    <Description>The unit of measure that applies to the invoiced quantity.
-					Codes for unit of packaging from UNECE Recommendation No. 21 can be used in accordance with the descriptions in the "Intro" section of UN/ECE Recommendation 20, Revision 11 (2015):
-					The 2 character alphanumeric code values in UNECE Recommendation 21 shall be used. To avoid duplication with existing code values in UNECE Recommendation No. 20, each code value from UNECE Recommendation 21 shall be prefixed with an “X”, resulting in a 3 alphanumeric code when used as a unit of measure.
-					</Description>
+                    <Description>The unit of measure that applies to the invoiced quantity.</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">IBT-130</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
                     <Value type="EXAMPLE">C62</Value>
                 </Attribute>
-                <Value type="EXAMPLE">100</Value>
             </Element>
 
             <Element>
                 <Term>cbc:LineExtensionAmount</Term>
                 <Name>Invoice line net amount</Name>
-                <Description>The total amount of the Invoice line.
-                    The amount is “net” without VAT, i.e. inclusive of line level allowances and charges as well as other relevant taxes.
-                    Must be rounded to maximum 2 decimals.</Description>
+                <Description>The total amount of the Invoice line.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">IBT-131</Reference>
+                <Value type="EXAMPLE">2145.00</Value>
+				<Section>Shared</Section>
                 
                 <Attribute>
                     <Term>currencyID</Term>
-                    <Description>Mandatory attribute. Use IBT-5</Description>
-                   <Reference type="CODE_LIST">ISO4217</Reference>
+                    <Description>Mandatory attribute. Use IBT-005</Description>
+					<Reference type="CODE_LIST">ISO4217</Reference>
                     <Value type="EXAMPLE">EUR</Value>
                 </Attribute>
                 
-                <Value type="EXAMPLE">2145.00</Value>
             </Element>
 
             <Element cardinality="0..1">
                 <Term>cbc:AccountingCost</Term>
                 <Name>Invoice line Buyer accounting reference</Name>
-                <Description>A textual value that specifies where to book the relevant data into the Buyer's financial
-                    accounts.
-                </Description>
+                <Description>A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-133</Reference>
-                <Value type="EXAMPLE">1287:65464</Value>
+                <Value type="EXAMPLE">1234:56789</Value>
+				<Section>Shared</Section>
             </Element>
             
-            <Include>part/line-period.xml</Include>
+<!-- HINGAÐ -->
 
-          
+            <Include>part/line-period.xml</Include>
 
             <Element cardinality="0..1">
                 <Term>cac:OrderLineReference</Term>
