@@ -52,7 +52,7 @@
     </Resource>
 	
     <Resource>
-        <Identifier>ubl-pint</Identifier>
+        <Identifier>ubl-japan</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
         <Title>Japanese rules for Standard Commercial Invoice</Title>
