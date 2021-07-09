@@ -1,0 +1,12 @@
+
+[appendix]
+= Restrictions on PINT 
+
+Below is a list of the restrictions on {PINT} that is done in this Country Specification.
+
+All restrictions are within the allowed specifications in a Country Specification, as listed in chapter 7.3.2 in {PINT}.
+
+:leveloffset: +1
+include::processes.adoc[]
+include::restricted-elements.adoc[]
+:leveloffset: -1

@@ -1,0 +1,49 @@
+include::settings.adoc[]
+
+= {doctitle}
+{name-op-en}
+v{version}
+:description: The Peppol BIS Japan Billing, has been developed by the OpenPEPPOL AISBL Post Award Coordinating Community and is published as part of the Peppol specifications.
+:doctype: book
+:icons: font
+:stem:
+:toc: left
+:toclevels: 2
+:source-highlighter: coderay
+:source-language: xml
+:sectanchors:
+:sectnums:
+:CIUS: Core Invoice Usage Specification (CIUS)
+:title-logo-image: ../images/peppol.jpg
+
+
+
+= Link to main site of documentation
+
+link:/poacc/billing-japan/[Main documentation site]
+
+:leveloffset: +1
+
+include::../profile/introduction.adoc[]
+
+include::../transaction-spec/principles/index.adoc[]
+
+include::../profile/process/index.adoc[]
+
+include::../transaction-spec/functionality/index.adoc[]
+
+include::../profile/profiles/index.adoc[]
+
+include::../transaction-spec/datatypes/index.adoc[]
+
+include::../transaction-spec/vat-info/vat-info.adoc[]
+
+include::../transaction-spec/calculations/rounding.adoc[]
+
+include::../transaction-spec/calculations/index.adoc[]
+
+include::../transaction-spec/descriptions/index.adoc[]
+
+include::../syntax/guideline.adoc[]
+
+//include::rules/index.adoc[]

@@ -1,0 +1,18 @@
+
+= Calculation of CT
+
+One CT Breakdown shall be provided for each distinct combination of CT category code and CT rate found in either the line CT information or the Document level allowance or charges.
+
+For each distinct combination of CT category code and CT rate the calculations are:
+====
+stem:["CT category taxable amount (BT-116)" = sum("Invoice line net amounts (BT-113)")] +
+stem:[+ "Document level charge amount (BT-99)" - "Document level allowance amount (BT-93)"]
+====
+
+====
+stem:["CT category tax amount (BT-117)" = "CT category taxable amount (BT-116)" times ("CT rate (BT-119)" div 100)]
+====
+
+IMPORTANT: For CT Breakdown where the CT Category is "Not subject to CT" (O), the CT category tax amount shall be zero.
+
+include::../../syntax/vat-calc.adoc[]

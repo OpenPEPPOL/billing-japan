@@ -1,0 +1,7 @@
+
+
+.UBL example of Combined nomenclature information
+[source, xml, indent=0]
+----
+include::{snippet-dir}/Snippet-full.xml[tags=intrastat]
+----

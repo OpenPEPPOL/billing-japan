@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..n">
+
+        <Term>cac:AllowanceCharge</Term>
+        <Name>DOCUMENT LEVEL ALLOWANCES AND CHARGES</Name>
+        <Description>A group of business terms providing information about allowances applicable to the Invoice as a
+            whole.
+        </Description>
+        <Reference type="BUSINESS_TERM">IBG-20, IBG-21</Reference>
+        
+        
+        <Element>
+            <Term>cbc:ChargeIndicator</Term>
+            <Description>Use “true” when informing about Charges and “false” when informing about Allowances.
+            </Description>
+            <Value type="EXAMPLE">false</Value>
+			<Section>Shared</Section>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:AllowanceChargeReasonCode</Term>
+            <Name>Document level allowance or charge reason code</Name>
+            <Description>The reason for the document level allowance or charge, expressed as a code.</Description>
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">IBT-098, IBT-105</Reference>
+            <Reference type="CODE_LIST">UNCL5189</Reference>
+            <Reference type="CODE_LIST">UNCL7161</Reference>
+            <Value type="EXAMPLE">95</Value>
+			<Section>Shared</Section>
+		</Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:AllowanceChargeReason</Term>
+            <Name>Document level allowance or charge reason</Name>
+            <Description>The reason for the document level allowance or charge, expressed as text.</Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">IBT-097, IBT-104</Reference>
+            <Value type="EXAMPLE">Discount</Value>
+			<Section>Shared</Section>            
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:MultiplierFactorNumeric</Term>
+            <Name>Document level allowance or charge percentage</Name>
+            <Description>The percentage that may be used, in conjunction with the document level allowance base amount, to calculate the document level allowance or charge amount.</Description>
+            <DataType>Percentage</DataType>
+            <Reference type="BUSINESS_TERM">IBT-094, IBT-101</Reference>
+            <Value type="EXAMPLE">20</Value>
+			<Section>Shared</Section>
+        </Element>
+        
+        <Element>
+            <Term>cbc:Amount</Term>
+            <Name>Document level allowance or charge amount</Name>
+            <Description>The amount of an allowance or a charge, without TAX.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">IBT-092,IBT-099</Reference>
+			<Section>Shared</Section>
+             
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use IBT-005</Description>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            <Value type="EXAMPLE">200</Value>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:BaseAmount</Term>
+            <Name>Document level allowance or charge base amount</Name>
+            <Description>The base amount that may be used, in conjunction with the document level allowance or charge percentage, to calculate the document level allowance or charge amount.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">IBT-093,IBT-100</Reference>
+			<Section>Shared</Section>
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use IBT-005</Description>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+            
+            <Value type="EXAMPLE">1000</Value>
+            
+        </Element>
+    <Element>
+        <Term>cac:TaxCategory</Term>
+        <Name>TAX CATEGORY</Name>
+        
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Document level allowance or charge TAX category code</Name>
+            <Description>A coded identification of what TAX category applies to the document level allowance or charge.</Description>
+            <DataType>Code</DataType>
+            <Reference type="BUSINESS_TERM">IBT-095,IBT-102</Reference>
+            <Reference type="CODE_LIST">UNCL5305</Reference>
+            <Value type="EXAMPLE">S</Value>
+			<Section>Aligned</Section>
+         </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:Percent</Term>
+            <Name>Document level allowance or charge TAX rate</Name>
+            <Description>The TAX rate, represented as percentage that applies to the document level allowance or charge.</Description>
+            <DataType>Percentage</DataType>
+            <Reference type="BUSINESS_TERM">IBT-096,IBT-103</Reference>
+            <Value type="EXAMPLE">25</Value>
+			<Section>Aligned</Section>
+        </Element>
+        
+        <Element>
+            <Term>cac:TaxScheme</Term>
+            <Name>TAX SCHEME</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Description>Mandatory element to indicate tax type.</Description>
+                <Reference type="BUSINESS_TERM">IBT-188,IBT-189</Reference>
+				<Value type="EXAMPLE">VAT</Value>
+				<Section>Aligned</Section>
+             </Element>
+        </Element>
+    </Element>
+</Element>
+        

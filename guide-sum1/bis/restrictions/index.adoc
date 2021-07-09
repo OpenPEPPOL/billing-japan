@@ -1,0 +1,20 @@
+
+[appendix]
+= Restrictions on PINT 
+
+Below is a list of the restrictions on {PINT} that is done in this country specification. 
+
+All restrictions are within the allowed specifications in {PINT}.
+
+:leveloffset: +1
+
+include::../../profile/annex/restricted-elements.adoc[]
+
+include::../../transaction-spec/annex/restricted-elements.adoc[]
+
+include::../../profile/annex/processes.adoc[]
+
+include::../../profile/annex/known-issues.adoc[]
+
+
+:leveloffset: -1

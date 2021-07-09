@@ -1,0 +1,11 @@
+
+
+[[rules]]
+= Transaction validation rules
+
+
+:leveloffset: +1
+
+include::pint_rules.adoc[]
+
+:leveloffset: -1

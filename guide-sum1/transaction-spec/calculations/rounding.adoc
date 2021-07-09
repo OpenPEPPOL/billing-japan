@@ -1,0 +1,14 @@
+
+= Rounding
+
+
+To minimize the risk of differences due to rounding, the following rules apply:
+
+[IMPORTANT]
+====
+* All document level amounts shall have no decimals for accounting
+* Invoice line net amount shall be rounded 
+* Results from calculations involving already rounded amounts are not subject to rounding, like payable amounts and total amounts included CT.
+====
+
+Please also see <<Calculation>> for details on how to calculate the different amounts.

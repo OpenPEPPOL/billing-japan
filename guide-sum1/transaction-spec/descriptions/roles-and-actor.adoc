@@ -1,0 +1,12 @@
+
+= Parties
+
+The following roles may be specified. The same actor may play more than one role depending on the handling routine.
+
+Further details on the roles/actors can be found in <<roles>>.
+
+:leveloffset: +1
+
+include::../../syntax/roles.adoc[]
+
+:leveloffset: -1

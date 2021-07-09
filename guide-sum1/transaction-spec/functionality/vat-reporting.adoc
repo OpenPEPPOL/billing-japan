@@ -1,0 +1,7 @@
+
+= Tax Reporting
+
+The invoice is used to carry Tax related information from the Seller to the Buyer to enable the Buyer and Seller to correctly handle Tax booking and reporting. An invoice should contain sufficient information to enable the Buyer and any auditor to determine whether the invoice is correct from a Tax point of view.
+
+The invoice shall allow the determination of the Tax regime, the calculation and description of the tax, in accordance with the {Tax-dir} and subsequent amendments.
+

@@ -1,0 +1,6 @@
+
+= CT accounting currency
+
+If the invoice currency is different from the national currency, this is expressed in the invoice by stating the national currency in the element Tax accounting currency (BT-6), and the amount of CT payable in national currency is stated in the element Invoice total CT amount in accounting currency (BT-111). 
+
+include::../../syntax/vat-currency.adoc[]

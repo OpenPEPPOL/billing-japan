@@ -1,0 +1,31 @@
+
+= Consumption tax (CT)
+
+The chapters below describe the different CT informations that can be provided in a Japanese {peppol} invoice or credit note.
+
+Please also see <<CT category codes>> for details on the CT category code list, and <<Calculation of CT>> for detailed explanation and example on how to perform the calculations for CT Breakdown.
+
+== Line CT Information
+
+Each invoice line shall have the invoiced item CT category code (BT-151), and for all CT categories except "Not subject to CT" (O), the CT rate shall be provided.
+
+== Document level allowance or charge
+
+Each document level charge or allowance must have the Document level allowance or charge CT category code (BT-95 and BT-102), and for all CT categories except "Not subject to CT" (O), the CT rate shall be provided.
+
+== CT Breakdown
+
+One CT Breakdown shall be provided for each distinct combination of CT category code and CT rate found in either the line CT information or the Document level allowance or charges. For some CT categories, the CT rate shall be zero, and hence the rate is not needed in order to group the CT Breakdown for these.
+
+Please note that for the CT rate, only significant decimals should be considered, i.e any difference in trailing zeros should not result in different CT breakdowns.
+
+.Example
+====
+Invoice line 1 has category code = S and CT rate = *25* +
+Invoice line 2 has category code = S and CT rate = *25.00* +
+This should result in only one CT Breakdown.
+====
+
+== Invoice total CT amount
+
+The invoice total CT amount (BT-110) is the sum of all CT Category CT amounts (BT-117)

@@ -1,0 +1,10 @@
+
+.UBL example of payment means info when payment is done by SEPA direct debit
+[source, xml, indent=0]
+----
+include::{snippet-dir}/direct-debit.xml[tags=direct-debit]
+----
+<1> Unique banking reference identifier of the Seller or Payee, schemeID shall have value "SEPA"
+<2> Payment means code
+<3> Remittance information
+<4> Mandate reference identifier

@@ -4,6 +4,7 @@
     <Name>Japanese PEPPOL BIS Documentation</Name>
 
     <Documentation path="bis/">Japan Standard Commercial Invoice process (BIS)</Documentation>
+	<Documentation path="bis/">Japan Standard Commercial Invoice process (BIS)</Documentation>
     <Documentation path="compliance/">BIS compliance</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
@@ -29,6 +30,11 @@
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>Standard Commercial Invoice, message specification</Title>
+    </Resource>
+	<Resource>
+        <Type>Structure-1</Type>
+        <Path>structure-sum1/syntax/ubl-invoice.xml</Path>
+        <Title>Summary invoice pattern 1, message specification</Title>
     </Resource>
 <!--     <Resource>
         <Type>Structure-1</Type>

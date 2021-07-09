@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+        
+
+        <Term>cac:Price</Term>
+        <Name>PRICE DETAILS</Name>
+        <Description>A group of business terms providing information about the price applied for the goods and services invoiced on the Invoice line.</Description>
+        <Reference type="BUSINESS_TERM">IBG-29</Reference>
+        
+        <Element>
+            <Term>cbc:PriceAmount</Term>
+            <Name>Item net price</Name>
+            <Description>The price of an item, exclusive of VAT, after subtracting item price discount. The Item net price has to be equal with the Item gross price less the Item price discount, if they are both provided. Item price can not be negative.</Description>
+            <DataType>Amount</DataType>
+            <Reference type="BUSINESS_TERM">IBT-146</Reference>
+            <!-- <Reference type="RULE">ibr-26</Reference> -->
+            <!-- <Reference type="RULE">ibr-27</Reference> -->
+            <Value type="EXAMPLE">23.45</Value>
+			<Section>Shared</Section>            
+            
+            <Attribute>
+                <Term>currencyID</Term>
+                <Description>Mandatory attribute. Use IBT-005</Description>
+                <Reference type="CODE_LIST">ISO4217</Reference>
+                <Value type="EXAMPLE">EUR</Value>
+            </Attribute>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:BaseQuantity</Term>
+            <Name>Item price base quantity</Name>
+            <Description>The number of item units to which the price applies.</Description>
+            <DataType>Quantity</DataType>
+            <Reference type="BUSINESS_TERM">IBT-149</Reference>
+            <Value type="EXAMPLE">1</Value>
+			<Section>Shared</Section>            
+
+            <Attribute usage="Optional">
+                <Term>unitCode</Term>
+                <Name>Item price base quantity unit of measure code</Name>
+                <Description>The unit of measure that applies to the Item price base quantity.</Description>
+                <Reference type="CODE_LIST">UNECERec20</Reference>
+				<Reference type="BUSINESS_TERM">IBT-150</Reference>
+                <Value type="EXAMPLE">C62</Value>
+            </Attribute>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:AllowanceCharge</Term>
+            <Name>ALLOWANCE</Name>
+            
+            <Element>
+                <Term>cbc:ChargeIndicator</Term>
+                <Description>Mandatory element. Value must be “false”</Description>
+                <Value type="FIXED">false</Value>
+            </Element>
+
+            <Element>
+                <Term>cbc:Amount</Term>
+                <Name>Item price discount</Name>
+                <Description>The total discount subtracted from the Item gross price to calculate the Item net price.</Description>
+                <DataType>Amount</DataType>
+                <Reference type="BUSINESS_TERM">IBT-147</Reference>
+                <Value type="EXAMPLE">100</Value>
+				<Section>Shared</Section>            
+                
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use IBT-005</Description>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
+                    <Value type="EXAMPLE">EUR</Value>
+                </Attribute>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:BaseAmount</Term>
+                <Name>Item gross price</Name>
+                <Description>The unit price, exclusive of VAT, before subtracting Item price discount, can not be negative</Description>
+                <DataType>Amount</DataType>
+                <Reference type="BUSINESS_TERM">IBT-148</Reference>
+                <!-- <Reference type="RULE">ibr-28</Reference> -->
+                <Value type="EXAMPLE">123.45</Value>
+				<Section>Shared</Section>            
+                
+                <Attribute>
+                    <Term>currencyID</Term>
+                    <Description>Mandatory attribute. Use IBT-005</Description>
+                    <Reference type="CODE_LIST">ISO4217</Reference>
+                    <Value type="EXAMPLE">EUR</Value>
+                </Attribute>
+            </Element>
+        </Element>
+    </Element>

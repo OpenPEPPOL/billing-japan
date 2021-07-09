@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
+    
+        <Term>cac:PaymentMandate</Term>
+        <Name>DIRECT DEBIT</Name>
+        <Description>A group of business terms to specify a direct debit.</Description>
+        <Reference type="BUSINESS_TERM">IBG-19</Reference>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:ID</Term>
+            <Name>Mandate reference identifier</Name>
+            <Description>Unique identifier assigned by the Payee for referencing the direct debit mandate. Used in order to pre-notify the Buyer of a SEPA direct debit.</Description>
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">IBT-089</Reference>
+            <Value type="EXAMPLE">123456</Value>
+			<Section>Shared</Section>            
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:PayerFinancialAccount</Term>
+            <Name>PAYER FINANCIAL ACCOUNT</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Debited account identifier</Name>
+                <Description>The account to be debited by the direct debit.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">IBT-091</Reference>
+                <Value type="EXAMPLE">12345676543</Value>
+				<Section>Shared</Section>            
+			</Element>
+        </Element>
+    </Element>

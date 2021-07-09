@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildConfigurations xmlns="http://difi.no/xsd/vefa/validator/1.0">
+
+  <package url="http://docs.peppol.eu/poacc/billing-japan/">PEPPOL BIS Japan Billing</package>
+
+  <testfolder>examples</testfolder>
+  <testfolder>snippets</testfolder>
+    <!-- <testfolder>unit-UBL-JPN</testfolder> -->
+
+  <!-- UBL -->
+
+  <configuration>
+    <identifier>peppolbis-pint-ubl</identifier>
+    <title>PINT UBL 4.0</title>
+    <file path="sch/PINT-UBL-validation-preprocessed.sch" infoUrl="http://docs.peppol.eu/poacc/billing-japan/rules/{}/"/>
+  </configuration>
+
+<!--   <configuration>
+    <identifier>peppolbis-japan-ubl</identifier>
+    <title>PEPPOL BIS Japan 4.0</title>
+    <file path="sch/PEPPOL-JPN-UBL.sch" infoUrl="http://docs.peppol.eu/poacc/billing-japan/rules/{}/"/>
+  </configuration>
+
+  <configuration>
+    <identifier>peppolbis-jpn-stylesheet-ubl</identifier>
+    <title>PEPPOL BIS Japan 4.0 Stylesheet</title>
+    <stylesheet identifier="peppol-bis-japan-v4-ubl" source="../stylesheet/stylesheet-japan-ubl.xslt" path="stylesheet/stylesheet-japan-ubl.xslt"/>
+  </configuration>
+-->
+  <configuration>
+    <identifier>peppolbis-japan-01-4.0-ubl-invoice</identifier>
+    <title>PEPPOL BIS Japan 4.0 (Profile 01)</title>
+    <declaration type="xml.ubl">Invoice::urn:peppol.org:pint:3.0#compliant#jp:billing:3.0</declaration>
+    <inherit>ubl-invoice-2.1</inherit>
+    <inherit>peppolbis-pint-ubl</inherit>
+<!--    <inherit>peppolbis-japan-stylesheet-4.0-ubl</inherit> -->
+  </configuration>
+
+  <configuration>
+    <identifier>peppolbis-japan-01-4.0-ubl-creditnote</identifier>
+    <title>PEPPOL BIS Japan 4.0 (Profile 01)</title>
+    <declaration type="xml.ubl">CreditNote::urn:peppol.org:pint:3.0#compliant#jp:billing:3.0</declaration>
+    <inherit>ubl-creditnote-2.1</inherit>
+    <inherit>peppolbis-pint-ubl</inherit>
+<!--    <inherit>peppolbis-japan-stylesheet-3.0-ubl</inherit> -->
+  </configuration> -->
+
+</buildConfigurations>

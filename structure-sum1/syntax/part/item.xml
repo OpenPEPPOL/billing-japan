@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+        
+        <Term>cac:Item</Term>
+        <Name>ITEM INFORMATION</Name>
+        <Description>A group of business terms providing information about the goods and services invoiced.</Description>
+        <Reference type="BUSINESS_TERM">IBG-31</Reference>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:Description</Term>
+            <Name>Item description</Name>
+            <Description>A description for an item.The item description allows for describing the item and its features in more detail than the Item name.</Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">IBT-154</Reference>
+            <Value type="EXAMPLE">Long description of the item on the invoice line</Value>  
+			<Section>Shared</Section>
+		</Element>
+        
+        <Element>
+            <Term>cbc:Name</Term>
+            <Name>Item name</Name>
+            <Description>A name for an item.</Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">BT-153</Reference>
+            <Reference type="RULE">ibr-25</Reference>
+            <Value type="EXAMPLE">Item name</Value>
+			<Section>Shared</Section>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:BuyersItemIdentification</Term>
+            <Name>BUYERS ITEM IDENTIFICATION</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Item Buyer's identifier</Name>
+                <Description>An identifier, assigned by the Buyer, for the item.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-156</Reference>
+                <Value type="EXAMPLE">123455</Value>
+				<Section>Shared</Section>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:SellersItemIdentification</Term>
+            <Name>SELLERS ITEM IDENTIFICATION</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Item Seller's identifier</Name>
+                <Description>An identifier, assigned by the Seller, for the item.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-155</Reference>
+                <Value type="EXAMPLE">9873242</Value>
+				<Section>Shared</Section>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:StandardItemIdentification</Term>
+            <Name>STANDARD ITEM IDENTIFICATION</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Item standard identifier</Name>
+                <Description>An item identifier based on a registered scheme.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">BT-157</Reference>
+                <!-- <Reference type="RULE">ibr-64</Reference> -->
+				<Section>Shared</Section>
+                <Value type="EXAMPLE">10986700</Value>
+                
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Item standard identifier identification scheme identifier</Name>
+                    <Description>The identification scheme shall be identified from the entries of the list published by the ISO/IEC 6523 maintenance agency.</Description>
+                    <Reference type="CODE_LIST">ICD</Reference>
+                    <Value type="EXAMPLE">0160</Value>
+                </Attribute>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:OriginCountry</Term>
+            <Name>ORIGIN COUNTRY</Name>
+            
+            <Element>
+                <Term>cbc:IdentificationCode</Term>
+                <Name>Item country of origin</Name>
+                <Description>The code identifying the country from which the item originates.</Description>
+                <DataType>Code</DataType>
+                <Reference type="BUSINESS_TERM">IBT-159</Reference>
+                <Reference type="CODE_LIST">ISO3166</Reference>
+                <Value type="EXAMPLE">CN</Value>
+				<Section>Shared</Section>
+           </Element>
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cac:CommodityClassification</Term>
+            <Name>COMMODITY CLASSIFICATION</Name>
+            
+            <Element>
+                <Term>cbc:ItemClassificationCode</Term>
+                <Name>Item classification identifier</Name>
+                <Description>A code for classifying the item by its type or nature.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">IBT-158</Reference>
+                <!-- <Reference type="RULE">ibr-65</Reference> -->
+				<Section>Shared</Section>
+                
+                <Attribute>
+                    <Term>listID</Term>
+                    <Name>Item classification identifier identification scheme identifier</Name>
+                    <Description>The identification scheme identifier of the Item classification identifier</Description>
+                    <Reference type="CODE_LIST">UNCL7143</Reference>
+					<Reference type="BUSINESS_TERM">IBT-158-1</Reference>
+					<Value type="EXAMPLE">9873242</Value>
+					<Section>Shared</Section>
+                </Attribute>
+                
+                <Attribute usage="Optional">
+                    <Term>listVersionID</Term>
+                    <Name>Item classification identifier version identification scheme identifier</Name>
+                    <Description>The identification scheme version identifier of the Item classification identifier</Description>
+                    <Value type="EXAMPLE">STI</Value>
+					<Reference type="BUSINESS_TERM">IBT-158-2</Reference>
+					<Section>Shared</Section>
+                </Attribute>
+            </Element>
+        </Element>
+        
+        <Element>
+            <Term>cac:ClassifiedTaxCategory</Term>
+            <Name>LINE TAX INFORMATION</Name>
+            <Description>A group of business terms providing information about the TAX applicable for the goods and services
+                invoiced on the Invoice line.
+            </Description>
+            <Reference type="BUSINESS_TERM">IBG-30</Reference>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Invoiced item TAX category code</Name>
+                <Description>The TAX category code for the invoiced item.</Description>
+                <DataType>Code</DataType>
+                <Reference type="BUSINESS_TERM">IBT-151</Reference>
+                <Reference type="CODE_LIST">UNCL5305</Reference>
+                <Value type="EXAMPLE">S</Value>
+				<Section>Aligned</Section>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:Percent</Term>
+                <Name>Invoiced item TAX rate</Name>
+                <Description>The TAX rate, represented as percentage that applies to the invoiced item.</Description>
+                <DataType>Percentage</DataType>
+                <Reference type="BUSINESS_TERM">IBT-152</Reference>
+                <Value type="EXAMPLE">25</Value>
+				<Section>Aligned</Section>
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cbc:PerUnitAmount</Term>
+                <Name>Unit TAX</Name>
+                <Description>The TAX rate, represented as percentage that applies to the invoiced item.</Description>
+                <DataType>Amount</DataType>
+                <Reference type="BUSINESS_TERM">IBT-152</Reference>
+                <Value type="EXAMPLE">25</Value>
+				<Section>Aligned</Section>
+            </Element>
+            
+			<Element cardinality="0..1">
+				<Term>cbc:TaxExemptionReasonCode</Term>
+				<Name>TAX exemption reason code</Name>
+				<Description>A coded statement of the reason for why the amount is exempted from TAX.</Description>
+				<DataType>Text</DataType>
+				<Reference type="BUSINESS_TERM">IBT-185</Reference>
+				<Section>Aligned</Section>			
+			</Element>
+			
+			<Element cardinality="0..1">
+				<Term>cbc:TaxExemptionReason</Term>
+				<Name>TAX exemption reason text</Name>
+				<Description>A textual statement of the reason why the amount is exempted from TAX or why no TAX is being charged.</Description>
+				<DataType>Text</DataType>
+				<Reference type="BUSINESS_TERM">IBT-186</Reference>
+				<Value type="EXAMPLE">Exempt</Value> 
+				<Section>Aligned</Section>			
+			</Element>
+
+            <Element>
+                <Term>cac:TaxScheme</Term>
+                <Name>TAX SCHEME</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Description>Mandatory element.</Description>
+                    <Value type="DEFAULT">TAX</Value>
+					<Reference type="BUSINESS_TERM">IBT-167</Reference>
+					<Section>Aligned</Section>			
+				</Element>
+            </Element>
+        </Element>
+        
+        <Element cardinality="0..n">
+            <Term>cac:AdditionalItemProperty</Term>
+            <Name>ITEM ATTRIBUTES</Name>
+            <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
+            <Reference type="BUSINESS_TERM">IBG-32</Reference>
+            <Element>
+                <Term>cbc:Name</Term>
+                <Name>Item attribute name</Name>
+                <Description>The name of the attribute or property of the item.</Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">IBT-160</Reference>
+                <!-- <Reference type="RULE">ibr-54</Reference> -->
+                <Value type="EXAMPLE">Color</Value>
+				<Section>Shared</Section>
+            </Element>
+            <Element>
+                <Term>cbc:Value</Term>
+                <Name>Item attribute value</Name>
+                <Description>The value of the attribute or property of the item.</Description>
+                <DataType>Text</DataType>
+                <Reference type="BUSINESS_TERM">IBT-161</Reference>
+                <!-- <Reference type="RULE">ibr-54</Reference> -->
+                <Value type="EXAMPLE">Black</Value>
+				<Section>Shared</Section>
+            </Element>
+        </Element>
+    </Element>
+    

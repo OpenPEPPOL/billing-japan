@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+            Copyright (C) 2020-2023 OpenPEPPOL AISBL
+
+            Licensed under the Apache License, Version 2.0 (the "License");
+            you may not use this file except in compliance with the License.
+            You may obtain a copy of the License at
+
+                    http://www.apache.org/licenses/LICENSE-2.0
+
+            Unless required by applicable law or agreed to in writing, software
+            distributed under the License is distributed on an "AS IS" BASIS,
+            WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+            See the License for the specific language governing permissions and
+            limitations under the License.
+
+-->
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+	xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<cbc:CustomizationID>urn:peppol.eu:pint:3.0#compliant#urn:fdc:peppol.eu:2017:poacc:billing:international:aunz:3</cbc:CustomizationID>
+	<cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
+	<cbc:ID>CA1</cbc:ID>
+	<cbc:IssueDate>2020-01-01</cbc:IssueDate>
+	<cbc:DueDate>2020-01-31</cbc:DueDate>
+	<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+	<cbc:TaxPointDate>2020-01-31</cbc:TaxPointDate>
+	<cbc:DocumentCurrencyCode>CAD</cbc:DocumentCurrencyCode>
+   <cac:AccountingSupplierParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">9429033821733</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Canadian supplier</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>5 Stout Street</cbc:StreetName>
+				<cbc:CityName>Kars</cbc:CityName>
+				<cbc:PostalZone>231</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>CA</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>99999999</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Canadian supplier Limited</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0088">9429046602558</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cbc:EndpointID schemeID="0088">8450303436</cbc:EndpointID>
+			<cac:PartyName>
+				<cbc:Name>Canadian Customer</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Main road 21</cbc:StreetName>
+				<cbc:CityName>Ottawa</cbc:CityName>
+				<cbc:PostalZone>1234</cbc:PostalZone>
+				<cac:Country>
+					<cbc:IdentificationCode>CA</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>8450303436</cbc:CompanyID>
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID>
+				</cac:TaxScheme>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName>Canadian Customer Limited</cbc:RegistrationName>
+				<cbc:CompanyID schemeID="0088">938492493242</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:PaymentMeans>
+		<cbc:PaymentMeansCode name="Credit transfer">30</cbc:PaymentMeansCode>
+		<cbc:PaymentID>5637835</cbc:PaymentID>
+		<cac:CardAccount>
+			<cbc:PrimaryAccountNumberID>1111-2222-3333-4444</cbc:PrimaryAccountNumberID>
+			<cbc:NetworkID>1111</cbc:NetworkID>
+			<cbc:HolderName>Canada Credit Limited</cbc:HolderName>
+		</cac:CardAccount>
+		<cac:PayeeFinancialAccount>
+			<cbc:ID>IBAN32423940</cbc:ID>
+			<cbc:Name>SupplierAccountName</cbc:Name>
+		</cac:PayeeFinancialAccount>
+		<cac:PaymentMandate>
+			<cbc:ID>0002-548155779</cbc:ID>
+			<cac:PayerFinancialAccount>
+				<cbc:ID>0044-93647258</cbc:ID>
+			</cac:PayerFinancialAccount>
+		</cac:PaymentMandate>
+	</cac:PaymentMeans>
+	<cac:PaymentTerms>
+		<cbc:Note>PAYMENT DUE NET 30 DAYS</cbc:Note>
+	</cac:PaymentTerms>
+	<cac:AllowanceCharge>
+		<cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+		<cbc:AllowanceChargeReasonCode>SAA</cbc:AllowanceChargeReasonCode>
+		<cbc:AllowanceChargeReason>PVRT tax 1.50 per day</cbc:AllowanceChargeReason>
+		<cbc:Amount currencyID="CAD">15.0</cbc:Amount> <!-- calculate the PVRT tax as a charge. We cannot use the Classified tax category as this tax is not calculated with a percentage -->
+		<cac:TaxCategory>
+			<cbc:ID>AA</cbc:ID>
+			<cbc:Percent>5</cbc:Percent>
+			<cac:TaxScheme>
+				<cbc:ID>GST</cbc:ID>
+			</cac:TaxScheme>
+		</cac:TaxCategory>
+	</cac:AllowanceCharge>
+	<cac:TaxTotal>
+		<cbc:TaxAmount currencyID="CAD">4.58</cbc:TaxAmount>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="CAD">31.95</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="CAD">2.24</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>7</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+		<cac:TaxSubtotal>
+			<cbc:TaxableAmount currencyID="CAD">46.95</cbc:TaxableAmount>
+			<cbc:TaxAmount currencyID="CAD">2.34</cbc:TaxAmount>
+			<cac:TaxCategory>
+				<cbc:ID>AA</cbc:ID>
+				<cbc:Percent>5</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID>
+				</cac:TaxScheme>
+			</cac:TaxCategory>
+		</cac:TaxSubtotal>
+	</cac:TaxTotal>
+	<cac:LegalMonetaryTotal>
+		<cbc:LineExtensionAmount currencyID="CAD">31.95</cbc:LineExtensionAmount>
+		<cbc:TaxExclusiveAmount currencyID="CAD">46.95</cbc:TaxExclusiveAmount>
+		<cbc:TaxInclusiveAmount currencyID="CAD">51.53</cbc:TaxInclusiveAmount>
+		<cbc:AllowanceTotalAmount currencyID="CAD">0</cbc:AllowanceTotalAmount>
+		<cbc:ChargeTotalAmount currencyID="CAD">15.0</cbc:ChargeTotalAmount>
+		<cbc:PrepaidAmount currencyID="CAD">0</cbc:PrepaidAmount>
+		<cbc:PayableRoundingAmount currencyID="CAD">0</cbc:PayableRoundingAmount>
+		<cbc:PayableAmount currencyID="CAD">51.53</cbc:PayableAmount>
+	</cac:LegalMonetaryTotal>
+	<cac:InvoiceLine>
+		<cbc:ID>1</cbc:ID>
+		<cbc:Note>Annual charges </cbc:Note>
+		<cbc:InvoicedQuantity unitCode="10">1</cbc:InvoicedQuantity>
+		<cbc:LineExtensionAmount currencyID="CAD">31.95</cbc:LineExtensionAmount>
+		<cac:Item>
+			<cbc:Description>user licences</cbc:Description>
+			<cbc:Name>Annual charges </cbc:Name>	
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>AA</cbc:ID>
+				<cbc:Percent>5</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+			<cac:ClassifiedTaxCategory>
+				<cbc:ID>S</cbc:ID>
+				<cbc:Percent>7</cbc:Percent>
+				<cac:TaxScheme>
+					<cbc:ID>GST</cbc:ID>
+				</cac:TaxScheme>
+			</cac:ClassifiedTaxCategory>
+		</cac:Item>
+		<cac:Price>
+			<cbc:PriceAmount currencyID="CAD">31.95</cbc:PriceAmount>
+		</cac:Price>
+	</cac:InvoiceLine>
+</Invoice>

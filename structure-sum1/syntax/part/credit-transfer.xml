@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
+
+        <Term>cac:PayeeFinancialAccount</Term>
+        <Name>CREDIT TRANSFER</Name>
+        <Description>A group of business terms to specify credit transfer payments.</Description>
+        <Reference type="BUSINESS_TERM">IBG-17</Reference>
+        
+        <Element>
+            <Term>cbc:ID</Term>
+            <Name>Payment account identifier</Name>
+            <Description>A unique identifier of the financial payment account, at a payment service provider, to which
+                payment should be made. Such as IBAN or BBAN.
+            </Description>
+            <DataType>Identifier</DataType>
+            <Reference type="BUSINESS_TERM">IBT-084</Reference>
+            <Value type="EXAMPLE">NO99991122222</Value>
+			<Section>Shared</Section>
+			
+			<Attribute usage="Optional">
+				<Term>name</Term>
+				<Name>Scheme identifier</Name>
+				<Description>The identification of the identification scheme.</Description>
+				<DataType>Code</DataType>
+				<Reference type="BUSINESS_TERM">IBT-084-1</Reference>
+				<Value type="EXAMPLE">IBAN</Value>
+				<Section>Aligned</Section>
+			</Attribute>
+        </Element>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:Name</Term>
+            <Name>Payment account name</Name>
+            <Description>The name of the payment account, at a payment service provider, to which payment should be made.
+            </Description>
+            <DataType>Text</DataType>
+            <Reference type="BUSINESS_TERM">IBT-085</Reference>
+            <Value type="EXAMPLE">Payment Account</Value>
+			<Section>Shared</Section>
+		</Element>
+        
+        <Element cardinality="0..1">
+            <Term>cac:FinancialInstitutionBranch</Term>
+            <Name>FINANCIAL INSTITUTION BRANCH</Name>
+            
+            <Element>
+                <Term>cbc:ID</Term>
+                <Name>Payment service provider identifier</Name>
+                <Description>An identifier for the payment service provider where a payment account is located.
+                    Such as a BIC or a national clearing code where required. No identification scheme Identifier to be used.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">IBT-086</Reference>
+                <Value type="EXAMPLE">9999</Value>
+				<Section>Shared</Section>
+            </Element>
+			
+			<Element>
+                <Term>cac:PostalAddress</Term>
+                <Name>BUYER POSTAL ADDRESS</Name>
+                <Description>The address of the financial institution or its branch that holds the payment account.</Description>
+                <Reference type="BUSINESS_TERM">IBG-34</Reference>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:StreetName</Term>
+                    <Name>Buyer address line 1</Name>
+                    <Description>The main address line in an address.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-169</Reference>
+                    <Value type="EXAMPLE">Hovudgatan 32</Value>
+					<Section>Aligned</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Buyer address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-170</Reference>
+                    <Value type="EXAMPLE">Po box 43</Value>
+					<Section>Aligned</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CityName</Term>
+                    <Name>Buyer city</Name>
+                    <Description>The common name of the city, town or village, where the Buyer's address is located.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-171</Reference>
+                    <Value type="EXAMPLE">Stockholm</Value>
+ 					<Section>Aligned</Section>
+               </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:PostalZone</Term>
+                    <Name>Buyer post code</Name>
+                    <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-172</Reference>
+                    <Value type="EXAMPLE">34567</Value>
+					<Section>Aligned</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CountrySubentity</Term>
+                    <Name>Buyer country subdivision</Name>
+                    <Description>The subdivision of a country.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-173</Reference>
+                    <Value type="EXAMPLE">Region A</Value>
+					<Section>Aligned</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cac:AddressLine</Term>
+                    <Name>ADDRESS LINE</Name>
+                    
+                    <Element>
+                        <Term>cbc:Line</Term>
+                        <Name>Buyer address line 3</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the main line.
+                        </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">IBT-174</Reference>
+                        <Value type="EXAMPLE">Building F2</Value>
+						<Section>Aligned</Section>
+                    </Element>
+
+                </Element>
+                
+                <Element>
+                    <Term>cac:Country</Term>
+                    <Name>COUNTRY</Name>
+                    
+                    <Element>
+                        <Term>cbc:IdentificationCode</Term>
+                        <Name>Buyer country code</Name>
+                        <Description>A code that identifies the country.</Description>
+                        <DataType>Code</DataType>
+                        <Reference type="BUSINESS_TERM">IBT-175</Reference>
+                        <Reference type="CODE_LIST">ISO3166</Reference>
+                        <Value type="EXAMPLE">SE</Value>
+						<Section>Shared</Section>
+                    </Element>
+
+                </Element>
+            </Element>
+        </Element>
+    </Element>
