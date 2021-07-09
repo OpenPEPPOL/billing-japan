@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeList xmlns="urn:fdc:difi.no:2017:vefa:structure:CodeList-1">
+
+    <Title>Consumption Tax Category code (Subset of UNCL5305)</Title>
+    <Identifier>UNCL5305</Identifier>
+    <Version>D.16B</Version>
+    <Agency>UN/CEFACT</Agency>
+    <Subset>OpenPEPPOL-JP</Subset>
+
+    <Code>
+        <Id>S</Id>
+        <Name>Standard rate Consumption Tax</Name>
+        <Description>Code specifying that the standard CT rate is levied from the invoicee.</Description>
+    </Code>
+
+    <Code>
+        <Id>AA</Id>
+        <Name>Lower rate Consumption Tax</Name>
+        <Description>Code specifying that the lower CT rate is levied from the invoicee.</Description>
+    </Code>
+
+    <Code>
+        <Id>E</Id>
+        <Name>Exempt from Tax</Name>
+        <Description>Code specifying that an item liable for Consumption Tax is exempted due to trade circumstances.</Description>
+    </Code>
+
+    <Code>
+        <Id>Z</Id>
+        <Name>Zero rated goods</Name>
+        <Description>Code specifying that the items have a zero rate Consumption Tax.</Description>
+    </Code>
+
+    <Code>
+        <Id>G</Id>
+        <Name>Free export item, Consumption Tax not charged</Name>
+        <Description>Code specifying that the item is free export and taxes are not charged.</Description>
+    </Code>
+
+    <Code>
+        <Id>O</Id>
+        <Name>Outside scope of tax</Name>
+        <Description>Code specifying that the seller is not registered for Consumption Tax.</Description>
+    </Code>
+
+</CodeList>

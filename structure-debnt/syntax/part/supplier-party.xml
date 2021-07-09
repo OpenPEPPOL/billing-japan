@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
+
+        <Term>cac:AccountingSupplierParty</Term>
+        <Name>SELLER</Name>
+        <Description>A group of business terms providing information about the Seller.</Description>
+        <Reference type="BUSINESS_TERM">IBG-04</Reference>
+        
+        <Element>
+            <Term>cac:Party</Term>
+            <Name>PARTY</Name>
+            
+            <Element>
+                <Term>cbc:EndpointID</Term>
+                <Name>Seller electronic address</Name>
+                <Description>Identifies the Seller's electronic address to which the application level response to the invoice may be delivered.</Description>
+                <DataType>Identifier</DataType>
+                <Reference type="BUSINESS_TERM">IBT-034</Reference>
+				<Section>Shared</Section>
+
+                <Attribute>
+                    <Term>schemeID</Term>
+                    <Name>Seller electronic address identification scheme identifier</Name>
+                    <Description>The identification scheme identifier of the Seller electronic address</Description>
+					<Reference type="BUSINESS_TERM">IBT-034-1</Reference>
+                    <Reference type="CODE_LIST">eas</Reference>
+                    <Value type="EXAMPLE">0088</Value>
+					<Section>Shared</Section>
+                </Attribute>
+                
+                <Value type="EXAMPLE">7300010000001</Value>
+ 
+			</Element>
+            
+            <Element cardinality="0..n">
+                <Term>cac:PartyIdentification</Term>
+                <Name>PARTY IDENTIFICATION</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Seller identifier</Name>
+                    <Description>An identification of the Seller.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-029</Reference>
+					<Section>Shared</Section>
+ 
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Scheme identifier</Name>
+                        <Description>If used, the identification scheme identifier shall be chosen from the entries of the list published by the ISO/IEC 6523 maintenance agency.</Description>
+						<Reference type="BUSINESS_TERM">IBT-029-1</Reference>
+                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Value type="EXAMPLE">0088</Value>
+						<Section>Shared</Section>
+                    </Attribute>
+                    
+                    <Value type="EXAMPLE">5060012349998</Value>
+                    
+                </Element>
+			</Element>
+            <Element cardinality="0..1">
+                <Term>cac:PartyIdentification</Term>
+                <Name>Bank assigned creditor identifier</Name>
+                
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Bank assigned creditor identifier</Name>
+                    <Description>Unique banking reference identifier of the Payee or Seller assigned by the Payee or Seller bank.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-090</Reference>
+					<Section>Shared</Section>
+                    
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Seller or bank assigned creditor identifier identification scheme identifier</Name>
+                        <Description>For bank assigned creditor identifier (IBT-090), value MUST be "SEPA"</Description>
+						<Reference type="BUSINESS_TERM">IBT-090-1</Reference>
+                         <Reference type="CODE_LIST">SEPA</Reference>
+						<Section>Shared</Section>
+                    </Attribute>
+                    
+                    <Value type="EXAMPLE">5060012349998</Value>
+                    
+                </Element>
+
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:PartyName</Term>
+                <Name>PARTY NAME</Name>
+                
+                <Element>
+                    <Term>cbc:Name</Term>
+                    <Name>Seller trading name</Name>
+                    <Description>A name by which the Seller is known, other than Seller name (also known as Business name).
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-028</Reference>
+                    <Value type="EXAMPLE">Seller Business Name AS</Value>
+					<Section>Shared</Section>
+                </Element>
+
+            </Element>
+            
+            <Element>
+                <Term>cac:PostalAddress</Term>
+                <Name>SELLER POSTAL ADDRESS</Name>
+                <Description>A group of business terms providing information about the address of the Seller.</Description>
+                <Reference type="BUSINESS_TERM">IBG-05</Reference>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:StreetName</Term>
+                    <Name>Seller address line 1</Name>
+                    <Description>The main address line in an address.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-035</Reference>
+                    <Value type="EXAMPLE">Main Street 1</Value>
+					<Section>Shared</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:AdditionalStreetName</Term>
+                    <Name>Seller address line 2</Name>
+                    <Description>An additional address line in an address that can be used to give further details supplementing the main line.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-036</Reference>
+                    <Value type="EXAMPLE">Po Box 351</Value>
+					<Section>Shared</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CityName</Term>
+                    <Name>Seller city</Name>
+                    <Description>The common name of the city, town or village, where the Seller address is located.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-037</Reference>
+                    <Value type="EXAMPLE">London</Value>
+					<Section>Shared</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:PostalZone</Term>
+                    <Name>Seller post code</Name>
+                    <Description>The identifier for an addressable group of properties according to the relevant postal service.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-038</Reference>
+                    <Value type="EXAMPLE">W1G 8LZ</Value>
+					<Section>Shared</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CountrySubentity</Term>
+                    <Name>Seller country subdivision</Name>
+                    <Description>The subdivision of a country.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-039</Reference>
+                    <Value type="EXAMPLE">Region A</Value>
+					<Section>Shared</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cac:AddressLine</Term>
+                    <Name>ADDRESS LINE</Name>
+                    
+                    <Element>
+                        <Term>cbc:Line</Term>
+                        <Name>Seller address line 3</Name>
+                        <Description>An additional address line in an address that can be used to give further details supplementing the
+                            main line.
+                        </Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">IBT-162</Reference>
+                        <Value type="EXAMPLE">Building 23</Value>
+						<Section>Shared</Section>
+                    </Element>
+                </Element>
+                
+                <Element>
+                    <Term>cac:Country</Term>
+                    <Name>COUNTRY</Name>
+                    
+                    <Element>
+                        <Term>cbc:IdentificationCode</Term>
+                        <Name>Seller country code</Name>
+                        <Description>A code that identifies the country.</Description>
+                        <DataType>Text</DataType>
+                        <Reference type="BUSINESS_TERM">IBT-040</Reference>
+                       <Reference type="CODE_LIST">ISO3166</Reference>
+                        <Value type="EXAMPLE">GB</Value>
+						<Section>Shared</Section>
+                    </Element>
+
+                </Element>
+
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:PartyTaxScheme</Term>
+                <Name>PARTY TAX</Name>
+                
+                <Element>
+                    <Term>cbc:CompanyID</Term>
+                    <Name>Seller TAX identifier</Name>
+                    <Description>The Seller's TAX identifier (also known as Seller TAX identification number).</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-031</Reference>
+                    <Value type="EXAMPLE">NO999888777</Value>
+					<Section>Aligned</Section>
+                </Element>
+                
+                <Element>
+                    <Term>cac:TaxScheme</Term>
+                    <Name>TAX SCHEME</Name>
+                    
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Description>Qualifies the identifier as Sellers TAX identifier</Description>
+						<Reference type="BUSINESS_TERM">IBT-031-1</Reference>
+                        <Value type="DEFAULT">VAT</Value>
+                    </Element>
+                </Element>
+                
+            </Element>
+            
+             <Element cardinality="0..1">
+                <Term>cac:PartyTaxScheme</Term>
+                <Name>TAX IDENTIFIERS</Name>
+                
+                <Element>
+                    <Term>cbc:CompanyID</Term>
+                    <Name>Seller tax registration identifier</Name>
+                    <Description>The local identification (defined by the Seller’s address) of the Seller for tax purposes or a reference that enables the Seller to state his registered tax status.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-032</Reference>
+                    <Value type="EXAMPLE">NO999888777</Value>
+					<Section>Aligned</Section>
+                </Element>
+                
+                <Element>
+                    <Term>cac:TaxScheme</Term>
+                    <Name>TAX SCHEME</Name>
+                    
+                    <Element>
+                        <Term>cbc:ID</Term>
+                        <Description>Qualifies the identifier as seller tax registration identifier.</Description>
+                    <Reference type="BUSINESS_TERM">IBT-032-1</Reference>
+                        <Value type="EXAMPLE">!="VAT"</Value>
+                    </Element>
+                </Element>
+                
+            </Element>
+
+			<Element>
+                <Term>cac:PartyLegalEntity</Term>
+                <Name>PARTY LEGAL ENTITY</Name>
+                
+                <Element>
+                    <Term>cbc:RegistrationName</Term>
+                    <Name>Seller name</Name>
+                    <Description>The full formal name by which the Seller is registered in the national registry of legal entities
+                        or as a Taxable person or otherwise trades as a person or persons.
+                    </Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-027</Reference>
+                    <Value type="EXAMPLE">Full Formal Seller Name LTD.</Value>
+					<Section>Shared</Section>
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CompanyID</Term>
+                    <Name>Seller legal registration identifier</Name>
+                    <Description>An identifier issued by an official registrar that identifies the Seller as a legal entity or person.
+                    </Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-030</Reference>
+					<Section>Shared</Section>
+
+                    <Attribute usage="Optional">
+                        <Term>schemeID</Term>
+                        <Name>Seller legal registration identifier identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Seller legal registration identifier.</Description>
+						<Reference type="BUSINESS_TERM">IBT-030-1</Reference>
+                        <Reference type="CODE_LIST">ICD</Reference>
+                        <Value type="EXAMPLE">0002</Value>   
+                    </Attribute>
+
+                    <Value type="EXAMPLE">987654321</Value>
+
+                </Element>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:CompanyLegalForm</Term>
+                    <Name>Seller additional legal information</Name>
+                    <Description>Additional legal information relevant for the Seller.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-033</Reference>
+                    <Value type="EXAMPLE">Share capital</Value>
+					<Section>Shared</Section>
+                </Element>
+
+            </Element>
+            
+            <Element cardinality="0..1">
+                <Term>cac:Contact</Term>
+                <Name>SELLER CONTACT</Name>
+                <Description>A group of business terms providing contact information about the Seller.</Description>
+                <Reference type="BUSINESS_TERM">IBG-06</Reference>
+                
+                <Element cardinality="0..1">
+                    <Term>cbc:Name</Term>
+                    <Name>Seller contact point</Name>
+                    <Description>A contact point for a legal entity or person.</Description>      
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-041</Reference>
+                    <Value type="EXAMPLE">xyz123</Value>
+					<Section>Shared</Section>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:Telephone</Term>
+                    <Name>Seller contact telephone number</Name>
+                    <Description>A phone number for the contact point.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-042</Reference>
+                    <Value type="EXAMPLE">887 654 321</Value>
+					<Section>Shared</Section>
+                </Element>
+
+                <Element cardinality="0..1">
+                    <Term>cbc:ElectronicMail</Term>
+                    <Name>Seller contact email address</Name>
+                    <Description>An e-mail address for the contact point.</Description>
+                    <DataType>Text</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-043</Reference>
+                    <Value type="EXAMPLE">test.name@foo.bar</Value>
+					<Section>Shared</Section>
+                </Element>
+
+            </Element>
+
+        </Element>
+    </Element>
