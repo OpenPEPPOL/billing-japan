@@ -83,8 +83,8 @@
             <Description>A code specifying the functional type of the Debit Note.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-003</Reference>
-            <Reference type="CODE_LIST">UNCL1001-inv</Reference>
-            <Value type="EXAMPLE">380</Value>
+            <!-- <Reference type="CODE_LIST">UNCL1001-inv</Reference> -->
+            <Value type="DEFAULT">383</Value>
   			<Section>Shared</Section>
         </Element>
 
