@@ -2,14 +2,14 @@
 <Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
     
         <Term>cac:InvoicePeriod</Term>
-        <Name>INVOICE LINE PERIOD</Name>
-        <Description>A group of business terms providing information about the period relevant for the Invoice line.</Description>
+        <Name>DEBIT NOTE LINE PERIOD</Name>
+        <Description>A group of business terms providing information about the period relevant for the Debit Note line.</Description>
         <Reference type="BUSINESS_TERM">IBG-26</Reference>
         
         <Element cardinality="0..1">
             <Term>cbc:StartDate</Term>
-            <Name>Invoice line period start date</Name>
-            <Description>The date when the Invoice period for this Invoice line starts.</Description>
+            <Name>Debit Note line period start date</Name>
+            <Description>The date when the Debit Note period for this Debit Note line starts.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-134</Reference>
             <!-- <Reference type="RULE">ibr-co-20</Reference> -->
@@ -19,8 +19,8 @@
 
         <Element cardinality="0..1">
             <Term>cbc:EndDate</Term>
-            <Name>Invoice line period end date</Name>
-            <Description>The date when the Invoice period for this Invoice line ends.</Description>
+            <Name>Debit Note line period end date</Name>
+            <Description>The date when the Debit Note period for this Debit Note line ends.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-135</Reference>
             <!-- <Reference type="RULE">ibr-30</Reference> -->

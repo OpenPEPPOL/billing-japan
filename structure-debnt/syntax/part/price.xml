@@ -4,7 +4,7 @@
 
         <Term>cac:Price</Term>
         <Name>PRICE DETAILS</Name>
-        <Description>A group of business terms providing information about the price applied for the goods and services invoiced on the Invoice line.</Description>
+        <Description>A group of business terms providing information about the price applied for the goods and services on the Debit Note line.</Description>
         <Reference type="BUSINESS_TERM">IBG-29</Reference>
         
         <Element>

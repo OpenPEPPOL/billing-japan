@@ -46,7 +46,7 @@
             <Term>cac:CardAccount</Term>
             <Name>PAYMENT CARD INFORMATION</Name>
             <Description>A group of business terms providing information about card used for payment contemporaneous with
-                invoice issuance.
+                debit note issuance.
             </Description>
             <Reference type="BUSINESS_TERM">BG-18</Reference>
             
@@ -54,7 +54,7 @@
                 <Term>cbc:PrimaryAccountNumberID</Term>
                 <Name>Payment card primary account number</Name>
                 <Description>The Primary Account Number (PAN) of the card used for payment.In accordance with card payments security
-                    standards, an invoice should never include a full card primary account number.</Description>
+                    standards, an debit note should never include a full card primary account number.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">BT-87</Reference>
                 <Reference type="RULE">ibr-51</Reference>

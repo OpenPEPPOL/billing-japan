@@ -13,7 +13,7 @@
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>Seller electronic address</Name>
-                <Description>Identifies the Seller's electronic address to which the application level response to the invoice may be delivered.</Description>
+                <Description>Identifies the Seller's electronic address to which the application level response to the debit note may be delivered.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-034</Reference>
 				<Section>Shared</Section>

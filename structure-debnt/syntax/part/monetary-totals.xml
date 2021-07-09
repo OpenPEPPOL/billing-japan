@@ -3,13 +3,13 @@
     
 	<Term>cac:LegalMonetaryTotal</Term>
 	<Name>DOCUMENT TOTALS</Name>
-	<Description>A group of business terms providing the monetary totals for the Invoice.</Description>
+	<Description>A group of business terms providing the monetary totals for the Debit Note.</Description>
 	<Reference type="BUSINESS_TERM">IBG-22</Reference>
 	
 	<Element>
 		<Term>cbc:LineExtensionAmount</Term>
-		<Name>Sum of Invoice line net amount</Name>
-		<Description>Sum of all Invoice line net amounts in the Invoice.</Description>
+		<Name>Sum of Debit Note line net amount</Name>
+		<Description>Sum of all Debit Note line net amounts in the Debit Note.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-106</Reference>
 		<!-- <Reference type="RULE">ibr-12</Reference> -->
@@ -27,8 +27,8 @@
 	
 	<Element>
 		<Term>cbc:TaxExclusiveAmount</Term>
-		<Name>Invoice total amount without TAX</Name>
-		<Description>The total amount of the Invoice without TAX.</Description>
+		<Name>Debit Note total amount without TAX</Name>
+		<Description>The total amount of the Debit Note without TAX.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">BT-109</Reference>
 		<!-- <Reference type="RULE">ibr-13</Reference> -->
@@ -46,8 +46,8 @@
 	
 	<Element>
 		<Term>cbc:TaxInclusiveAmount</Term>
-		<Name>Invoice total amount with TAX</Name>
-		<Description>The total amount of the Invoice with TAX.</Description>
+		<Name>Debit Note total amount with TAX</Name>
+		<Description>The total amount of the Debit Note with TAX.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-112</Reference>
 		<!-- <Reference type="RULE">ibr-14</Reference> -->
@@ -66,7 +66,7 @@
 	<Element cardinality="0..1">
 		<Term>cbc:AllowanceTotalAmount</Term>
 		<Name>Sum of allowances on document level</Name>
-		<Description>Sum of all allowances on document level in the Invoice.</Description>
+		<Description>Sum of all allowances on document level in the Debit Note.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-107</Reference>
 		<!-- <Reference type="RULE">ibr-co-11</Reference> -->
@@ -84,7 +84,7 @@
 	<Element cardinality="0..1">
 		<Term>cbc:ChargeTotalAmount</Term>
 		<Name>Sum of charges on document level</Name>
-		<Description>Sum of all charges on document level in the Invoice.</Description>
+		<Description>Sum of all charges on document level in the Debit Note.</Description>
 		<DataType>Amount</DataType>
 		<Reference type="BUSINESS_TERM">IBT-108</Reference>
 		<!-- <Reference type="RULE">ibr-co-12</Reference> -->

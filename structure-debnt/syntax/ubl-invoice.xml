@@ -2,7 +2,7 @@
 <Structure xmlns="urn:fdc:difi.no:2017:vefa:structure-1">
 
     <Term>ubl-invoice</Term>
-    <Name>PEPPOL International Invoice</Name>
+    <Name>Japanese Debit Note</Name>
 
     <Namespace prefix="ubl">urn:oasis:names:specification:ubl:schema:xsd:Invoice-2</Namespace>
     <Namespace prefix="cac">urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"</Namespace>
@@ -28,7 +28,7 @@
         <Element>
             <Term>cbc:ProfileID</Term>
             <Name>Business process type</Name>
-            <Description>Identifies the business process context in which the transaction appears, to enable the Buyer to process the Invoice in an appropriate way.
+            <Description>Identifies the business process context in which the transaction appears, to enable the Buyer to process the Debit Note in an appropriate way.
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-023</Reference>
@@ -38,8 +38,8 @@
 
         <Element>
             <Term>cbc:ID</Term>
-            <Name>Invoice number</Name>
-            <Description>A unique identification of the Invoice. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Invoice 
+            <Name>Debit Note number</Name>
+            <Description>A unique identification of the Debit Note. The sequential number required in Article 226(2) of the directive 2006/112/EC [2], to uniquely identify the Debit Note 
                 within the business context, time-frame, operating systems and records of the Seller. No identification scheme is to be used.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">IBT-001</Reference>
@@ -49,8 +49,8 @@
 
         <Element>
             <Term>cbc:IssueDate</Term>
-            <Name>Invoice issue date</Name>
-            <Description>The date when the Invoice was issued.</Description>
+            <Name>Debit Note issue date</Name>
+            <Description>The date when the Debit Note was issued.</Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-002</Reference>
             <Value type="EXAMPLE">2017-11-01</Value>
@@ -59,8 +59,8 @@
 
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
-            <Name>Invoice issue date</Name>
-            <Description>The time of day when an invoice was issued.</Description>
+            <Name>Debit Note issue date</Name>
+            <Description>The time of day when an Debit Note was issued.</Description>
             <DataType>Time</DataType>
             <Reference type="BUSINESS_TERM">IBT-168</Reference>
             <Value type="EXAMPLE">12:35</Value>
@@ -79,8 +79,8 @@
 
         <Element>
             <Term>cbc:InvoiceTypeCode</Term>
-            <Name>Invoice type code</Name>
-            <Description>A code specifying the functional type of the Invoice.</Description>
+            <Name>Debit Note type code</Name>
+            <Description>A code specifying the functional type of the Debit Note.</Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-003</Reference>
             <Reference type="CODE_LIST">UNCL1001-inv</Reference>
@@ -90,8 +90,8 @@
 
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
-            <Name>Invoice note</Name>
-            <Description>A textual note that gives unstructured information that is relevant to the Invoice as a whole.
+            <Name>Debit Note note</Name>
+            <Description>A textual note that gives unstructured information that is relevant to the Debit Note as a whole.
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-022</Reference>
@@ -101,7 +101,7 @@
 
         <Element cardinality="0..1">
             <Term>cbc:Note</Term>
-            <Name>Invoice note</Name>
+            <Name>Debit Note note</Name>
             <Description>The subject of the textual note in EN BT-22.
             </Description>
             <DataType>Text</DataType>
@@ -113,7 +113,7 @@
         <Element cardinality="0..1">
             <Term>cbc:TaxPointDate</Term>
             <Name>TAX point date</Name>
-            <Description>The date when the TAX becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the invoice, according to the TAX directive.
+            <Description>The date when the TAX becomes accountable for the Seller and for the Buyer in so far as that date can be determined and differs from the date of issue of the Debit Note, according to the TAX directive.
             </Description>
             <DataType>Date</DataType>
             <Reference type="BUSINESS_TERM">IBT-007</Reference>
@@ -123,8 +123,8 @@
 
         <Element>
             <Term>cbc:DocumentCurrencyCode</Term>
-            <Name>Invoice currency code</Name>
-            <Description>TThe currency in which all Invoice amounts are given, except for the Total TAX amount in accounting currency.
+            <Name>Debit Note currency code</Name>
+            <Description>TThe currency in which all Debit Note amounts are given, except for the Total TAX amount in accounting currency.
             </Description>
             <DataType>Code</DataType>
             <Reference type="BUSINESS_TERM">IBT-005</Reference>
@@ -168,14 +168,14 @@
 
         <Element cardinality="0..1">
             <Term>cac:InvoicePeriod</Term>
-            <Name>DELIVERY OR INVOICE PERIOD</Name>
-            <Description>A group of business terms providing information on the invoice period.</Description>
+            <Name>DELIVERY OR DEBIT NOTE PERIOD</Name>
+            <Description>A group of business terms providing information on the Debit Note period.</Description>
             <Reference type="BUSINESS_TERM">BG-14</Reference>
 
             <Element cardinality="0..1">
                 <Term>cbc:StartDate</Term>
                 <Name>Invoicing period start date</Name>
-                <Description>The date when the Invoice period starts.</Description>
+                <Description>The date when the Debit Note period starts.</Description>
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">IBT-073</Reference>
                 <Value type="EXAMPLE">2017-10-01</Value>
@@ -185,7 +185,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:EndDate</Term>
                 <Name>Invoicing period end date</Name>
-                <Description>The date when the Invoice period ends.</Description>			
+                <Description>The date when the Debit Note period ends.</Description>			
                 <DataType>Date</DataType>
                 <Reference type="BUSINESS_TERM">IBT-074</Reference>
                 <Value type="EXAMPLE">2017-10-31</Value>
@@ -231,18 +231,18 @@
 
         <Element cardinality="0..n">
             <Term>cac:BillingReference</Term>
-            <Name>PRECEDING INVOICE REFERENCE</Name>
-            <Description>A group of business terms providing information on one or more preceding Invoices.</Description>
+            <Name>PRECEDING DEBIT NOTE REFERENCE</Name>
+            <Description>A group of business terms providing information on one or more preceding Debit Notes.</Description>
             <Reference type="BUSINESS_TERM">IBG-03</Reference>
 
             <Element>
                 <Term>cac:InvoiceDocumentReference</Term>
-                <Name>INVOICE DOCUMENT REFERENCE</Name>      
+                <Name>DEBIT NOTE DOCUMENT REFERENCE</Name>      
 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name>Preceding Invoice number</Name>
-                    <Description>The identification of an Invoice that was previously sent by the Seller.</Description>
+                    <Name>Preceding Debit Note number</Name>
+                    <Description>The identification of an Debit Note that was previously sent by the Seller.</Description>
                     <DataType>Document Reference</DataType>
                     <Reference type="BUSINESS_TERM">IBT-025</Reference>
                     <Value type="EXAMPLE">inv123</Value>
@@ -250,8 +250,8 @@
                 </Element>
                 <Element cardinality="0..1">
                     <Term>cbc:IssueDate</Term>
-                    <Name>Preceding Invoice issue date</Name>
-                    <Description>The date when the Preceding Invoice was issued.</Description>
+                    <Name>Preceding Debit Note issue date</Name>
+                    <Description>The date when the Preceding Debit Note was issued.</Description>
                     <DataType>Date</DataType>
                     <Reference type="BUSINESS_TERM">IBT-026</Reference>
                     <Value type="EXAMPLE">2017-09-15</Value>
@@ -297,7 +297,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Tender or lot reference</Name>
-                <Description>The identification of the call for tender or lot the invoice relates to.</Description>
+                <Description>The identification of the call for tender or lot the Debit Note relates to.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-017</Reference>
                 <Value type="EXAMPLE">PPID-123</Value>
@@ -322,14 +322,14 @@
 
         <Element> 
         <Term>cac:AdditionalDocumentReference</Term>
-        <Name>Invoice object identifier</Name>
-        <Description>A group of elements mappint the Invoice object identifier as a document reference qualified as document type 130.</Description>
+        <Name>Debit Note object identifier</Name>
+        <Description>A group of elements mappint the Debit Note object identifier as a document reference qualified as document type 130.</Description>
         <Reference type="BUSINESS_TERM">IBT-018</Reference>
 		
 			<Element>
 				<Term>cbc:ID</Term>
-				<Name>Invoiced object identifier</Name>
-				<Description>An identifier for an object on which the invoice is based, given by the Seller.</Description>
+				<Name>Debit Noted object identifier</Name>
+				<Description>An identifier for an object on which the Debit Note is based, given by the Seller.</Description>
 				<DataType>Identifier</DataType>
 				<Reference type="BUSINESS_TERM">IBT-018</Reference>
 				<Section>Shared</Section>
@@ -337,7 +337,7 @@
 				<Attribute usage="Optional">
 					<Term>schemeID</Term>
 					<Name>Scheme identifier</Name>
-					<Description>The identification scheme identifier of the Invoiced object identifier.</Description>
+					<Description>The identification scheme identifier of the object identifier.</Description>
 					<Reference type="BUSINESS_TERM">IBT-018-1</Reference>
 					<Reference type="CODE_LIST">UNCL1153</Reference>
 					<Value type="EXAMPLE">AUN</Value>
@@ -348,7 +348,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:DocumentTypeCode</Term>
 				<Name>Document type code</Name>
-				<Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
+				<Description>Code "130" MUST be used to indicate an Debit Note object reference. Not used for other additional documents</Description>
 				<DataType>Code</DataType>
 				<Reference type="BUSINESS_TERM">IBT-018-2</Reference>
 				<Value type="DEFAULT">130</Value>
@@ -365,7 +365,7 @@
             <Element>
                 <Term>cbc:ID</Term>
                 <Name>Project reference</Name>
-                <Description>The identification of the project the invoice refers to.</Description>
+                <Description>The identification of the project the Debit Note refers to.</Description>
                 <DataType>Document Reference</DataType>
                 <Reference type="BUSINESS_TERM">IBT-011</Reference>
                 <Value type="EXAMPLE">PID33</Value>
@@ -427,7 +427,7 @@
 			<Element cardinality="0..1">
 				<Term>cbc:PaymentID</Term>
 				<Name>Remittance information</Name>
-				<Description>A textual value used for payment routing or to establish a link between the payment and the Invoice.</Description>
+				<Description>A textual value used for payment routing or to establish a link between the payment and the Debit Note.</Description>
 				<DataType>Text</DataType>
 				<Reference type="BUSINESS_TERM">IBT-083</Reference>
 				<Value type="EXAMPLE">432948234234234</Value>
@@ -506,7 +506,7 @@
             <Element  cardinality="0..1">
                 <Term>cbc:PaidAmount</Term>
                 <Name>Paid amount</Name>
-                <Description>The amount of the payment in the invoice currency.</Description>
+                <Description>The amount of the payment in the Debit Note currency.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">IBT-180</Reference>
                 <Value type="EXAMPLE">100.00</Value>
@@ -515,7 +515,7 @@
 
 			<Element  cardinality="0..1">
 					<Term>cbc:ReceivedDate</Term>
-					<Name>The date when the paid amount is debited to the invoice.</Name>
+					<Name>The date when the paid amount is debited to the Debit Note.</Name>
 					<Description>The date when the prepaid amount was received by the seller.</Description>
 					<DataType>Date</DataType>
 					<Reference type="BUSINESS_TERM">IBT-181</Reference>
@@ -542,14 +542,14 @@
    
         <Element cardinality="1..n">
             <Term>cac:InvoiceLine</Term>
-            <Name>INVOICE LINE</Name>
-            <Description>A group of business terms providing information on individual Invoice lines.</Description>
+            <Name>DEBIT NOTE LINE</Name>
+            <Description>A group of business terms providing information on individual Debit Note lines.</Description>
             <Reference type="BUSINESS_TERM">IBG-25</Reference>
             
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Invoice line identifier</Name>
-                <Description>A unique identifier for the individual line within the Invoice.</Description>
+                <Name>Debit Note line identifier</Name>
+                <Description>A unique identifier for the individual line within the Debit Note.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-126</Reference>
                 <Value type="EXAMPLE">12</Value>
@@ -558,8 +558,8 @@
 
             <Element cardinality="0..1">
                 <Term>cbc:Note</Term>
-                <Name>Invoice line note</Name>
-                <Description>A textual note that gives unstructured information that is relevant to the Invoice line.</Description>
+                <Name>Debit Note line note</Name>
+                <Description>A textual note that gives unstructured information that is relevant to the Debit Note line.</Description>
                 <DataType>Text</DataType>
                 <Reference type="BUSINESS_TERM">IBT-127</Reference>
                 <Value type="EXAMPLE">New article number 12345</Value>
@@ -568,8 +568,8 @@
 
             <Element>
                 <Term>cbc:InvoicedQuantity</Term>
-                <Name>Invoiced quantity</Name>
-                <Description>The quantity of items (goods or services) that is charged in the Invoice line.</Description>
+                <Name>Quantity</Name>
+                <Description>The quantity of items (goods or services) that is charged in the Debit Note line.</Description>
                 <DataType>Quantity</DataType>
                 <Reference type="BUSINESS_TERM">IBT-129</Reference>
                 <Value type="EXAMPLE">100</Value>
@@ -577,8 +577,8 @@
 
                 <Attribute>
                     <Term>unitCode</Term>
-                    <Name>Invoiced quantity unit of measure</Name>
-                    <Description>The unit of measure that applies to the invoiced quantity.</Description>
+                    <Name>Quantity unit of measure</Name>
+                    <Description>The unit of measure that applies to the  quantity.</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">IBT-130</Reference>
                     <Reference type="CODE_LIST">UNECERec20</Reference>
@@ -588,8 +588,8 @@
 
             <Element>
                 <Term>cbc:LineExtensionAmount</Term>
-                <Name>Invoice line net amount</Name>
-                <Description>The total amount of the Invoice line.</Description>
+                <Name>Debit Note line net amount</Name>
+                <Description>The total amount of the Debit Note line.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">IBT-131</Reference>
                 <Value type="EXAMPLE">2145.00</Value>
@@ -606,7 +606,7 @@
 
             <Element cardinality="0..1">
                 <Term>cbc:AccountingCost</Term>
-                <Name>Invoice line Buyer accounting reference</Name>
+                <Name>Debit Note line Buyer accounting reference</Name>
                 <Description>A textual value that specifies where to book the relevant data into the Buyer's financial accounts.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-133</Reference>
@@ -637,8 +637,8 @@
 
                 <Element>
                     <Term>cbc:ID</Term>
-                    <Name>Invoice line object identifier</Name>
-                    <Description>An identifier for an object on which the invoice line is based, given by the Seller.</Description>
+                    <Name>Debit Note line object identifier</Name>
+                    <Description>An identifier for an object on which the Debit Note line is based, given by the Seller.</Description>
                     <DataType>Identifier</DataType>
                     <Reference type="BUSINESS_TERM">IBT-128</Reference>
                     <Value type="EXAMPLE">AB12345</Value>
@@ -646,8 +646,8 @@
                     
                     <Attribute usage="Optional">
                         <Term>schemeID</Term>
-                        <Name>Invoice line object identifier identification scheme identifier</Name>
-                        <Description>The identification scheme identifier of the Invoice line object identifier.</Description>
+                        <Name>Debit Note line object identifier identification scheme identifier</Name>
+                        <Description>The identification scheme identifier of the Debit Note line object identifier.</Description>
                         <Reference type="CODE_LIST">UNCL1153</Reference>
 						<Reference type="BUSINESS_TERM">IBT-128-1</Reference>
 						<Value type="EXAMPLE">ABZ</Value>
@@ -658,7 +658,7 @@
                 <Element>
                     <Term>cbc:DocumentTypeCode</Term>
                     <Name>Document type code</Name>
-                    <Description>Code "130" MUST be used to indicate an invoice object reference. Not used for other additional documents</Description>
+                    <Description>Code "130" MUST be used to indicate an Debit Note object reference. Not used for other additional documents</Description>
                     <DataType>Code</DataType>
                     <Reference type="BUSINESS_TERM">IBT-128</Reference>
                     <Value type="DEFAULT">130</Value>

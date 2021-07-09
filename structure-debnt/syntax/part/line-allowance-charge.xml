@@ -2,8 +2,8 @@
 <Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..n">
     
         <Term>cac:AllowanceCharge</Term>
-        <Name>INVOICE LINE ALLOWANCES OR CHARGES</Name>
-        <Description>A group of business terms providing information about allowances or charges applicable to the individual Invoice line.</Description>
+        <Name>DEBIT NOTE LINE ALLOWANCES OR CHARGES</Name>
+        <Description>A group of business terms providing information about allowances or charges applicable to the individual Debit Note line.</Description>
         <Reference type="BUSINESS_TERM">IBG-27, IBG-28</Reference>
         <!-- <Reference type="RULE">ibr-co-24</Reference> -->
         

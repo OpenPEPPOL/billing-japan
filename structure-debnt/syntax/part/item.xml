@@ -3,7 +3,7 @@
         
         <Term>cac:Item</Term>
         <Name>ITEM INFORMATION</Name>
-        <Description>A group of business terms providing information about the goods and services invoiced.</Description>
+        <Description>A group of business terms providing information about the goods and services.</Description>
         <Reference type="BUSINESS_TERM">IBG-31</Reference>
         
         <Element cardinality="0..1">
@@ -12,7 +12,7 @@
             <Description>A description for an item.The item description allows for describing the item and its features in more detail than the Item name.</Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-154</Reference>
-            <Value type="EXAMPLE">Long description of the item on the invoice line</Value>  
+            <Value type="EXAMPLE">Long description of the item on the debit note line</Value>  
 			<Section>Shared</Section>
 		</Element>
         
@@ -135,14 +135,14 @@
             <Term>cac:ClassifiedTaxCategory</Term>
             <Name>LINE TAX INFORMATION</Name>
             <Description>A group of business terms providing information about the TAX applicable for the goods and services
-                invoiced on the Invoice line.
+                on the debit note line.
             </Description>
             <Reference type="BUSINESS_TERM">IBG-30</Reference>
             
             <Element>
                 <Term>cbc:ID</Term>
-                <Name>Invoiced item TAX category code</Name>
-                <Description>The TAX category code for the invoiced item.</Description>
+                <Name>Item TAX category code</Name>
+                <Description>The TAX category code for the item.</Description>
                 <DataType>Code</DataType>
                 <Reference type="BUSINESS_TERM">IBT-151</Reference>
                 <Reference type="CODE_LIST">UNCL5305</Reference>
@@ -152,8 +152,8 @@
             
             <Element cardinality="0..1">
                 <Term>cbc:Percent</Term>
-                <Name>Invoiced item TAX rate</Name>
-                <Description>The TAX rate, represented as percentage that applies to the invoiced item.</Description>
+                <Name>Item TAX rate</Name>
+                <Description>The TAX rate, represented as percentage that applies to the item.</Description>
                 <DataType>Percentage</DataType>
                 <Reference type="BUSINESS_TERM">IBT-152</Reference>
                 <Value type="EXAMPLE">25</Value>
@@ -163,7 +163,7 @@
             <Element cardinality="0..1">
                 <Term>cbc:PerUnitAmount</Term>
                 <Name>Unit TAX</Name>
-                <Description>The TAX rate, represented as percentage that applies to the invoiced item.</Description>
+                <Description>The TAX rate, represented as percentage that applies to the item.</Description>
                 <DataType>Amount</DataType>
                 <Reference type="BUSINESS_TERM">IBT-152</Reference>
                 <Value type="EXAMPLE">25</Value>
@@ -206,7 +206,7 @@
         <Element cardinality="0..n">
             <Term>cac:AdditionalItemProperty</Term>
             <Name>ITEM ATTRIBUTES</Name>
-            <Description>A group of business terms providing information about properties of the goods and services invoiced.</Description>
+            <Description>A group of business terms providing information about properties of the goods and services.</Description>
             <Reference type="BUSINESS_TERM">IBG-32</Reference>
             <Element>
                 <Term>cbc:Name</Term>

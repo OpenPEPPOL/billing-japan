@@ -13,7 +13,7 @@
             <Element>
                 <Term>cbc:EndpointID</Term>
                 <Name>Buyer electronic address</Name>
-                <Description>Identifies the Buyer's electronic address to which the invoice is delivered.</Description>
+                <Description>Identifies the Buyer's electronic address to which the debit note is delivered.</Description>
                 <DataType>Identifier</DataType>
                 <Reference type="BUSINESS_TERM">IBT-049</Reference>
 				<Section>Shared</Section>

@@ -3,7 +3,7 @@
 
         <Term>cac:AllowanceCharge</Term>
         <Name>DOCUMENT LEVEL ALLOWANCES AND CHARGES</Name>
-        <Description>A group of business terms providing information about allowances applicable to the Invoice as a
+        <Description>A group of business terms providing information about allowances applicable to the Debit Note as a
             whole.
         </Description>
         <Reference type="BUSINESS_TERM">IBG-20, IBG-21</Reference>

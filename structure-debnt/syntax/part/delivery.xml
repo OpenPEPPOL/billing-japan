@@ -4,7 +4,7 @@
         <Term>cac:Delivery</Term>
         <Name>DELIVERY INFORMATION</Name>
         <Description>A group of business terms providing information about where and when the goods and services
-            invoiced are delivered.
+            are delivered.
         </Description>
         <Reference type="BUSINESS_TERM">IBG-13</Reference>
         
