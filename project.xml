@@ -3,7 +3,7 @@
 
     <Name>Japanese PEPPOL BIS Documentation</Name>
 
-    <Documentation path="bis/">Japan Standard Commercial Invoice process (BIS) A</Documentation>
+    <!-- <Documentation path="bis/">Japan Standard Commercial Invoice process (BIS) A</Documentation> -->
     <Documentation path="compliance/">BIS compliance</Documentation>
 	<Documentation path="release-notes/">Release notes</Documentation>
 
