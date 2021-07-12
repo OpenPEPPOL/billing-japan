@@ -59,7 +59,7 @@
 
         <Element cardinality="0..1">
             <Term>cbc:IssueTime</Term>
-            <Name>Debit Note issue date</Name>
+            <Name>Debit Note issue time</Name>
             <Description>The time of day when an Debit Note was issued.</Description>
             <DataType>Time</DataType>
             <Reference type="BUSINESS_TERM">IBT-168</Reference>
