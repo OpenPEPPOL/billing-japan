@@ -1,8 +1,7 @@
 [[benefits]]
 = Benefits
 
-The invoice and credit note provides simple support for complex invoicing, where there is a need for credit note in addition
-to an invoice. Other potential benefits are, among others:
+The Summary invoice pattern 1 process support for complex invoicing, where there is a need for a debit note in addition to an invoice and a credit note. Other potential benefits are, among others:
 
 * Can be mandated as a basis for national or regional eInvoicing initiatives.
 * Procurement agencies can use them as basis for moving all invoices into electronic form. The flexibility of the specifications allows the buyers to automate processing of invoices gradually, based on different sets of identifiers or references, based on a cost/benefit approach.

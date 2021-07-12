@@ -13,7 +13,7 @@ The purpose of this document is to facilitate an efficient implementation and in
 ****
 This Peppol Business Interoperability Specification (Peppol BIS) document is a Country Specification based on the PINT. The restrictions on PINT implemented in this Peppol BIS are identified in the conformance statement provided in appendix A.
 
-The copyright of PINT is owned by OpenPEPPOL and its members.cOpenPEPPOL AISBL holds the copyright of this Peppol BIS. 
+The copyright of PINT is owned by OpenPEPPOL and its members. OpenPEPPOL AISBL holds the copyright of this Peppol BIS. 
 
 This PEPPOL BIS document may not be modified, re-distribute, sold or repackaged in any other way without the prior consent of OpenPEPPOL AISBL.
 ****
@@ -35,7 +35,7 @@ This document is structured as follows:
 
 == Scope
 
-This document is concerned with clarifying requirements for ensuring interoperability  and provides guidelines for the support and implementation of these requirements. This document will also provide a detailed implementation guideline for the invoice and credit note transactions.
+This document is concerned with clarifying requirements for ensuring interoperability and provides guidelines for the support and implementation of these requirements. This document will also provide a detailed implementation guideline for a Summary invoice pattern 1 business process, which includes the use of Debit Note, Invoice and Credit Note transactions.
 
 == Audience
 
