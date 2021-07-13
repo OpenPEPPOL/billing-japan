@@ -43,8 +43,8 @@
 	<Resource>
         <Type>Structure-1</Type>
         <Path>structure-debnt/syntax/ubl-invoice.xml</Path>
-        <Title>Debit note</Title> -->
-    </Resource>
+        <Title>Debit note</Title>
+    </Resource> -->
 <!--     <Resource>
         <Type>Structure-1</Type>
         <Path>structure/syntax/ubl-creditnote.xml</Path>
