@@ -35,7 +35,7 @@
         <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>Standard Commercial Invoice, message specification</Title>
     </Resource>
-	<Resource>
+<!-- 	<Resource>
         <Type>Structure-1</Type>
         <Path>structure-sum1/syntax/ubl-invoice.xml</Path>
         <Title>Summary invoice pattern 1, message specification</Title>
@@ -43,7 +43,7 @@
 	<Resource>
         <Type>Structure-1</Type>
         <Path>structure-debnt/syntax/ubl-invoice.xml</Path>
-        <Title>Debit note</Title>
+        <Title>Debit note</Title> -->
     </Resource>
 <!--     <Resource>
         <Type>Structure-1</Type>
