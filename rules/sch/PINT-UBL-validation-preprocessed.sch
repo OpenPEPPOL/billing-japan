@@ -42,14 +42,14 @@
       <assert id="ibr-63" flag="fatal" test="exists(@schemeID)">[ibr-63]-The Buyer electronic address (ibt-049) shall have a Scheme identifier.    </assert>
     </rule>
     <rule context="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress">
-      <assert id="ibr-11" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[ibr-11]-The Buyer postal address (ibg-089 shall contain a Buyer country code (ibt-055).</assert>
+      <assert id="ibr-11" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[ibr-11]-The Buyer postal address (ibg-08) shall contain a Buyer country code (ibt-055).</assert>
     </rule>
     <rule context="cac:Delivery/cac:DeliveryLocation/cac:Address">
       <assert id="ibr-57" flag="fatal" test="exists(cac:Country/cbc:IdentificationCode)">[ibr-57]-Each Deliver to address (ibg-15) shall contain a Deliver to country code (ibt-080).</assert>
     </rule>
     <rule context="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = false()]">
       <assert id="ibr-31" flag="fatal" test="exists(cbc:Amount)">[ibr-31]-Each Document level allowance (ibg-20) shall have a Document level allowance amount (ibt-092).</assert>
-      <assert id="ibr-33" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-33]-Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-907) or a Document level allowance reason code (ibt-098).</assert>
+      <assert id="ibr-33" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-33]-Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098).</assert>
       <assert id="ibr-co-05" flag="fatal" test="true()">[ibr-co-05]-Document level allowance reason code (ibt-098) and Document level allowance reason (ibt-097) shall indicate the same type of allowance.</assert>
       <assert id="ibr-co-21" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-co-21]-Each Document level allowance (ibg-20) shall contain a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098), or both.</assert>
     </rule>
@@ -97,12 +97,12 @@
     <rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()]">
       <assert id="ibr-41" flag="fatal" test="exists(cbc:Amount)">[ibr-41]-Each Invoice line allowance (ibg-27) shall have an Invoice line allowance amount (ibt-136).</assert>
       <assert id="ibr-42" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-42]-Each Invoice line allowance (ibg-27) shall have an Invoice line allowance reason (ibt-139) or an Invoice line allowance reason code (ibt-140).</assert>
-      <assert id="ibr-co-07" flag="fatal" test="true()">[ibr-co-07]-When both Invoice line allowance reason code (iibt-140) and Invoice line allowance reason (iibt-139) the definition of the code is normative.</assert>
+      <assert id="ibr-co-07" flag="fatal" test="true()">[ibr-co-07]-When both Invoice line allowance reason code (ibt-140) and Invoice line allowance reason (ibt-139) the definition of the code is normative.</assert>
     </rule>
     <rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()]">
       <assert id="ibr-43" flag="fatal" test="exists(cbc:Amount)">[ibr-43]-Each Invoice line charge (ibg-28) shall have an Invoice line charge amount (ibt-141).</assert>
       <assert id="ibr-44" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-44]-Each Invoice line charge (ibg-28) shall have an Invoice line charge reason (ibt-144) or an invoice line allowance reason code (ibt-145). </assert>
-      <assert id="ibr-co-08" flag="fatal" test="true()">[ibr-co-08]-When both Invoice line charge reason code (iibt-145) and Invoice line charge reason (iibt-144) the definition of the code is normative.</assert>
+      <assert id="ibr-co-08" flag="fatal" test="true()">[ibr-co-08]-When both Invoice line charge reason code (ibt-145) and Invoice line charge reason (ibt-144) the definition of the code is normative.</assert>
       <assert id="ibr-co-24" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-co-24]-Each Invoice line charge (ibg-28) shall contain an Invoice line charge reason (ibt-144) or an Invoice line charge reason code (ibt-145), or both.</assert>
     </rule>
     <rule context="cac:InvoiceLine/cac:InvoicePeriod | cac:CreditNoteLine/cac:InvoicePeriod">
@@ -123,7 +123,7 @@
       <assert id="ibr-64" flag="fatal" test="exists(@schemeID)">[ibr-64]-The Item standard identifier (ibt-157) shall have a Scheme identifier.</assert>
     </rule>
     <rule context="cac:PayeeParty">
-      <assert id="ibr-17" flag="fatal" test="exists(cac:PartyName/cbc:Name) and (not(cac:PartyName/cbc:Name = ../cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) and not(cac:PartyIdentification/cbc:ID = ../cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID) )">[ibr-17]-The Payee name (ibt-059) shall be provided in the Invoice, if the Payee (ibg-10) is different from the Seller (ibg-4).</assert>
+      <assert id="ibr-17" flag="fatal" test="exists(cac:PartyName/cbc:Name) and (not(cac:PartyName/cbc:Name = ../cac:AccountingSupplierParty/cac:Party/cac:PartyName/cbc:Name) and not(cac:PartyIdentification/cbc:ID = ../cac:AccountingSupplierParty/cac:Party/cac:PartyIdentification/cbc:ID) )">[ibr-17]-The Payee name (ibt-059) shall be provided in the Invoice, if the Payee (ibg-10) is different from the Seller (ibg-04).</assert>
     </rule>
     <rule context="cac:PaymentMeans">
       <assert id="ibr-49" flag="fatal" test="exists(cbc:PaymentMeansCode)">[ibr-49]-A Payment instruction (ibg-16) shall specify the Payment means type code (ibt-081).</assert>
