@@ -1,20 +1,20 @@
 
-= General invoicing process
+= Summary invoicing process, pattern 1.
 
-The invoicing process includes issuing and sending the invoice and the credit note from the supplier to the customer and the reception  and handling of the same at the customer’s site.
+Int the summary invoicing process, pattern 1, the supplier sends a debit note to the buyer with each delivery and the buyer uses the information in the debit note to verify the reception of the items. The debit note is focused on providing information about the items that are being delivered. At the end of a period (usually a month) the supplier senda a single invoice that summarises the items that were send during that period. The invoice contains represents a claim for payment and contains the necessary tax information.
 
 The invoicing process is shown in this work flow:
 
-* A supplier issues and sends an invoice to a customer. The invoice refers to one order and a specification of delivered goods and services.
+* A supplier can send one or more debit note along with the deliveries of items. The debit note refers to the order and provides information about the items and their quantities. The customer can use the debit note to control the receiption of the items.
 
-An invoice may also refer to a contract or a frame agreement. The invoice may specify articles (goods and services) with article number or article description.
+* A the end of a period a supplier issues and sends an invoice to a customer. The invoice summarizes all the items delivered during the period and references the debit notes.
 
 * The customer receives the invoice and processes it in the invoice control system leading to one of the following results:
   .. The customer fully approves the invoice, posts it in the accounting system and passes it on to be paid.
   .. The customer completely rejects the invoice, contacts the supplier and requests a credit note.
   .. The customer disputes parts of the invoice, contacts the supplier and requests a credit note and a new invoice.
 
-The diagram below shows the basic invoicing process with the use of this PEPPOL BIS profile. This process assumes that both the invoice and the credit note are exchanged electronically.
+The diagram below shows the basic invoicing process with the use of this PEPPOL Japan summary invoice BIS profile. This process assumes that both the invoice and the credit note are exchanged electronically.
 
 image::../shared/images/process.png[The invoicing process, align="center"]
 
