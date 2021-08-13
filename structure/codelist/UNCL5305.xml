@@ -26,12 +26,6 @@
     </Code>
 
     <Code>
-        <Id>Z</Id>
-        <Name>Zero rated goods</Name>
-        <Description>Code specifying that the items have a zero rate Consumption Tax.</Description>
-    </Code>
-
-    <Code>
         <Id>G</Id>
         <Name>Free export item, Consumption Tax not charged</Name>
         <Description>Code specifying that the item is free export and taxes are not charged.</Description>
