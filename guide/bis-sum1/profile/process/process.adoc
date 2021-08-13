@@ -1,7 +1,7 @@
 
 = Summary invoicing process, pattern 1.
 
-In the summary invoicing process, pattern 1, the supplier sends a debit note to the buyer with each delivery and the buyer uses the information in the debit note to verify the reception of the items. The debit note is focused on providing information about the items that are being delivered. At the end of a period (usually a month) the supplier senda a single invoice that summarises the items that were send during that period. The invoice contains represents a claim for payment and contains the necessary tax information.
+In the summary invoicing process, pattern 1, the supplier sends a debit note to the buyer with each delivery and the buyer uses the information in the debit note to verify the reception of the items. The debit note is focused on providing information about the items that are being delivered. At the end of a period (usually a month) the supplier sends a single invoice that summarises the items that were send during that period. The invoice contains represents a claim for payment and contains the necessary tax information.
 
 The invoicing process is shown in this work flow:
 
