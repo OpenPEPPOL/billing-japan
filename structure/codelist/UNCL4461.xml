@@ -481,5 +481,14 @@
             defined among trading partners until a precise code can be assigned to the code list.</Description>
     </Code>
 
+    <Code>
+        <Id>Z01</Id>
+        <Name>Singapore GIRO</Name>
+    </Code>
+	
+	<Code>
+        <Id>Z02</Id>
+        <Name>Singapore PayNow Corporate</Name>
+    </Code>
 
 </CodeList>

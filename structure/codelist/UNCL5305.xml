@@ -9,38 +9,31 @@
 
     <Code>
         <Id>S</Id>
-        <Name>Standard rate Consumption Tax</Name>
-        <Description>Code specifying that the standard CT rate is levied from the invoicee.</Description>
+        <Name>Standard rate</Name>
+        <Description>Code specifying the standard rate.</Description>
     </Code>
 
     <Code>
         <Id>AA</Id>
-        <Name>Lower rate Consumption Tax</Name>
-        <Description>Code specifying that the lower CT rate is levied from the invoicee.</Description>
+        <Name>Lower rate</Name>
+        <Description>Tax rate is lower than standard rate.</Description>
     </Code>
 
     <Code>
         <Id>E</Id>
-        <Name>Exempt from Tax</Name>
-        <Description>Code specifying that an item liable for Consumption Tax is exempted due to trade circumstances.</Description>
-    </Code>
-
-    <Code>
-        <Id>Z</Id>
-        <Name>Zero rated goods</Name>
-        <Description>Code specifying that the items have a zero rate Consumption Tax.</Description>
+        <Name>Exempt from tax</Name>
+        <Description>Code specifying that taxes are not applicable.</Description>
     </Code>
 
     <Code>
         <Id>G</Id>
-        <Name>Free export item, Consumption Tax not charged</Name>
+        <Name>Free export item, tax not charged</Name>
         <Description>Code specifying that the item is free export and taxes are not charged.</Description>
     </Code>
 
     <Code>
         <Id>O</Id>
-        <Name>Outside scope of tax</Name>
-        <Description>Code specifying that the seller is not registered for Consumption Tax.</Description>
+        <Name>Services outside scope of tax</Name>
+        <Description>Code specifying that taxes are not applicable to the services.</Description>
     </Code>
-
 </CodeList>
