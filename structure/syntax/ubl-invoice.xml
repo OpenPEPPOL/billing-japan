@@ -633,6 +633,33 @@
 
             <Element cardinality="0..1">
                 <Term>cac:DocumentReference</Term>
+                <Name>LINE DOCUMENT REFERENCE</Name>
+
+                <Element>
+                    <Term>cbc:ID</Term>
+                    <Name>Invoice line document identifier</Name>
+                    <Description>An identifiers for a document that the invoice line referes to.</Description>
+                    <DataType>Identifier</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-188</Reference>
+                    <Value type="EXAMPLE">AB12345</Value>
+					<Section>Aligned</Section>
+                </Element>
+                
+                <Element>
+                    <Term>cbc:DocumentTypeCode</Term>
+                    <Name>Document type code</Name>
+                    <Description>A code that qualifies the type of the document that is referenced.</Description>
+                    <DataType>Code</DataType>
+                    <Reference type="BUSINESS_TERM">IBT-189</Reference>
+					<Reference type="CODE_LIST">UNCL1001</Reference>
+                    <Value type="EXAMPLE">383</Value>
+					<Section>Aligned</Section>
+				</Element>
+ 
+			</Element>
+			
+            <Element cardinality="0..1">
+                <Term>cac:DocumentReference</Term>
                 <Name>LINE OBJECT IDENTIFIER</Name>
 
                 <Element>
