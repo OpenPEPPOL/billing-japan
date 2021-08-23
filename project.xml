@@ -127,7 +127,7 @@
     <!-- Downloads -->
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
         <Title>Schematron for PEPPOL PINT rules (UBL)</Title>
         <Description>Schematron file containing rules according to ISO Schematron.</Description>
         <Property key="download">PINT-UBL-validation-preprocessed.sch</Property>
@@ -135,7 +135,7 @@
 
     <Resource>
         <Type>native:File</Type>
-        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
+        <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
         <Title>Schematron for Japanese rules (UBL)</Title>
         <Description>Schematron file containing Japanese rules according to ISO Schematron.</Description>
         <Property key="download">Japan-UBL-validation-preprocessed.sch</Property>
