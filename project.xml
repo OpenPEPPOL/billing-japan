@@ -51,58 +51,22 @@
         <Title>UBL Credit Note</Title>
     </Resource> -->
 
+    <!-- Rules -->
     <Resource>
         <Identifier>ubl-pint</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
         <Title>Rules for PEPPOL PINT</Title>
     </Resource>
-    
-    <Resource>
-        <Type>native:File</Type>
-        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
-        <Title>Schematron for PEPPOL PINT rules (UBL)</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">PINT-UBL-validation-preprocessed.sch</Property>
-    </Resource>
-	
+
     <Resource>
         <Identifier>ubl-japan</Identifier>
         <Type>native:Schematron</Type>
         <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
         <Title>Japanese rules for Standard Commercial Invoice</Title>
     </Resource>
-    
-    <Resource>
-        <Type>native:File</Type>
-        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
-        <Title>Schematron for Japanese rules (UBL)</Title>
-        <Description>Schematron file containing Japanese rules according to ISO Schematron.</Description>
-        <Property key="download">Japan-UBL-validation-preprocessed.sch</Property>
-    </Resource>
-
-    <!--    <Resource>
-        <Type>native:File</Type>
-        <Path>rules/sch/CEN-EN16931-UBL.sch</Path>
-        <Title>Schematron for TC434 rules (UBL)</Title>
-        <Description>Schematron file containing rules according to ISO Schematron.</Description>
-        <Property key="download">CEN-EN16931-UBL.sch</Property>
-    </Resource>
-    -->
-    <Resource>
-        <Type>native:File</Type>
-        <Path>stylesheet/stylesheet-ubl.xslt</Path>
-        <Title>Stylesheet for UBL instances</Title>
-        <Property key="download">stylesheet-ubl.xslt</Property>
-    </Resource>
-    <!--
-    <Resource>
-        <Type>native:File</Type>
-        <Path>mapping/mapping-cii-ubl.xls</Path>
-        <Title>Excel mappling table cii to ubl</Title>
-        <Property key="download">mapping-cii-ubl.xls</Property>
-    </Resource> -->
-
+	
+    <!-- Code list -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/icd.xml</Path>
@@ -143,10 +107,6 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL1153.xml</Path>
     </Resource>
-<!--     <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/UNCL2005.xml</Path>
-    </Resource> -->
     <Resource>
         <Type>CodeList-1</Type>
         <Path>structure/codelist/UNCL4461.xml</Path>
@@ -163,13 +123,29 @@
         <Type>CodeList-1</Type>
         <Path>structure/codelist/MimeCode.xml</Path>
     </Resource>   
-<!--     <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/SEPA.xml</Path>
-    </Resource>  -->
-<!--     <Resource>
-        <Type>CodeList-1</Type>
-        <Path>structure/codelist/VATEX.xml</Path>
-    </Resource> -->
+
+    <!-- Downloads -->
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
+        <Title>Schematron for PEPPOL PINT rules (UBL)</Title>
+        <Description>Schematron file containing rules according to ISO Schematron.</Description>
+        <Property key="download">PINT-UBL-validation-preprocessed.sch</Property>
+    </Resource>
+
+    <Resource>
+        <Type>native:File</Type>
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
+        <Title>Schematron for Japanese rules (UBL)</Title>
+        <Description>Schematron file containing Japanese rules according to ISO Schematron.</Description>
+        <Property key="download">Japan-UBL-validation-preprocessed.sch</Property>
+    </Resource>
+
+    <Resource>
+        <Type>native:File</Type>
+        <Path>stylesheet/stylesheet-ubl.xslt</Path>
+        <Title>Stylesheet for UBL instances</Title>
+        <Property key="download">stylesheet-ubl.xslt</Property>
+    </Resource>
 
 </Project>
