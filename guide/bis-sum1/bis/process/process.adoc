@@ -16,7 +16,7 @@ The invoicing process is shown in this work flow:
 
 The diagram below shows the basic invoicing process with the use of this PEPPOL Japan summary invoice BIS profile. This process assumes that both the invoice and the credit note are exchanged electronically.
 
-image::../images/process.png[The invoicing process, align="center"]
+image::process.png[The invoicing process, align="center"]
 
 This profile covers the following invoice processes:
 P1:: Invoicing of deliveries of goods and services against purchase orders, based on a contract
