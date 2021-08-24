@@ -157,7 +157,7 @@
         <Type>native:File</Type>
         <Path>stylesheet/stylesheet-ubl.xslt</Path>
         <Title>Testing external links</Title>
-        <Property key="download">stylesheet-ubl.xslt</Property>
+        <Property key="download">https://www.ruv.is/</Property>
     </Resource>
 
 </Project>
