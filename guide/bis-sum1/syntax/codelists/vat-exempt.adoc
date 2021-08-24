@@ -1,8 +1,0 @@
-
-[cols="1,4"]
-|===
-h| Document location
-|cac:TaxTotal/TaxSubtotal/TaxCategory/cbc:TaxExemptionReasonCode
-h| Source codelist
-| {VATEX}
-|===

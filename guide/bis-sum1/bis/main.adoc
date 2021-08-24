@@ -14,7 +14,7 @@ v{version}
 :sectanchors:
 :sectnums:
 :CIUS: Core Invoice Usage Specification (CIUS)
-:title-logo-image: ../images/peppol.jpg
+:title-logo-image: /images/peppol.jpg
 
 
 
@@ -24,14 +24,14 @@ link:/poacc/billing-japan/[Main documentation site]
 
 :leveloffset: +1
 
-include::../profile/introduction.adoc[]
+include::/profile/introduction.adoc[]
 
-include::../transaction-spec/principles/index.adoc[]
+include::/principles/index.adoc[]
 
-include::../profile/process/index.adoc[]
+include::/process/index.adoc[]
 
-include::../profile/profiles/index.adoc[]
+include::/profiles/index.adoc[]
 
-include::../syntax/guideline.adoc[]
+include::/profile/guideline.adoc[]
 
 //include::rules/index.adoc[]

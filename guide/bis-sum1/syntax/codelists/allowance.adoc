@@ -1,8 +1,0 @@
-
-[cols="1,4"]
-|===
-h| Document location
-| `cbc:AllowanceChargeReasonCode[cbc:ChargeIndicator=false]`
-h| Source codelist
-| Subset of {UNCL5189}
-|===

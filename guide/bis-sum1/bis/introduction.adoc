@@ -1,5 +1,5 @@
 
-= Introduction to openPEPPOL and BIS
+= Introduction to openPEPPOL and BIS QQQQQ
 
 [preface]
 This {peppol} BIS Japan Billing provides a set of specifications for implementing a {peppol} billing business process in Japan. The document is concerned with clarifying requirements for ensuring international interoperability while supporting the Japanese domestic business processes and provides guidelines for the support and implementation of these requirements.
