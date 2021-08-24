@@ -153,11 +153,11 @@
         <Property key="download">stylesheet-ubl.xslt</Property>
     </Resource>
 	
-	<Resource>
+    <Resource>
         <Type>native:File</Type>
-        <Path>https://www.ruv.is/</Path>
-        <Title>Test link</Title>
-        <Property key="download">https://www.ruv.is/</Property>
+        <Path>stylesheet/stylesheet-ubl.xslt</Path>
+        <Title>Testing external links</Title>
+        <Property key="download">stylesheet-ubl.xslt</Property>
     </Resource>
 
 </Project>
