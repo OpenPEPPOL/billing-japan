@@ -1,0 +1,10 @@
+
+= Contract reference
+
+To reference or match an invoice to a purchase contract, the contract number could be specified like this:
+
+.UBL example of contract reference
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/Snippet-refs.xml[tags=contract]
+----
