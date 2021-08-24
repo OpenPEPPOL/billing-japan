@@ -157,7 +157,7 @@
         <Type>native:File</Type>
         <Path>https://www.ruv.is/</Path>
         <Title>Test link</Title>
-        <Property key="url">https://www.ruv.is/</Property>
+        <Property key="download">https://www.ruv.is/</Property>
     </Resource>
 
 </Project>
