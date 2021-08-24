@@ -28,7 +28,12 @@
         <Path>release-notes/</Path>
         <Title>Release notes</Title>
     </Resource>
-
+    <Resource>
+        <Type>Doc-1</Type>
+        <Path>https://www.ruv.is/</Path>
+        <Title>Test link</Title>
+    </Resource>
+	
     <!-- Syntax -->
     <Resource>
         <Type>Structure-1</Type>
@@ -146,6 +151,13 @@
         <Path>stylesheet/stylesheet-ubl.xslt</Path>
         <Title>Stylesheet for UBL instances</Title>
         <Property key="download">stylesheet-ubl.xslt</Property>
+    </Resource>
+	
+	<Resource>
+        <Type>native:File</Type>
+        <Path>https://www.ruv.is/</Path>
+        <Title>Test link</Title>
+        <Property key="url">https://www.ruv.is/</Property>
     </Resource>
 
 </Project>
