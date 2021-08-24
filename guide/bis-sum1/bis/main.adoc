@@ -24,14 +24,12 @@ link:/poacc/billing-japan/[Main documentation site]
 
 :leveloffset: +1
 
-include::/profile/introduction.adoc[]
+include::profile/introduction.adoc[]
 
-include::/principles/index.adoc[]
+include::principles/index.adoc[]
 
-include::/process/index.adoc[]
+include::process/index.adoc[]
 
-include::/profiles/index.adoc[]
+include::profiles/index.adoc[]
 
-include::/profile/guideline.adoc[]
-
-//include::rules/index.adoc[]
+include::syntax/guideline.adoc[]
