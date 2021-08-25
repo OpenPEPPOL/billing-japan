@@ -3,10 +3,6 @@
 
     <Name>Japanese PEPPOL BIS Documentation</Name>
 
-    <!-- <Documentation path="bis/">Japan Standard Commercial Invoice process (BIS)</Documentation> -->
-    <!-- <Documentation path="compliance/">BIS compliance</Documentation> -->
-	<!-- <Documentation path="release-notes/">Release notes</Documentation> -->
-
     <!-- Documentation -->
     <Resource>
         <Type>Doc-1</Type>
@@ -37,37 +33,47 @@
     <!-- Syntax -->
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/ubl-invoice.xml</Path>
-        <Title>Standard Commercial Invoice, message specification</Title>
+        <Path>https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-invoice/tree/en/</Path>
+        <Title>Standard Commercial Invoice, Syntax view</Title>
     </Resource>
-<!-- 	<Resource>
+    <Resource>
         <Type>Structure-1</Type>
-        <Path>structure-sum1/syntax/ubl-invoice.xml</Path>
-        <Title>Summary invoice pattern 1, message specification</Title>
+        <Path>https://www.wuwei.space/jp_pint/billing-japan/semantic/invoice/tree/en/</Path>
+        <Title>Standard Commercial Invoice, Semantic view</Title>
     </Resource>
-	<Resource>
+    <Resource>
         <Type>Structure-1</Type>
-        <Path>structure-debnt/syntax/ubl-invoice.xml</Path>
-        <Title>Debit note</Title>
-    </Resource> -->
-<!--     <Resource>
+        <Path>https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-summarised/tree/en/</Path>
+        <Title>Summarized Invoice, Syntax view</Title>
+    </Resource>
+    <Resource>
         <Type>Structure-1</Type>
-        <Path>structure/syntax/ubl-creditnote.xml</Path>
-        <Title>UBL Credit Note</Title>
-    </Resource> -->
+        <Path>https://www.wuwei.space/jp_pint/billing-japan/semantic/summarised/tree/en/</Path>
+        <Title>Summarized Invoice, Semantic view</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-debitnote/tree/en/</Path>
+        <Title>Debit Note, Syntax view</Title>
+    </Resource>
+    <Resource>
+        <Type>Structure-1</Type>
+        <Path>https://www.wuwei.space/jp_pint/billing-japan/semantic/debitnote/tree/en/</Path>
+        <Title>Debit Note, Semantic view</Title>
+    </Resource>
 
     <!-- Rules -->
     <Resource>
         <Identifier>ubl-pint</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
+        <Path>https://www.wuwei.space/jp_pint/billing-japan/rules/ubl-pint/en/ </Path>
         <Title>Rules for PEPPOL PINT</Title>
     </Resource>
 
     <Resource>
         <Identifier>ubl-japan</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
+        <Path>https://www.wuwei.space/jp_pint/billing-japan/rules/ubl-japan/en/</Path>
         <Title>Japanese rules for Standard Commercial Invoice</Title>
     </Resource>
 	
@@ -151,13 +157,6 @@
         <Path>stylesheet/stylesheet-ubl.xslt</Path>
         <Title>Stylesheet for UBL instances</Title>
         <Property key="download">stylesheet-ubl.xslt</Property>
-    </Resource>
-	
-    <Resource>
-        <Type>native:File</Type>
-        <Path>stylesheet/stylesheet-ubl.xslt</Path>
-        <Title>Testing external links</Title>
-        <Property key="download">https://www.ruv.is/</Property>
     </Resource>
 
 </Project>
