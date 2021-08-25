@@ -1,9 +1,0 @@
-
-
-
-//:leveloffset: +1
-
-include::restricted-elements.adoc[]
-
-
-:leveloffset: -1

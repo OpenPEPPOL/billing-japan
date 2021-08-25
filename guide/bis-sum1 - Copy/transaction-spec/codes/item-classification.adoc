@@ -1,8 +1,0 @@
-
-
-= Item classification identifier
-
-An item classification identifier has a *mandatory* scheme attribute. The value shall be chosen from {UNCL7143}.
-
-
-include::../../syntax/codelists/item-classification.adoc[]

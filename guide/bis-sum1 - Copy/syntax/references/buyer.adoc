@@ -1,6 +1,0 @@
-
-.UBL example of buyer reference
-[source, xml, indent=0]
-----
-include::../{snippet-dir}/Snippet-refs.xml[tags=buyer-ref]
-----
