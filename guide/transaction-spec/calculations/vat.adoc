@@ -15,4 +15,6 @@ stem:["CT category tax amount (IBT-117)" = "CT category taxable amount (IBT-116)
 
 IMPORTANT: For CT Breakdown where the CT Category is "Not subject to CT" (O), the CT category tax amount shall be zero.
 
+IMPORTANT: Consumption Tax category tax amount (BT-117) = Consumption Tax category taxable amount (IBT-116) x (Consumption Tax category rate (IBT-119) / 100), rounded to integer. The rounded result amount SHALL be between the amount rounded down to integer value as floor and the amount rounded up to integer value as ceiling. (jp-br-co-01).
+
 include::../../syntax/vat-calc.adoc[]
