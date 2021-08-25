@@ -18,7 +18,9 @@ The diagram below shows the basic invoicing process with the use of this PEPPOL 
 
 image::../shared/images/process.png[The invoicing process, align="center"]
 
+
 This profile covers the following invoice processes:
+
 P1:: Invoicing of deliveries of goods and services against purchase orders, based on a contract
 P2:: Invoicing deliveries of goods and services based on a contract
 P3:: Invoicing the delivery of an incidental purchase order
