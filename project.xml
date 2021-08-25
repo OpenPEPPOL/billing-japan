@@ -31,12 +31,12 @@
     </Resource>
 	
     <!-- Syntax -->
-<!--     <Resource>
+<Resource>
         <Type>Structure-1</Type>
         <Path>https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-invoice/tree/en/</Path>
         <Title>Standard Commercial Invoice, Syntax view</Title>
     </Resource>
-    <Resource>
+<!--         <Resource>
         <Type>Structure-1</Type>
         <Path>https://www.wuwei.space/jp_pint/billing-japan/semantic/invoice/tree/en/</Path>
         <Title>Standard Commercial Invoice, Semantic view</Title>
