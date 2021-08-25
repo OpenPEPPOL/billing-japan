@@ -1,0 +1,18 @@
+
+= Documents used in process.
+
+The Summarized Invoiced process requires the use of the following documents:
+
+* Standard Japanese Invoice
+* Debit Note
+
+== Standard Japanese Invoice
+The invoice used in this process is the same datamodel as specified for the Standard Japanese Invoice process, but with additional rules.
+
+Additional rules are the following:
+
+* A reference to a debit note is required for each invoice line.
+
+== Debit Note
+The debit note used in this process is the same as specifed for the stand alone Debit note process.
+
