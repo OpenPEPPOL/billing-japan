@@ -1,0 +1,22 @@
+
+[cols="2s,5a,5a", options="header"]
+|===
+| Type
+| Element `cbc:CustomizationID`
+| Element `cbc:ProfileID`
+
+
+| JP standard Invoice and credit note
+| urn:peppol:pint:billing-3.0@jp:peppol-1@jp:suminvpt1-1
+| urn:peppol:bis:suminvpt1
+| Debit Note
+| urn:peppol:pint:debitnote-3.0@jp:peppol-1
+| urn:peppol:bis:suminvpt1
+|===
+
+
+.UBL example of profile identifier
+[source, xml, indent=0]
+----
+include::{snippet-dir}/Snippet-full.xml[tags=profile]
+----
