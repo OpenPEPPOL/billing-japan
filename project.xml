@@ -31,7 +31,7 @@
     </Resource>
 	
     <!-- Syntax -->
-    <Resource>
+<!--     <Resource>
         <Type>Structure-1</Type>
         <Path>https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-invoice/tree/en/</Path>
         <Title>Standard Commercial Invoice, Syntax view</Title>
@@ -60,10 +60,10 @@
         <Type>Structure-1</Type>
         <Path>https://www.wuwei.space/jp_pint/billing-japan/semantic/debitnote/tree/en/</Path>
         <Title>Debit Note, Semantic view</Title>
-    </Resource>
+    </Resource> -->
 
     <!-- Rules -->
-    <Resource>
+<!--     <Resource>
         <Identifier>ubl-pint</Identifier>
         <Type>native:Schematron</Type>
         <Path>https://www.wuwei.space/jp_pint/billing-japan/rules/ubl-pint/en/ </Path>
@@ -75,7 +75,7 @@
         <Type>native:Schematron</Type>
         <Path>https://www.wuwei.space/jp_pint/billing-japan/rules/ubl-japan/en/</Path>
         <Title>Japanese rules for Standard Commercial Invoice</Title>
-    </Resource>
+    </Resource> -->
 	
     <!-- Code list -->
     <Resource>
