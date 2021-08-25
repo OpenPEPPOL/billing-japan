@@ -3,7 +3,7 @@
 [[roles]]
 = Parties and roles
 
-The diagram below shows the roles involved in the exchange of debit notes.
+The diagram below shows the parties and roles involved in the exchange of debit notes.
 
 image::../shared/images/functionality-and-roles.png[Functionality and roles, align="center"]
 

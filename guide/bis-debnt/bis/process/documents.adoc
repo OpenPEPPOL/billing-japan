@@ -3,5 +3,6 @@
 
 The Debit Note process requires the use of the following document:
 
-* Debit Note
+Debit Note::
+The debit note uses the same data model as the Japanese standard invoice with the difference that document type code is 383, terminology is adjusted from invoice to debit note and rules are reduced.
 

@@ -20,7 +20,7 @@ This PEPPOL BIS document may not be modified, re-distribute, sold or repackaged 
 
 == Scope
 
-This document is concerned with clarifying requirements for ensuring interoperability and provides guidelines for the support and implementation of these requirements. This document will also provide a detailed implementation guideline for a Summary invoice pattern 1 business process, which includes the use of Debit Note, Invoice and Credit Note transactions.
+This document will also provide a detailed implementation guideline for a Debit Note as a standalone business process.
 
 == Audience
 
