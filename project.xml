@@ -69,19 +69,21 @@
     </Resource>
 
     <!-- Rules -->
-<!--     <Resource>
+    <Resource>
         <Identifier>ubl-pint</Identifier>
         <Type>native:Schematron</Type>
-        <Path>https://www.wuwei.space/jp_pint/billing-japan/rules/ubl-pint/en/ </Path>
+		<!-- https://www.wuwei.space/jp_pint/billing-japan/rules/ubl-pint/en/ -->
+        <Path>rules/sch/PINT-UBL-validation-preprocessed.sch</Path>
         <Title>Rules for PEPPOL PINT</Title>
     </Resource>
 
     <Resource>
         <Identifier>ubl-japan</Identifier>
         <Type>native:Schematron</Type>
-        <Path>https://www.wuwei.space/jp_pint/billing-japan/rules/ubl-japan/en/</Path>
+		<!-- https://www.wuwei.space/jp_pint/billing-japan/rules/ubl-japan/en/ -->
+        <Path>rules/sch/Japan-UBL-validation-preprocessed.sch</Path>
         <Title>Japanese rules for Standard Commercial Invoice</Title>
-    </Resource> -->
+    </Resource>
 	
     <!-- Code list -->
     <Resource>
