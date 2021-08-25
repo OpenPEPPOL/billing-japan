@@ -8,4 +8,4 @@
 :name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
 
 
-include::../shared/settings.adoc[]
+include::shared/settings.adoc[]
