@@ -5,7 +5,7 @@
 
 The diagram below shows the roles involved in the invoice and credit note transactions. The customer and invoice receiver is the same entity, as is the supplier and the invoice sender.
 
-image::functionality-and-roles.png[Functionality and roles, align="center"]
+image:: functionality-and-roles.png[Functionality and roles, align="center"]
 
 
 == Parties
