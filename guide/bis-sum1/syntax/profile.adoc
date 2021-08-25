@@ -6,10 +6,9 @@
 | Element `cbc:ProfileID`
 
 
-| Invoice and credit note
-| urn:cen.eu:en16931:2017# +
-compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0
-| urn:fdc:peppol.eu:2017:poacc:billing:01:1.0
+| JP standard Invoice and credit note
+| urn:peppol:bis:billing
+| urn:peppol:pint:billing-3.0@jp:peppol-1@jp:suminvpt1-1
 
 |===
 
