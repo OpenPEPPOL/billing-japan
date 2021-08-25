@@ -7,11 +7,11 @@ Please also see <<CT category codes>> for details on the CT category code list, 
 
 == Line CT Information
 
-Each invoice line shall have the invoiced item CT category code (BT-151), and for all CT categories except "Not subject to CT" (O), the CT rate shall be provided.
+Each invoice line shall have the invoiced item CT category code (IBT-151), and for all CT categories except "Not subject to CT" (O), the CT rate shall be provided.
 
 == Document level allowance or charge
 
-Each document level charge or allowance must have the Document level allowance or charge CT category code (BT-95 and BT-102), and for all CT categories except "Not subject to CT" (O), the CT rate shall be provided.
+Each document level charge or allowance must have the Document level allowance or charge CT category code (IBT-95 and IBT-102), and for all CT categories except "Not subject to CT" (O), the CT rate shall be provided.
 
 == CT Breakdown
 
@@ -28,4 +28,4 @@ This should result in only one CT Breakdown.
 
 == Invoice total CT amount
 
-The invoice total CT amount (BT-110) is the sum of all CT Category CT amounts (BT-117)
+The invoice total CT amount (IBT-110) is the sum of all CT Category CT amounts (IBT-117)

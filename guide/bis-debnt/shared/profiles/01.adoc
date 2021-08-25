@@ -2,6 +2,6 @@
 [[prof-01]]
 = Summarised invoice messages
 
-In the table below you will find the values to be used as the specification identifier (BT-24) and the business process type (BT-23) for this profile
+In the table below you will find the values to be used as the specification identifier (IBT-24) and the business process type (IBT-23) for this profile
 
 include::../../syntax/profile.adoc[]

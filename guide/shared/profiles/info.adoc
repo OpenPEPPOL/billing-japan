@@ -1,9 +1,9 @@
 
 = Profiles and messages [[profiles]]
 
-All messages contains Business process type (BT-23) and Specification identifier (BT-24). Business process type (BT-23) identifies what business process a given message is part of, and Specification identifier (BT-24) identifies the kind of message and the rules applied.
+All messages contains Business process type (IBT-23) and Specification identifier (IBT-24). Business process type (IBT-23) identifies what business process a given message is part of, and Specification identifier (IBT-24) identifies the kind of message and the rules applied.
 
-Profiles are connected to one business process, and may contain multiple document types. Valid document instances shall contain corresponding Business process type (BT-23) and Specification identifier (BT-24).
+Profiles are connected to one business process, and may contain multiple document types. Valid document instances shall contain corresponding Business process type (IBT-23) and Specification identifier (IBT-24).
 
 
-IMPORTANT: Specification identifier (BT-24) is a string without spaces. The list below contains spaces in Specification identifier (BT-24) to make them easier to read. *Make sure to remove any spaces before use.*
+IMPORTANT: Specification identifier (IBT-24) is a string without spaces. The list below contains spaces in Specification identifier (IBT-24) to make them easier to read. *Make sure to remove any spaces before use.*

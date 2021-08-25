@@ -3,7 +3,7 @@
 
 == Credit transfer
 
-If payment is made by credit transfer, the Payment account identifier (BT-84) is mandatory
+If payment is made by credit transfer, the Payment account identifier (IBT-84) is mandatory
 
 See <<payment-means>> for all allowed codes. Examples of codes for payment by credit transfer are:
 

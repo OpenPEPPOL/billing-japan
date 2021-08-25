@@ -1,10 +1,10 @@
 = Credit note types or corrective invoices
 
-The codes below can be used in business term Invoice Type Code (BT-3) for credit notes.
+The codes below can be used in business term Invoice Type Code (IBT-3) for credit notes.
 
 [cols="1s,5a", options="header"]
 |===
-|Invoice type code (BT-3)
+|Invoice type code (IBT-3)
 | Name/description
 
 

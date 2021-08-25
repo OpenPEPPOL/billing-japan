@@ -22,10 +22,10 @@ General rule that applies to all invoices and are triggered by the existence of 
 _An invoice shall have a buyers reference *or* an order reference_
 
 * *Context that triggers the rule* +
-_Existence of either Buyer reference (BT-10) *OR* Purchased order reference (BT-13)_
+_Existence of either Buyer reference (IBT-10) *OR* Purchased order reference (IBT-13)_
 
 CIUS - Country qualified validation rules::
-Applies only for invoices issued in a specific country. The rule is triggered by the given country code of the seller (BT-40).
+Applies only for invoices issued in a specific country. The rule is triggered by the given country code of the seller (IBT-40).
 * *Example rule text* +
 _When the Seller is Swedish, the Legal Registration Number shall be numeric with 10 digits._
 
