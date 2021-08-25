@@ -1,6 +1,6 @@
 :lang: en
 
-:doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] Japan Summarized invoice pattern 1 (BIS)
+:doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] Debit Note (BIS)
 :version: 0.9.0
 :shared-dir: ../../shared
 :snippet-dir: ../../../rules/snippets
