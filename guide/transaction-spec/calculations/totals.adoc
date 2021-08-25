@@ -47,4 +47,7 @@ stem:[+ \ "IBT-114: Rounding amount"]
 
 |===
 
+IMPORTANT: In case of amount in JPY, BT-114 Rounding amount is not used, therefore, BT-115 = BT-112: Invoice total
+amount with CT − BT-113: Paid amount.
+
 include::../../syntax/totals.adoc[]
