@@ -3,7 +3,7 @@
 :doctitle: image:../shared/images/peppol.jpg[float="right", width=100%] Japan Summarized invoice pattern 1 (BIS)
 :version: 0.9.0
 :shared-dir: ../../shared
-:snippet-dir: ../../shared/snippets
+:snippet-dir: ../../../rules/snippets
 
 :name-op-en: OpenPEPPOL AISBL, Post-Award Coordinating Community
 
