@@ -31,36 +31,42 @@
     </Resource>
 	
     <!-- Syntax -->
-<Resource>
+	<Resource>
         <Type>Structure-1</Type>
-        <Path>https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-invoice/tree/en/</Path>
+		<!-- https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-invoice/tree/en/ -->
+        <Path>structure/syntax/ubl-invoice.xml</Path> 
         <Title>Standard Commercial Invoice, Syntax view</Title>
     </Resource>
-<!--         <Resource>
+        <Resource>
         <Type>Structure-1</Type>
-        <Path>https://www.wuwei.space/jp_pint/billing-japan/semantic/invoice/tree/en/</Path>
+		<!-- https://www.wuwei.space/jp_pint/billing-japan/semantic/invoice/tree/en/ -->
+        <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>Standard Commercial Invoice, Semantic view</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-summarised/tree/en/</Path>
+		<!-- https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-summarised/tree/en/ -->
+        <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>Summarized Invoice, Syntax view</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>https://www.wuwei.space/jp_pint/billing-japan/semantic/summarised/tree/en/</Path>
+		<!-- https://www.wuwei.space/jp_pint/billing-japan/semantic/summarised/tree/en/ -->
+        <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>Summarized Invoice, Semantic view</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-debitnote/tree/en/</Path>
+		<!-- https://www.wuwei.space/jp_pint/billing-japan/syntax/ubl-debitnote/tree/en/ -->
+        <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>Debit Note, Syntax view</Title>
     </Resource>
     <Resource>
         <Type>Structure-1</Type>
-        <Path>https://www.wuwei.space/jp_pint/billing-japan/semantic/debitnote/tree/en/</Path>
+		<!-- https://www.wuwei.space/jp_pint/billing-japan/semantic/debitnote/tree/en/ -->
+        <Path>structure/syntax/ubl-invoice.xml</Path>
         <Title>Debit Note, Semantic view</Title>
-    </Resource> -->
+    </Resource>
 
     <!-- Rules -->
 <!--     <Resource>
