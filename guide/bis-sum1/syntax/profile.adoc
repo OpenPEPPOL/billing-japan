@@ -7,9 +7,11 @@
 
 
 | JP standard Invoice and credit note
-| urn:peppol:bis:billing
 | urn:peppol:pint:billing-3.0@jp:peppol-1@jp:suminvpt1-1
-
+| urn:peppol:bis:billing
+| Debit Note
+| urn:peppol:pint:billing-3.0@jp:peppol-1@jp:suminvpt1-1
+| urn:peppol:pint:debitnote-3.0@jp:peppol-1
 |===
 
 
