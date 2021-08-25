@@ -15,6 +15,11 @@
     </Resource>
 	<Resource>
         <Type>Doc-1</Type>
+        <Path>bis-debnt/bis/</Path>
+        <Title>Debit note</Title>
+    </Resource>
+	<Resource>
+        <Type>Doc-1</Type>
         <Path>bis-sum1/bis/</Path>
         <Title>Summary invoice pattern 1 BIS</Title>
     </Resource>
@@ -27,11 +32,6 @@
         <Type>Doc-1</Type>
         <Path>release-notes/</Path>
         <Title>Release notes</Title>
-    </Resource>
-    <Resource>
-        <Type>Doc-1</Type>
-        <Path>https://www.ruv.is/</Path>
-        <Title>External link</Title>
     </Resource>
 	
     <!-- Syntax -->
