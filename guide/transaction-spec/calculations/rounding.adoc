@@ -6,8 +6,8 @@ To minimize the risk of differences due to rounding, the following rules apply:
 
 [IMPORTANT]
 ====
-* All document level amounts shall have no decimals for accounting
-* Invoice line net amount shall be rounded 
+* If Invoice currency code(ibt-005) is "JPY", all document level amounts shall have no decimals for accounting.
+* If Invoice currency code(ibt-005) is "JPY", invoice line net amount shall be rounded. 
 * Results from calculations involving already rounded amounts are not subject to rounding, like payable amounts and total amounts included CT.
 ====
 
