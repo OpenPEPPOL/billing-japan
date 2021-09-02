@@ -39,7 +39,7 @@
 	
     <Resource>
         <Type>Structure-1</Type>
-        <Path>structure-sum1/syntax/ubl-invoice.xml</Path>
+        <Path>structure-summ/syntax/ubl-invoice.xml</Path>
         <Title>Summarized Invoice, Syntax view</Title>
     </Resource>
 	
