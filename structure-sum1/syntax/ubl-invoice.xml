@@ -21,7 +21,7 @@
             <Description languageID="ja-JP">An identification of the specification containing the total set of rules regarding semantic content, cardinalities and business rules to which the data contained in the instance document conforms.</Description>
             <DataType>Identifier</DataType>
             <Reference type="BUSINESS_TERM">IBT-024</Reference>
-            <Value type="EXAMPLE">urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0</Value>
+            <Value type="EXAMPLE">urn:peppol:pint:billing-3.0@jp:peppol-1@jp:suminvpt1-1</Value>
 			<Section>Shared</Section>
         </Element>
 
@@ -32,7 +32,7 @@
             </Description>
             <DataType>Text</DataType>
             <Reference type="BUSINESS_TERM">IBT-023</Reference>
-            <Value type="DEFAULT">urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</Value>
+            <Value type="DEFAULT">urn:peppol:bis:suminvpt1</Value>
 			<Section>Shared</Section>
         </Element>
 
