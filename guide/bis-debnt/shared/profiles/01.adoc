@@ -1,6 +1,6 @@
 
 [[prof-01]]
-= Summarised invoice messages
+= Debit Note messages
 
 In the table below you will find the values to be used as the specification identifier (IBT-24) and the business process type (IBT-23) for this profile
 
