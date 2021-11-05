@@ -36,13 +36,12 @@
     </rule>
     <rule context="cac:LegalMonetaryTotal/cbc:PayableAmount">
       <assert id="ibr-67" flag="fatal" test="string-length(substring-after(., '.')) &lt;= 2">[ibr-67]-Invoice amount due for payment (ibt-115) shall have no more than 2 decimals.</assert>
-      <assert id="ibr-co-25" flag="fatal" test="((. > 0) and (exists(//cbc:DueDate) or exists(//cac:PaymentTerms/cbc:Note))) or (. &lt;= 0)">[ibr-co-25]-In case the Amount due for payment (ibt-115) is positive, either the Payment due date (ibt-009) or the Payment terms (ibt-020) shall be present.</assert>
     </rule>
     <rule context="cac:AccountingCustomerParty/cac:Party/cbc:EndpointID">
       <assert id="ibr-63" flag="fatal" test="exists(@schemeID)">[ibr-63]-The Buyer electronic address (ibt-049) shall have a Scheme identifier.    </assert>
     </rule>
     <rule context="cac:AccountingCustomerParty/cac:Party/cac:PostalAddress">
-      <assert id="ibr-11" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[ibr-11]-The Buyer postal address (ibg-08) shall contain a Buyer country code (ibt-055).</assert>
+      <assert id="ibr-11" flag="fatal" test="(cac:Country/cbc:IdentificationCode) != ''">[ibr-11]-The Buyer postal address (ibg-08 shall contain a Buyer country code (ibt-055).</assert>
     </rule>
     <rule context="cac:Delivery/cac:DeliveryLocation/cac:Address">
       <assert id="ibr-57" flag="fatal" test="exists(cac:Country/cbc:IdentificationCode)">[ibr-57]-Each Deliver to address (ibg-15) shall contain a Deliver to country code (ibt-080).</assert>
@@ -50,13 +49,11 @@
     <rule context="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = false()]">
       <assert id="ibr-31" flag="fatal" test="exists(cbc:Amount)">[ibr-31]-Each Document level allowance (ibg-20) shall have a Document level allowance amount (ibt-092).</assert>
       <assert id="ibr-33" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-33]-Each Document level allowance (ibg-20) shall have a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098).</assert>
-      <assert id="ibr-co-05" flag="fatal" test="true()">[ibr-co-05]-Document level allowance reason code (ibt-098) and Document level allowance reason (ibt-097) shall indicate the same type of allowance.</assert>
       <assert id="ibr-co-21" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-co-21]-Each Document level allowance (ibg-20) shall contain a Document level allowance reason (ibt-097) or a Document level allowance reason code (ibt-098), or both.</assert>
     </rule>
     <rule context="/ubl:Invoice/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | /cn:CreditNote/cac:AllowanceCharge[cbc:ChargeIndicator = true()]">
       <assert id="ibr-36" flag="fatal" test="exists(cbc:Amount)">[ibr-36]-Each Document level charge (ibg-21) shall have a Document level charge amount (ibt-099).</assert>
       <assert id="ibr-38" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-38]-Each Document level charge (ibg-21) shall have a Document level charge reason (ibt-104) or a Document level charge reason code (ibt-105).</assert>
-      <assert id="ibr-co-06" flag="fatal" test="true()">[ibr-co-06]-Document level charge reason code (ibt-105) and Document level charge reason (ibt-104) shall indicate the same type of charge.</assert>
       <assert id="ibr-co-22" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-co-22]-Each Document level charge (ibg-21) shall contain a Document level charge reason (ibt-104) or a Document level charge reason code (ibt-105), or both.</assert>
     </rule>
     <rule context="cac:LegalMonetaryTotal">
@@ -86,7 +83,6 @@
     </rule>
     <rule context="cac:InvoiceLine | cac:CreditNoteLine">
       <assert id="ibr-21" flag="fatal" test="(cbc:ID) != ''">[ibr-21]-Each Invoice line (ibg-25) shall have an Invoice line identifier (ibt-126).</assert>
-      <assert id="ibr-22" flag="fatal" test="exists(cbc:InvoicedQuantity) or exists(cbc:CreditedQuantity)">[ibr-22]-Each Invoice line (ibg-25) shall have an Invoiced quantity (ibt-129).</assert>
       <assert id="ibr-23" flag="fatal" test="exists(cbc:InvoicedQuantity/@unitCode) or exists(cbc:CreditedQuantity/@unitCode)">[ibr-23]-An Invoice line (ibg-25) shall have an Invoiced quantity unit of measure code (ibt-130).</assert>
       <assert id="ibr-24" flag="fatal" test="exists(cbc:LineExtensionAmount)">[ibr-24]-Each Invoice line (ibg-25) shall have an Invoice line net amount (ibt-131).</assert>
       <assert id="ibr-25" flag="fatal" test="(cac:Item/cbc:Name) != ''">[ibr-25]-Each Invoice line (ibg-25) shall contain the Item name (ibt-153).</assert>
@@ -97,13 +93,10 @@
     <rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = false()]">
       <assert id="ibr-41" flag="fatal" test="exists(cbc:Amount)">[ibr-41]-Each Invoice line allowance (ibg-27) shall have an Invoice line allowance amount (ibt-136).</assert>
       <assert id="ibr-42" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-42]-Each Invoice line allowance (ibg-27) shall have an Invoice line allowance reason (ibt-139) or an Invoice line allowance reason code (ibt-140).</assert>
-      <assert id="ibr-co-07" flag="fatal" test="true()">[ibr-co-07]-When both Invoice line allowance reason code (ibt-140) and Invoice line allowance reason (ibt-139) the definition of the code is normative.</assert>
     </rule>
     <rule context="//cac:InvoiceLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()] | //cac:CreditNoteLine/cac:AllowanceCharge[cbc:ChargeIndicator = true()]">
       <assert id="ibr-43" flag="fatal" test="exists(cbc:Amount)">[ibr-43]-Each Invoice line charge (ibg-28) shall have an Invoice line charge amount (ibt-141).</assert>
-      <assert id="ibr-44" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-44]-Each Invoice line charge (ibg-28) shall have an Invoice line charge reason (ibt-144) or an invoice line allowance reason code (ibt-145). </assert>
-      <assert id="ibr-co-08" flag="fatal" test="true()">[ibr-co-08]-When both Invoice line charge reason code (ibt-145) and Invoice line charge reason (ibt-144) the definition of the code is normative.</assert>
-      <assert id="ibr-co-24" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-co-24]-Each Invoice line charge (ibg-28) shall contain an Invoice line charge reason (ibt-144) or an Invoice line charge reason code (ibt-145), or both.</assert>
+      <assert id="ibr-44" flag="fatal" test="exists(cbc:AllowanceChargeReason) or exists(cbc:AllowanceChargeReasonCode)">[ibr-44]-Each Invoice line charge (ibg-28) shall have an Invoice line charge reason (ibt-144) or an invoice line charge reason code (ibt-145). </assert>
     </rule>
     <rule context="cac:InvoiceLine/cac:InvoicePeriod | cac:CreditNoteLine/cac:InvoicePeriod">
       <assert id="ibr-30" flag="fatal" test="(exists(cbc:EndDate) and exists(cbc:StartDate) and xs:date(cbc:EndDate) >= xs:date(cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))">[ibr-30]-If both Invoice line period start date (ibt-134) and Invoice line period end date (ibt-135) are given then the Invoice line period end date (ibt-135) shall be later or equal to the Invoice line period start date (ibt-134).</assert>
@@ -184,7 +177,7 @@
       <assert id="ibr-cl-15" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 1A AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS XI YE YT ZA ZM ZW ', concat(' ', normalize-space(.), ' '))))">[ibr-cl-15]-Origin country codes in an invoice MUST be coded using ISO code list 3166-1</assert>
     </rule>
     <rule flag="fatal" context="cac:PaymentMeans/cbc:PaymentMeansCode">
-      <assert id="ibr-cl-16" flag="fatal" test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 70 74 75 76 77 78 91 92 93 94 95 96 97 ZZZ Z01 Z02 ',concat(' ',normalize-space(.),' ') ) ) )">[ibr-cl-16]-Payment means in an invoice MUST be coded using UNCL4461 code list (adding Z01 and Z02)</assert>
+      <assert id="ibr-cl-16" flag="fatal" test="( ( not(contains(normalize-space(.),' ')) and contains( ' 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 70 74 75 76 77 78 91 92 93 94 95 96 97 ZZZ Z01 Z02 ',concat(' ',normalize-space(.),' ') ) ) )">[ibr-cl-16]-Payment means in an invoice MUST be coded using UNCL4461 code list</assert>
     </rule>
     <rule flag="fatal" context="cac:AllowanceCharge[cbc:ChargeIndicator = false()]/cbc:AllowanceChargeReasonCode">
       <assert id="ibr-cl-19" flag="fatal" test="((not(contains(normalize-space(.), ' ')) and contains(' 41 42 60 62 63 64 65 66 67 68 70 71 88 95 100 102 103 104 ', concat(' ', normalize-space(.), ' '))))">[ibr-cl-19]-Coded allowance reasons MUST belong to the UNCL 5189 code list</assert>
